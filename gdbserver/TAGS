@@ -1,0 +1,2843 @@
+
+x86-low.cc,27
+x86_low_init_dregs 27,927
+
+win32-low.cc,3510
+gdbserver_windows_process windows_process;42,1332
+#define OUTMSG(48,1429
+#define OUTMSG2(50,1492
+#define _T(61,1655
+int using_threads 64,1686
+const struct target_desc *win32_tdesc;win32_tdesc66,1710
+const struct target_desc *wow64_win32_tdesc;wow64_win32_tdesc68,1767
+#define NUM_REGS 71,1820
+current_thread_ptid 76,1966
+debug_event_ptid 83,2090
+win32_get_thread_context 91,2270
+win32_set_thread_context 105,2625
+win32_prepare_to_resume 118,2926
+win32_require_context 127,3105
+gdbserver_windows_process::thread_recthread_rec146,3498
+child_add_thread 161,3927
+delete_thread_info 188,4665
+child_delete_thread 198,4893
+win32_process_target::supports_z_point_type supports_z_point_type215,5318
+win32_process_target::insert_point insert_point223,5531
+win32_process_target::remove_point remove_point236,5900
+win32_process_target::stopped_by_watchpoint stopped_by_watchpoint249,6270
+win32_process_target::stopped_data_address stopped_data_address258,6461
+child_xfer_memory 269,6700
+child_init_thread_list 301,7560
+do_initial_child_stuff 307,7647
+continue_one_thread 405,10635
+child_continue 434,11237
+child_fetch_inferior_registers 453,11796
+child_store_inferior_registers 469,12350
+create_process 483,12773
+win32_process_target::create_inferior create_inferior520,13918
+win32_process_target::attach attach608,16385
+gdbserver_windows_process::handle_output_debug_stringhandle_output_debug_string637,16937
+#define READ_BUFFER_LEN 640,17036
+#undef READ_BUFFER_LEN678,17955
+win32_clear_inferiors 684,18006
+win32_process_target::kill kill700,18345
+win32_process_target::detach detach726,18982
+win32_process_target::mourn mourn745,19359
+win32_process_target::join join753,19500
+win32_process_target::thread_alive thread_alive765,19762
+win32_process_target::resume resume775,20028
+gdbserver_windows_process::handle_load_dll handle_load_dll867,22379
+gdbserver_windows_process::handle_unload_dll handle_unload_dll921,23586
+suspend_one_thread 934,23973
+fake_breakpoint_event 942,24131
+gdbserver_windows_process::handle_access_violationhandle_access_violation961,24666
+maybe_adjust_pc 972,24909
+get_child_debug_event 999,25868
+win32_process_target::wait wait1202,32397
+win32_process_target::fetch_registers fetch_registers1254,34016
+win32_process_target::store_registers store_registers1262,34269
+win32_process_target::read_memory read_memory1271,34602
+win32_process_target::write_memory write_memory1282,35028
+win32_process_target::request_interrupt request_interrupt1290,35269
+win32_process_target::supports_hardware_single_step supports_hardware_single_step1308,35782
+win32_process_target::supports_qxfer_siginfo supports_qxfer_siginfo1314,35862
+win32_process_target::qxfer_siginfo qxfer_siginfo1322,35969
+win32_process_target::supports_get_tib_address supports_get_tib_address1369,37225
+win32_process_target::get_tib_address get_tib_address1377,37358
+win32_process_target::sw_breakpoint_from_kind sw_breakpoint_from_kind1391,37717
+win32_process_target::stopped_by_sw_breakpoint stopped_by_sw_breakpoint1398,37872
+win32_process_target::supports_stopped_by_sw_breakpoint supports_stopped_by_sw_breakpoint1407,38117
+win32_process_target::read_pc read_pc1413,38206
+win32_process_target::write_pc write_pc1419,38320
+win32_process_target::thread_name thread_name1425,38461
+win32_process_target::pid_to_exec_file pid_to_exec_file1434,38674
+static win32_process_target the_win32_target;1441,38814
+initialize_low 1445,38903
+
+win32-i386-low.cc,1488
+#define CONTEXT_EXTENDED_REGISTERS 32,1015
+#define FCS_REGNUM 35,1060
+#define FOP_REGNUM 36,1082
+#define FLAG_TRACE_BIT 38,1105
+static struct x86_debug_reg_state debug_reg_state;40,1135
+update_debug_registers 43,1199
+x86_dr_low_set_addr 55,1568
+x86_dr_low_set_control 66,1889
+win32_get_current_dr 76,2163
+#define RET_DR(84,2338
+#undef RET_DR101,2588
+#define RET_DR(103,2609
+#undef RET_DR119,2810
+x86_dr_low_get_addr 125,2888
+x86_dr_low_get_control 133,3067
+x86_dr_low_get_status 142,3258
+struct x86_dr_low_type x86_dr_low 148,3361
+i386_supports_z_point_type 161,3611
+i386_insert_point 175,3825
+i386_remove_point 197,4297
+x86_stopped_by_watchpoint 219,4769
+x86_stopped_data_address 225,4882
+i386_initial_stuff 234,5039
+i386_get_thread_context 240,5123
+i386_prepare_to_resume 282,6163
+i386_thread_added 318,7114
+i386_single_step 324,7213
+#define context_offset(342,7852
+#define context_offset(344,7914
+static const int i386_mappings[i386_mappings346,7978
+#undef context_offset391,9606
+#define context_offset(395,9648
+static const int amd64_mappings[amd64_mappings396,9698
+#undef context_offset458,11518
+i386_fetch_inferior_register 464,11630
+i386_store_inferior_register 500,12535
+static const unsigned char i386_win32_breakpoint 522,13059
+#define i386_win32_breakpoint_len 523,13116
+i386_arch_setup 526,13165
+i386_win32_num_regs 549,13689
+i386_win32_get_pc 564,14031
+i386_win32_set_pc 587,14463
+struct win32_target_ops the_low_target 605,14807
+
+debug.cc,250
+bool remote_debug 23,860
+static FILE *debug_file debug_file27,957
+bool debug_threads;30,1012
+int debug_timestamp;33,1080
+debug_set_output 40,1161
+int debug_print_depth 69,1762
+debug_vprintf 77,1999
+debug_flush 108,2875
+debug_write 116,2951
+
+dll.cc,141
+#define UNSPECIFIED_CORE_ADDR 24,846
+loaded_dll 29,971
+loaded_dll 37,1141
+unloaded_dll 48,1454
+unloaded_dll 57,1655
+clear_dlls 95,2772
+
+gdbreplay.cc,509
+#undef PACKAGE22,890
+#undef PACKAGE_NAME23,905
+#undef PACKAGE_VERSION24,925
+#undef PACKAGE_STRING25,948
+#undef PACKAGE_TARNAME26,970
+typedef int socklen_t;63,1570
+#define EOL 67,1625
+static int remote_desc_in;69,1648
+static int remote_desc_out;70,1675
+sync_error 73,1716
+remote_error 83,1965
+remote_close 91,2081
+remote_open 107,2425
+logchar 264,6323
+gdbchar 340,7443
+expect 354,7725
+play 386,8424
+gdbreplay_version 405,8792
+gdbreplay_usage 416,9092
+captured_main 427,9463
+main 477,10333
+
+hostio.cc,765
+struct fd_list32,1022
+  int fd;34,1039
+  struct fd_list *next;next35,1049
+static struct fd_list *open_fds;open_fds38,1077
+safe_fromhex 41,1122
+#  define HOSTIO_PATH_MAX 58,1562
+#  define HOSTIO_PATH_MAX 60,1612
+require_filename 64,1666
+require_int 94,2118
+require_data 128,2608
+require_comma 162,3171
+require_end 174,3297
+require_valid_fd 183,3389
+hostio_error 198,3676
+hostio_packet_error 205,3818
+hostio_reply 211,3917
+hostio_reply_with_data 217,4010
+static int hostio_fs_pid;255,4872
+hostio_handle_new_gdb_connection 260,4926
+handle_setfs 268,5044
+handle_open 299,5711
+handle_pread 345,6791
+handle_pwrite 412,8565
+handle_fstat 455,9421
+handle_close 491,10178
+handle_unlink 528,10848
+handle_readlink 558,11355
+handle_vFile 597,12303
+
+i387-fp.cc,2521
+static const int num_mpx_bnd_registers 23,880
+static const int num_mpx_cfg_registers 24,924
+static const int num_avx512_k_registers 25,968
+static const int num_pkeys_registers 26,1013
+struct i387_fsave 34,1298
+  unsigned short fctrl;37,1467
+  unsigned short pad1;38,1491
+  unsigned short fstat;39,1514
+  unsigned short pad2;40,1538
+  unsigned short ftag;41,1561
+  unsigned short pad3;42,1584
+  unsigned int fioff;43,1607
+  unsigned short fiseg;44,1629
+  unsigned short fop;45,1653
+  unsigned int fooff;46,1675
+  unsigned short foseg;47,1697
+  unsigned short pad4;48,1721
+  unsigned char st_space[st_space51,1788
+struct i387_fxsave 54,1822
+  unsigned short fctrl;57,1992
+  unsigned short fstat;58,2016
+  unsigned short ftag;59,2040
+  unsigned short fop;60,2063
+  unsigned int fioff;61,2085
+  unsigned short fiseg;62,2107
+  unsigned short pad1;63,2131
+  unsigned int fooff;64,2154
+  unsigned short foseg;65,2176
+  unsigned short pad12;66,2200
+  unsigned int mxcsr;68,2225
+  unsigned int pad3;69,2247
+  unsigned char st_space[st_space72,2330
+  unsigned char xmm_space[xmm_space75,2424
+struct i387_xsave 78,2460
+  unsigned short fctrl;81,2629
+  unsigned short fstat;82,2653
+  unsigned short ftag;83,2677
+  unsigned short fop;84,2700
+  unsigned int fioff;85,2722
+  unsigned short fiseg;86,2744
+  unsigned short pad1;87,2768
+  unsigned int fooff;88,2791
+  unsigned short foseg;89,2813
+  unsigned short pad12;90,2837
+  unsigned int mxcsr;92,2862
+  unsigned int mxcsr_mask;93,2884
+  unsigned char st_space[st_space96,2973
+  unsigned char xmm_space[xmm_space99,3067
+  unsigned char reserved1[reserved1101,3100
+  unsigned long long xcr0;105,3216
+  unsigned char reserved2[reserved2107,3244
+  unsigned long long xstate_bv;110,3311
+  unsigned char reserved3[reserved3112,3344
+  unsigned char ymmh_space[ymmh_space115,3444
+  unsigned char reserved4[reserved4117,3478
+  unsigned char mpx_bnd_space[mpx_bnd_space120,3568
+  unsigned char mpx_cfg_space[mpx_cfg_space124,3690
+  unsigned char reserved5[reserved5126,3726
+  unsigned char k_space[k_space129,3814
+  unsigned char zmmh_low_space[zmmh_low_space132,3883
+  unsigned char zmmh_high_space[zmmh_high_space135,3968
+  unsigned char pkru_space[pkru_space139,4167
+i387_cache_to_fsave 143,4207
+i387_fsave_to_cache 170,5199
+i387_cache_to_fxsave 206,6212
+i387_cache_to_xsave 252,7818
+i387_ftag 619,17761
+i387_fxsave_to_cache 666,18583
+i387_xsave_to_cache 719,20202
+unsigned long long x86_xcr0 978,27730
+
+inferiors.cc,1135
+std::list<process_info *> all_processes;26,940
+std::list<thread_info *> all_threads;27,981
+static process_info *current_process_;current_process_30,1048
+struct thread_info *current_thread;current_thread34,1172
+static std::string current_inferior_cwd;39,1302
+add_thread 42,1365
+get_first_thread 57,1662
+find_thread_ptid 66,1798
+find_thread_process 77,2043
+find_any_thread_of_pid 85,2205
+free_one_thread 93,2332
+remove_thread 99,2397
+thread_target_data 112,2700
+thread_regcache_data 118,2801
+set_thread_regcache_data 124,2893
+clear_inferiors 130,3012
+add_process 142,3202
+remove_process 156,3521
+find_process_pid 168,3844
+get_first_process 178,4063
+have_started_inferiors_p 190,4291
+have_attached_inferiors_p 200,4506
+get_thread_process 208,4662
+current_process 214,4790
+switch_to_thread 222,4893
+switch_to_thread 231,5073
+switch_to_process 243,5290
+get_inferior_cwd 252,5451
+set_inferior_cwd 260,5537
+scoped_restore_current_thread::scoped_restore_current_thread scoped_restore_current_thread265,5619
+scoped_restore_current_thread::~scoped_restore_current_thread ~scoped_restore_current_thread271,5749
+
+linux-aarch64-low.cc,7845
+class aarch64_target 60,1698
+static aarch64_target the_aarch64_target;150,4308
+aarch64_target::low_cannot_fetch_register low_cannot_fetch_register153,4356
+aarch64_target::low_cannot_store_register low_cannot_store_register160,4533
+aarch64_target::low_prepare_to_resume low_prepare_to_resume167,4710
+struct arch_process_info174,4866
+  struct aarch64_debug_reg_state debug_reg_state;186,5488
+is_64bit_tdesc 192,5610
+aarch64_fill_gregset 200,5823
+aarch64_store_gregset 213,6283
+aarch64_fill_fpregset 226,6758
+aarch64_store_fpregset 238,7169
+aarch64_store_pauthregset 253,7647
+aarch64_fill_mteregset 270,8128
+aarch64_store_mteregset 281,8407
+aarch64_fill_tlsregset 293,8730
+aarch64_store_tlsregset 310,9216
+aarch64_target::low_supports_breakpoints low_supports_breakpoints325,9661
+aarch64_target::low_get_pc low_get_pc333,9799
+aarch64_target::low_set_pc low_set_pc344,10059
+#define aarch64_breakpoint_len 352,10258
+static const gdb_byte aarch64_breakpoint[aarch64_breakpoint357,10431
+aarch64_target::low_breakpoint_at low_breakpoint_at362,10579
+aarch64_init_debug_reg_state 379,10961
+aarch64_get_debug_reg_state 402,11510
+aarch64_target::supports_z_point_type supports_z_point_type412,11737
+aarch64_target::low_insert_point low_insert_point433,12213
+aarch64_target::low_remove_point low_remove_point484,13649
+aarch64_remove_non_address_bits 526,14846
+aarch64_target::low_stopped_data_address low_stopped_data_address554,15895
+aarch64_target::low_stopped_by_watchpoint low_stopped_by_watchpoint621,18277
+ps_get_thread_area 629,18446
+aarch64_target::low_siginfo_fixup low_siginfo_fixup639,18704
+aarch64_target::low_new_process low_new_process661,19249
+aarch64_target::low_delete_process low_delete_process673,19509
+aarch64_target::low_new_thread low_new_thread679,19596
+aarch64_target::low_delete_thread low_delete_thread685,19687
+aarch64_target::low_new_fork low_new_fork693,19865
+aarch64_sve_regs_copy_to_regcache 722,20985
+aarch64_sve_regs_copy_from_regcache 730,21196
+static struct regset_info aarch64_regsets[aarch64_regsets741,21674
+static struct regsets_info aarch64_regsets_info 772,22748
+static struct regs_info regs_info_aarch64 779,22904
+aarch64_adjust_register_sets 791,23213
+#define AARCH64_HWCAP_PACA 831,24320
+aarch64_target::low_arch_setup low_arch_setup836,24431
+aarch64_target::get_regs_info get_regs_info872,25440
+aarch64_target::supports_tracepoints supports_tracepoints884,25673
+aarch64_target::low_get_thread_area low_get_thread_area898,25951
+aarch64_target::low_supports_catch_syscall low_supports_catch_syscall915,26234
+aarch64_target::low_get_syscall_trapinfo low_get_syscall_trapinfo923,26383
+enum aarch64_condition_codes940,26768
+  EQ 942,26799
+  NE 943,26811
+  LO 944,26823
+  GE 945,26835
+  LT 946,26847
+  GT 947,26859
+  LE 948,26871
+enum aarch64_operand_type951,26887
+  OPERAND_IMMEDIATE,953,26915
+  OPERAND_REGISTER,954,26936
+struct aarch64_operand960,27063
+  enum aarch64_operand_type type;963,27118
+      uint32_t imm;968,27220
+      struct aarch64_register reg;969,27240
+static const struct aarch64_register x0 977,27440
+static const struct aarch64_register x1 978,27492
+static const struct aarch64_register x2 979,27544
+static const struct aarch64_register x3 980,27596
+static const struct aarch64_register x4 981,27648
+static const struct aarch64_register w0 984,27752
+static const struct aarch64_register w2 985,27804
+static const struct aarch64_register ip0 988,27899
+static const struct aarch64_register fp 991,27988
+static const struct aarch64_register lr 992,28041
+static const struct aarch64_register sp 993,28094
+static const struct aarch64_register xzr 994,28147
+aarch64_register 1001,28396
+register_operand 1013,28697
+immediate_operand 1030,29066
+offset_memory_operand 1046,29387
+preindex_memory_operand 1057,29683
+postindex_memory_operand 1068,29983
+enum aarch64_system_control_registers1082,30444
+  NZCV 1085,30560
+  FPSR 1086,30633
+  FPCR 1087,30706
+  TPIDR_EL0 1088,30779
+emit_blr 1098,30959
+emit_ret 1110,31184
+emit_load_store_pair 1116,31316
+emit_stp 1173,32665
+emit_ldp 1192,33229
+emit_ldp_q_offset 1209,33761
+emit_stp_q_offset 1231,34446
+emit_ldrh 1255,35140
+emit_ldrb 1274,35656
+emit_str 1295,36170
+emit_load_store_exclusive 1305,36464
+emit_ldaxr 1325,37024
+emit_stxr 1341,37434
+emit_stlr 1356,37787
+emit_data_processing_reg 1366,38060
+emit_data_processing 1381,38508
+emit_add 1423,39680
+emit_sub 1441,40128
+emit_mov 1462,40765
+emit_movk 1488,41437
+emit_mov_addr 1508,42026
+emit_subs 1542,42788
+emit_cmp 1557,43140
+emit_and 1571,43431
+emit_orr 1585,43756
+emit_orn 1599,44081
+emit_eor 1613,44406
+emit_mvn 1629,44760
+emit_lslv 1643,45039
+emit_lsrv 1657,45369
+emit_asrv 1671,45699
+emit_mul 1685,46027
+emit_mrs 1699,46398
+emit_msr 1714,46799
+emit_sevl 1726,47137
+emit_wfe 1736,47336
+emit_sbfm 1754,47790
+emit_sbfx 1780,48577
+emit_ubfm 1799,49145
+emit_ubfx 1825,49938
+emit_csinc 1843,50436
+emit_cset 1870,51187
+append_insns 1882,51566
+struct aarch64_insn_relocation_data1907,52291
+  struct aarch64_insn_data base;1909,52329
+  CORE_ADDR new_addr;1912,52421
+  uint32_t *insn_ptr;insn_ptr1914,52503
+aarch64_ftrace_insn_reloc_b 1920,52600
+aarch64_ftrace_insn_reloc_b_cond 1935,53098
+aarch64_ftrace_insn_reloc_cb 1971,54227
+aarch64_ftrace_insn_reloc_tb 2008,55455
+aarch64_ftrace_insn_reloc_adr 2046,56710
+aarch64_ftrace_insn_reloc_ldr_literal 2071,57566
+aarch64_ftrace_insn_reloc_others 2108,58642
+static const struct aarch64_insn_visitor visitor 2119,59005
+aarch64_target::supports_fast_tracepoints supports_fast_tracepoints2131,59308
+aarch64_target::install_fast_tracepoint_jump_padinstall_fast_tracepoint_jump_pad2140,59460
+emit_ops_insns 2519,70962
+emit_pop 2533,71268
+emit_push 2541,71443
+aarch64_emit_prologue 2549,71641
+aarch64_emit_epilogue 2595,73319
+aarch64_emit_add 2619,74004
+aarch64_emit_sub 2633,74252
+aarch64_emit_mul 2647,74500
+aarch64_emit_lsh 2661,74729
+aarch64_emit_rsh_signed 2675,74966
+aarch64_emit_rsh_unsigned 2689,75212
+aarch64_emit_ext 2703,75451
+aarch64_emit_log_not 2716,75667
+aarch64_emit_bit_and 2733,76013
+aarch64_emit_bit_or 2747,76249
+aarch64_emit_bit_xor 2761,76485
+aarch64_emit_bit_not 2775,76722
+aarch64_emit_equal 2788,76928
+aarch64_emit_less_signed 2803,77212
+aarch64_emit_less_unsigned 2818,77504
+aarch64_emit_ref 2833,77788
+aarch64_emit_if_goto 2864,78433
+aarch64_emit_goto 2889,79061
+aarch64_write_goto_address 2907,79427
+aarch64_emit_const 2918,79652
+aarch64_emit_call 2931,79868
+aarch64_emit_reg 2945,80109
+aarch64_emit_pop 2963,80534
+aarch64_emit_stack_flush 2976,80738
+aarch64_emit_zero_ext 2989,80948
+aarch64_emit_swap 3002,81166
+aarch64_emit_stack_adjust 3017,81517
+aarch64_emit_int_call_1 3031,81807
+aarch64_emit_void_call_2 3046,82089
+aarch64_emit_eq_goto 3076,82654
+aarch64_emit_ne_goto 3098,83187
+aarch64_emit_lt_goto 3120,83720
+aarch64_emit_le_goto 3142,84253
+aarch64_emit_gt_goto 3164,84785
+aarch64_emit_ge_got 3186,85317
+static struct emit_ops aarch64_emit_ops_impl 3205,85779
+aarch64_target::emit_ops emit_ops3249,86783
+aarch64_target::get_min_fast_tracepoint_insn_len get_min_fast_tracepoint_insn_len3258,86936
+aarch64_target::low_supports_range_stepping low_supports_range_stepping3266,87091
+aarch64_target::sw_breakpoint_from_kind sw_breakpoint_from_kind3274,87246
+aarch64_target::breakpoint_kind_from_pc breakpoint_kind_from_pc3288,87556
+aarch64_target::breakpoint_kind_from_current_state breakpoint_kind_from_current_state3300,87828
+aarch64_target::supports_memory_tagging supports_memory_tagging3310,88086
+aarch64_target::fetch_memtags fetch_memtags3329,88536
+aarch64_target::store_memtags store_memtags3343,88931
+linux_process_target *the_linux_target the_linux_target3358,89364
+initialize_low_arch 3361,89432
+
+linux-arc-low.cc,1303
+#define ARC_HAS_V2_REGSET32,1072
+#define TRAP_S_1_OPCODE	36,1179
+#define TRAP_S_1_SIZE	37,1210
+static gdb_byte arc_linux_trap_s[arc_linux_trap_s47,1649
+static gdb_byte arc_linux_trap_s[arc_linux_trap_s51,1773
+class arc_target 60,2112
+static arc_target the_arc_target;87,2718
+arc_target::low_supports_breakpoints low_supports_breakpoints90,2758
+arc_target::low_get_pc low_get_pc96,2828
+arc_target::low_set_pc low_set_pc102,2922
+arc_linux_read_description 108,3056
+arc_target::low_arch_setup low_arch_setup124,3445
+arc_target::low_cannot_fetch_register low_cannot_fetch_register130,3546
+arc_target::low_cannot_store_register low_cannot_store_register136,3671
+arc_target::low_breakpoint_at low_breakpoint_at151,4181
+arc_fill_gregset 173,4965
+arc_store_gregset 234,8308
+is_reg_name_available_p 299,11723
+arc_fill_v2_regset 311,11996
+arc_store_v2_regset 328,12558
+ps_get_thread_area 351,13315
+static struct regset_info arc_regsets[arc_regsets365,13728
+static struct regsets_info arc_regsets_info 380,14123
+static struct regs_info arc_regs_info 387,14262
+arc_target::get_regs_info get_regs_info395,14402
+arc_target::sw_breakpoint_from_kind sw_breakpoint_from_kind403,14538
+linux_process_target *the_linux_target the_linux_target412,14719
+initialize_low_arch 415,14783
+
+linux-arm-low.cc,4382
+#define PTRACE_GET_THREAD_AREA 39,1345
+# define PTRACE_GETWMMXREGS 43,1414
+# define PTRACE_SETWMMXREGS 44,1445
+# define PTRACE_GETVFPREGS 48,1510
+# define PTRACE_SETVFPREGS 49,1540
+#define PTRACE_GETHBPREGS 53,1604
+#define PTRACE_SETHBPREGS 54,1633
+class arm_target 59,1732
+static arm_target the_arm_target;124,3471
+arm_target::low_supports_breakpoints low_supports_breakpoints127,3511
+arm_target::low_get_pc low_get_pc133,3581
+arm_target::low_set_pc low_set_pc139,3675
+arm_target::breakpoint_kind_from_pc breakpoint_kind_from_pc145,3779
+arm_target::breakpoint_kind_from_current_state breakpoint_kind_from_current_state151,3889
+arm_target::sw_breakpoint_from_kind sw_breakpoint_from_kind157,4034
+arm_target::low_breakpoint_at low_breakpoint_at163,4153
+  unsigned char arch;171,4320
+  unsigned char max_wp_length;172,4342
+  unsigned char wp_count;173,4373
+  unsigned char bp_count;174,4399
+} arm_linux_hwbp_cap;175,4425
+  arm_hwbp_break 180,4543
+  arm_hwbp_load 181,4565
+  arm_hwbp_store 182,4586
+  arm_hwbp_access 183,4608
+} arm_hwbp_type;184,4630
+typedef unsigned int arm_hwbp_control_t;187,4722
+struct arm_linux_hw_breakpoint190,4833
+  unsigned int address;193,4914
+  arm_hwbp_control_t control;195,4989
+#define MAX_BPTS 200,5159
+#define MAX_WPTS 201,5179
+struct arch_process_info204,5255
+  struct arm_linux_hw_breakpoint bpts[bpts207,5330
+  struct arm_linux_hw_breakpoint wpts[wpts209,5427
+struct arch_lwp_info213,5534
+  char bpts_changed[bpts_changed216,5631
+  char wpts_changed[wpts_changed217,5662
+  CORE_ADDR stopped_data_address;219,5731
+#define HWCAP_VFP 223,5821
+#define HWCAP_IWMMXT 224,5848
+#define HWCAP_NEON 225,5876
+#define HWCAP_VFPv3 226,5905
+#define HWCAP_VFPv3D16 227,5934
+#define arm_num_regs 233,6016
+static int arm_regmap[arm_regmap235,6041
+static struct arm_get_next_pcs_ops get_next_pcs_ops 255,6644
+arm_target::low_cannot_store_register low_cannot_store_register264,6876
+arm_target::low_cannot_fetch_register low_cannot_fetch_register270,6970
+arm_fill_wmmxregset 276,7071
+arm_store_wmmxregset 291,7528
+arm_fill_vfpregset 306,7989
+get_next_pcs_addr_bits_remove 329,8473
+arm_store_vfpregset 335,8601
+get_next_pcs_is_thumb 358,9087
+get_next_pcs_read_memory_unsigned_integer 367,9330
+ps_get_thread_area 382,9616
+arm_linux_init_hwbp_cap 400,10182
+arm_linux_get_hw_breakpoint_count 423,10896
+arm_linux_get_hw_watchpoint_count 430,11043
+arm_linux_get_hw_watchpoint_max_length 437,11200
+arm_hwbp_control_initialize 447,11553
+arm_hwbp_control_is_enabled 460,11974
+arm_hwbp_control_is_initialized 467,12131
+arm_hwbp_control_disable 474,12323
+arm_linux_hw_breakpoint_equal 481,12460
+raw_bkpt_type_to_arm_hwbp_type 490,12742
+arm_linux_hw_point_initialize 513,13517
+update_registers_callback 572,15031
+arm_target::supports_z_point_type supports_z_point_type590,15551
+arm_target::low_insert_point low_insert_point608,15937
+arm_target::low_remove_point low_remove_point653,16965
+arm_target::low_stopped_by_watchpoint low_stopped_by_watchpoint698,18046
+arm_target::low_stopped_data_address low_stopped_data_address733,19054
+arm_target::low_new_process low_new_process741,19272
+arm_target::low_delete_process low_delete_process750,19445
+arm_target::low_new_thread low_new_thread757,19573
+arm_target::low_delete_thread low_delete_thread773,19911
+arm_target::low_new_fork low_new_fork779,19997
+arm_target::low_prepare_to_resume low_prepare_to_resume825,21759
+arm_sigreturn_next_pc 880,23657
+get_next_pcs_syscall_next_pc 910,24595
+arm_read_description 959,25820
+arm_target::low_arch_setup low_arch_setup992,26895
+arm_target::supports_software_single_step supports_software_single_step1014,27395
+arm_target::low_get_next_pcs low_get_next_pcs1022,27559
+arm_target::supports_hardware_single_step supports_hardware_single_step1040,27895
+arm_target::low_supports_catch_syscall low_supports_catch_syscall1046,27966
+arm_target::low_get_syscall_trapinfo low_get_syscall_trapinfo1054,28111
+static struct regset_info arm_regsets[arm_regsets1087,28793
+static struct regsets_info arm_regsets_info 1098,29255
+static struct usrregs_info arm_usrregs_info 1105,29400
+static struct regs_info regs_info_arm 1111,29490
+arm_target::get_regs_info get_regs_info1119,29633
+linux_process_target *the_linux_target the_linux_target1133,29970
+initialize_low_arch 1136,30034
+
+linux-csky-low.cc,1268
+class csky_target 30,1059
+static csky_target the_csky_target;59,1722
+static int csky_regmap[csky_regmap62,1813
+static unsigned short csky_breakpoint_illegal_2_v2 88,3021
+static unsigned int csky_breakpoint_illegal_4_v2 89,3082
+csky_target::low_cannot_fetch_register low_cannot_fetch_register92,3151
+csky_target::low_cannot_store_register low_cannot_store_register101,3278
+csky_target::low_get_pc low_get_pc112,3448
+csky_target::low_set_pc low_set_pc122,3618
+csky_target::low_arch_setup low_arch_setup130,3777
+ps_get_thread_area 146,4151
+csky_fill_pt_gregset 167,4712
+csky_store_pt_gregset 196,5720
+csky_fill_pt_vrregset 225,6736
+csky_store_pt_vrregset 241,7200
+struct regset_info csky_regsets[csky_regsets260,7803
+static struct regsets_info csky_regsets_info 270,8140
+static struct regs_info csky_regs_info 278,8300
+csky_target::get_regs_info get_regs_info287,8484
+csky_target::sw_breakpoint_from_kind sw_breakpoint_from_kind295,8639
+csky_target::supports_z_point_type supports_z_point_type310,8916
+csky_target::low_breakpoint_at low_breakpoint_at320,9088
+csky_target::supports_hardware_single_step supports_hardware_single_step338,9544
+linux_process_target *the_linux_target the_linux_target345,9647
+initialize_low_arch 348,9712
+
+linux-ia64-low.cc,887
+class ia64_target 28,973
+static ia64_target the_ia64_target;51,1478
+ia64_target::sw_breakpoint_from_kind sw_breakpoint_from_kind54,1532
+ia64_target::low_breakpoint_at low_breakpoint_at61,1707
+#define ia64_num_regs 71,1993
+static int ia64_regmap[ia64_regmap75,2053
+ia64_target::low_cannot_store_register low_cannot_store_register311,6401
+ia64_target::low_cannot_fetch_register low_cannot_fetch_register317,6478
+#define IA64_GR0_REGNUM	323,6579
+#define IA64_FR0_REGNUM	324,6606
+#define IA64_FR1_REGNUM	325,6635
+ia64_target::low_fetch_register low_fetch_register328,6670
+static struct usrregs_info ia64_usrregs_info 364,7666
+static struct regs_info myregs_info 370,7759
+ia64_target::get_regs_info get_regs_info377,7878
+ia64_target::low_arch_setup low_arch_setup383,7941
+linux_process_target *the_linux_target the_linux_target390,8056
+initialize_low_arch 393,8121
+
+linux-loongarch-low.cc,1346
+class loongarch_target 28,1007
+static loongarch_target the_loongarch_target;59,1745
+loongarch_target::low_cannot_fetch_register low_cannot_fetch_register62,1797
+loongarch_target::low_cannot_store_register low_cannot_store_register69,1976
+loongarch_target::low_arch_setup low_arch_setup78,2223
+loongarch_fill_gregset 95,2673
+loongarch_store_gregset 110,3194
+loongarch_fill_fpregset 126,3771
+loongarch_store_fpregset 153,4668
+static struct regset_info loongarch_regsets[loongarch_regsets178,5569
+static struct regsets_info loongarch_regsets_info 187,5970
+static struct regs_info loongarch_regs 195,6190
+loongarch_target::get_regs_info get_regs_info205,6409
+loongarch_target::low_fetch_register low_fetch_register213,6552
+loongarch_target::low_supports_breakpoints low_supports_breakpoints222,6722
+loongarch_target::low_get_pc low_get_pc230,6862
+loongarch_target::low_set_pc low_set_pc241,7124
+#define loongarch_breakpoint_len 249,7334
+static const gdb_byte loongarch_breakpoint[loongarch_breakpoint254,7515
+loongarch_target::breakpoint_kind_from_pc breakpoint_kind_from_pc259,7664
+loongarch_target::sw_breakpoint_from_kind sw_breakpoint_from_kind267,7853
+loongarch_target::low_breakpoint_at low_breakpoint_at276,8085
+linux_process_target *the_linux_target the_linux_target289,8401
+initialize_low_arch 294,8518
+
+linux-low.cc,15668
+#define O_LARGEFILE 66,2172
+#define AT_HWCAP2 70,2220
+#define PT_TEXT_ADDR 81,2620
+#define PT_DATA_ADDR 82,2646
+#define PT_TEXT_END_ADDR 83,2672
+#define PT_TEXT_ADDR 86,2782
+#define PT_DATA_ADDR 87,2819
+#define PT_TEXT_END_ADDR 88,2856
+#define SUPPORTS_READ_OFFSETS97,3067
+  uint32_t a_type;109,3285
+      uint32_t a_val;112,3336
+    } a_un;116,3557
+} Elf32_auxv_t;117,3569
+  uint64_t a_type;124,3670
+      uint64_t a_val;127,3721
+    } a_un;131,3942
+} Elf64_auxv_t;132,3954
+int have_ptrace_getregset 136,4033
+is_leader 141,4145
+ptid_of_lwp 152,4312
+lwp_set_arch_private_info 160,4427
+lwp_arch_private_info 169,4595
+lwp_is_stopped 177,4706
+lwp_stop_reason 185,4825
+lwp_is_stepping 193,4929
+struct simple_pid_list202,5159
+  int pid;205,5209
+  int status;208,5265
+  struct simple_pid_list *next;next211,5304
+static struct simple_pid_list *stopped_pids;stopped_pids213,5339
+add_to_pid_list 219,5494
+pull_pid_from_list 230,5744
+enum stopping_threads_kind247,6063
+    NOT_STOPPING_THREADS,250,6137
+    STOPPING_THREADS,253,6193
+    STOPPING_AND_SUSPENDING_THREADS256,6260
+static stopping_threads_kind stopping_threads 260,6355
+int using_threads 263,6466
+static int stabilizing_threads;267,6576
+static ptid_t step_over_bkpt;279,7134
+linux_process_target::low_supports_breakpoints low_supports_breakpoints282,7170
+linux_process_target::low_get_pc low_get_pc288,7251
+linux_process_target::low_set_pc low_set_pc294,7327
+linux_process_target::low_get_next_pcs low_get_next_pcs300,7502
+linux_process_target::low_decr_pc_after_break low_decr_pc_after_break307,7661
+lwp_in_step_range 315,7792
+static event_pipe linux_event_pipe;323,8009
+#define target_is_async_p(326,8092
+elf_64_header_p 333,8268
+elf_64_file_p 353,8824
+linux_pid_exe_is_elf_64_file 376,9253
+linux_process_target::delete_lwp delete_lwp385,9428
+linux_process_target::low_delete_thread low_delete_thread399,9676
+open_proc_mem_file 409,9936
+linux_process_target::add_linux_process_no_mem_file add_linux_process_no_mem_file421,10220
+linux_process_target::add_linux_process add_linux_process436,10530
+linux_process_target::remove_linux_process remove_linux_process444,10718
+linux_process_target::low_new_process low_new_process458,10999
+linux_process_target::low_delete_process low_delete_process464,11068
+linux_process_target::low_new_fork low_new_fork472,11271
+linux_process_target::arch_setup_thread arch_setup_thread478,11374
+linux_process_target::handle_extended_wait handle_extended_wait487,11544
+linux_process_target::get_pc get_pc748,20494
+linux_process_target::get_syscall_trapinfo get_syscall_trapinfo768,20971
+linux_process_target::low_get_syscall_trapinfo low_get_syscall_trapinfo782,21341
+linux_process_target::save_stop_reason save_stop_reason789,21518
+linux_process_target::add_lwp add_lwp908,25468
+linux_process_target::low_new_thread low_new_thread920,25635
+linux_ptrace_fun 929,25844
+linux_process_target::create_inferior create_inferior962,26813
+linux_process_target::post_create_inferior post_create_inferior1003,28021
+linux_process_target::attach_lwp attach_lwp1020,28432
+attach_proc_task_lwp_callback 1105,31757
+linux_process_target::attach attach1145,32822
+last_thread_of_process_p 1219,35323
+linux_kill_one_lwp 1244,35744
+kill_wait_lwp 1288,37312
+kill_one_lwp_callback 1331,38586
+linux_process_target::kill kill1351,39122
+get_detach_signal 1386,40137
+linux_process_target::detach_one_lwp detach_one_lwp1458,42359
+linux_process_target::detach detach1537,44493
+linux_process_target::mourn mourn1588,46105
+linux_process_target::join join1603,46386
+linux_process_target::thread_alive thread_alive1617,46663
+linux_process_target::thread_still_has_status_pending thread_still_has_status_pending1631,47040
+lwp_resumed 1690,48410
+linux_process_target::status_pending_p_callback status_pending_p_callback1708,48883
+find_lwp_pid 1732,49433
+num_lwps 1749,49796
+iterate_over_lwps 1764,49981
+linux_process_target::check_zombie_leaders check_zombie_leaders1781,50323
+not_stopped_callback 1861,53754
+lwp_suspended_inc 1874,53991
+lwp_suspended_decr 1887,54287
+handle_tracepoints 1906,54740
+linux_process_target::linux_fast_tracepoint_collectinglinux_fast_tracepoint_collecting1950,56110
+linux_process_target::low_get_thread_area low_get_thread_area1967,56779
+linux_process_target::maybe_move_out_of_jump_pad maybe_move_out_of_jump_pad1973,56874
+enqueue_one_deferred_signal 2093,60503
+dequeue_one_deferred_signal 2135,61718
+linux_process_target::check_stopped_by_watchpoint check_stopped_by_watchpoint2168,62558
+linux_process_target::low_stopped_by_watchpoint low_stopped_by_watchpoint2183,62962
+linux_process_target::low_stopped_data_address low_stopped_data_address2189,63044
+linux_low_ptrace_options 2197,63187
+linux_process_target::filter_event filter_event2220,63631
+linux_process_target::maybe_hw_step maybe_hw_step2440,69857
+linux_process_target::resume_stopped_resumed_lwps resume_stopped_resumed_lwps2454,70164
+linux_process_target::wait_for_event_filtered wait_for_event_filtered2477,70773
+linux_process_target::wait_for_event wait_for_event2674,76824
+select_event_lwp 2682,77044
+unsuspend_all_lwps 2738,78765
+linux_process_target::stabilize_threads stabilize_threads2782,80548
+ignore_event 2856,82374
+linux_process_target::filter_exit_event filter_exit_event2868,82675
+gdb_catching_syscalls_p 2890,83192
+linux_process_target::gdb_catch_this_syscall gdb_catch_this_syscall2899,83422
+linux_process_target::wait_1 wait_12921,83912
+async_file_flush 3599,105861
+async_file_mark 3606,105993
+linux_process_target::wait wait3612,106056
+kill_lwp 3643,106823
+linux_stop_lwp 3659,107134
+send_sigstop 3665,107211
+send_sigstop 3687,107647
+suspend_and_send_sigstop 3704,107963
+mark_lwp_dead 3718,108215
+lwp_is_marked_dead 3742,108901
+linux_process_target::wait_for_sigstop wait_for_sigstop3750,109071
+linux_process_target::stuck_in_jump_pad stuck_in_jump_pad3788,110094
+linux_process_target::move_out_of_jump_pad move_out_of_jump_pad3810,110773
+lwp_running 3853,111929
+linux_process_target::stop_all_lwps stop_all_lwps3864,112099
+enqueue_pending_signal 3902,113099
+linux_process_target::install_software_single_step_breakpoints install_software_single_step_breakpoints3912,113379
+linux_process_target::single_step single_step3927,113811
+lwp_signal_can_be_delivered 3953,114491
+linux_process_target::resume_one_lwp_throw resume_one_lwp_throw3960,114645
+linux_process_target::low_prepare_to_resume low_prepare_to_resume4156,121209
+check_ptrace_stopped_lwp_gone 4168,121624
+linux_process_target::resume_one_lwp resume_one_lwp4195,122588
+linux_set_resume_request 4226,123474
+linux_process_target::resume_status_pending resume_status_pending4326,126291
+linux_process_target::thread_needs_step_over thread_needs_step_over4339,126646
+linux_process_target::start_step_over start_step_over4455,130050
+linux_process_target::finish_step_over finish_step_over4498,131140
+linux_process_target::complete_ongoing_step_over complete_ongoing_step_over4534,132189
+linux_process_target::resume_one_thread resume_one_thread4583,133554
+linux_process_target::resume resume4681,136725
+linux_process_target::proceed_one_lwp proceed_one_lwp4744,138956
+linux_process_target::unsuspend_and_proceed_one_lwp unsuspend_and_proceed_one_lwp4833,141531
+linux_process_target::proceed_all_lwps proceed_all_lwps4847,141794
+linux_process_target::unstop_all_lwps unstop_all_lwps4882,142690
+#define use_linux_regsets 4907,143223
+regset_disabled 4912,143313
+disable_regset 4921,143522
+regsets_fetch_inferior_registers 4932,143814
+regsets_store_inferior_registers 5011,145689
+#define use_linux_regsets 5101,147916
+#define regsets_fetch_inferior_registers(5102,147944
+#define regsets_store_inferior_registers(5103,148011
+linux_register_in_regsets 5111,148230
+register_addr 5124,148543
+linux_process_target::fetch_register fetch_register5138,148781
+linux_process_target::store_register store_register5182,149896
+linux_process_target::low_collect_ptrace_register low_collect_ptrace_register5235,151342
+linux_process_target::low_supply_ptrace_register low_supply_ptrace_register5242,151497
+linux_process_target::usr_fetch_inferior_registers usr_fetch_inferior_registers5249,151655
+linux_process_target::usr_store_inferior_registers usr_store_inferior_registers5268,152124
+linux_process_target::fetch_registers fetch_registers5287,152593
+linux_process_target::store_registers store_registers5318,153489
+linux_process_target::low_fetch_register low_fetch_register5343,154197
+linux_read_memory 5351,154351
+proc_xfer_memory 5365,154894
+linux_process_target::read_memory read_memory5417,156065
+linux_process_target::write_memory write_memory5428,156431
+linux_process_target::look_up_symbols look_up_symbols5453,156984
+linux_process_target::request_interrupt request_interrupt5466,157185
+linux_process_target::supports_read_auxv supports_read_auxv5477,157532
+linux_process_target::read_auxv read_auxv5486,157717
+linux_process_target::insert_point insert_point5511,158205
+linux_process_target::low_insert_point low_insert_point5521,158462
+linux_process_target::remove_point remove_point5529,158631
+linux_process_target::low_remove_point low_remove_point5539,158888
+linux_process_target::stopped_by_sw_breakpoint stopped_by_sw_breakpoint5550,159127
+linux_process_target::supports_stopped_by_sw_breakpoint supports_stopped_by_sw_breakpoint5561,159388
+linux_process_target::stopped_by_hw_breakpoint stopped_by_hw_breakpoint5570,159556
+linux_process_target::supports_stopped_by_hw_breakpoint supports_stopped_by_hw_breakpoint5581,159817
+linux_process_target::supports_hardware_single_step supports_hardware_single_step5589,159987
+linux_process_target::stopped_by_watchpoint stopped_by_watchpoint5595,160067
+linux_process_target::stopped_data_address stopped_data_address5603,160247
+linux_process_target::supports_read_offsets supports_read_offsets5616,160620
+linux_process_target::read_offsets read_offsets5629,160849
+linux_process_target::supports_get_tls_address supports_get_tls_address5667,162076
+linux_process_target::get_tls_address get_tls_address5677,162200
+linux_process_target::supports_qxfer_osdata supports_qxfer_osdata5690,162486
+linux_process_target::qxfer_osdata qxfer_osdata5696,162557
+linux_process_target::siginfo_fixup siginfo_fixup5705,162793
+linux_process_target::low_siginfo_fixup low_siginfo_fixup5722,163249
+linux_process_target::supports_qxfer_siginfo supports_qxfer_siginfo5729,163371
+linux_process_target::qxfer_siginfo qxfer_siginfo5735,163443
+sigchld_handler 5789,164963
+linux_process_target::supports_non_stop supports_non_stop5811,165356
+linux_process_target::async async5817,165424
+linux_process_target::start_non_stop start_non_stop5864,166341
+linux_process_target::supports_multi_process supports_multi_process5876,166569
+linux_process_target::supports_fork_events supports_fork_events5884,166686
+linux_process_target::supports_vfork_events supports_vfork_events5892,166802
+linux_process_target::supports_exec_events supports_exec_events5900,166918
+linux_process_target::handle_new_gdb_connection handle_new_gdb_connection5910,167209
+linux_process_target::handle_monitor_command handle_monitor_command5936,167902
+linux_process_target::core_of_thread core_of_thread5946,168063
+linux_process_target::supports_disable_randomization supports_disable_randomization5952,168169
+linux_process_target::supports_agent supports_agent5958,168250
+linux_process_target::supports_range_stepping supports_range_stepping5964,168315
+linux_process_target::low_supports_range_stepping low_supports_range_stepping5973,168473
+linux_process_target::supports_pid_to_exec_file supports_pid_to_exec_file5979,168552
+linux_process_target::pid_to_exec_file pid_to_exec_file5985,168636
+linux_process_target::supports_multifs supports_multifs5991,168739
+linux_process_target::multifs_open multifs_open5997,168805
+linux_process_target::multifs_unlink multifs_unlink6004,168977
+linux_process_target::multifs_readlink multifs_readlink6010,169104
+struct target_loadseg6017,169321
+  Elf32_Addr addr;6020,169399
+  Elf32_Addr p_vaddr;6022,169463
+  Elf32_Word p_memsz;6024,169526
+struct target_loadmap6028,169576
+  Elf32_Word version;6031,169648
+  unsigned *dsbt_table;dsbt_table6033,169736
+  unsigned dsbt_size,6034,169760
+  unsigned dsbt_size, dsbt_index;6034,169760
+  Elf32_Word nsegs;6036,169835
+  struct target_loadseg segs[segs6038,169887
+#  define LINUX_LOADMAP	6040,169931
+#  define LINUX_LOADMAP_EXEC	6041,169967
+#  define LINUX_LOADMAP_INTERP	6042,170016
+struct target_loadmap6044,170076
+  Elf32_Half version;6047,170148
+  Elf32_Half nsegs;6049,170211
+  struct target_loadseg segs[segs6051,170263
+#  define LINUX_LOADMAP	6053,170307
+#  define LINUX_LOADMAP_EXEC	6054,170348
+#  define LINUX_LOADMAP_INTERP	6055,170398
+linux_process_target::supports_read_loadmap supports_read_loadmap6059,170466
+linux_process_target::read_loadmap read_loadmap6065,170537
+linux_process_target::supports_catch_syscall supports_catch_syscall6099,171464
+linux_process_target::low_supports_catch_syscall low_supports_catch_syscall6105,171562
+linux_process_target::read_pc read_pc6111,171645
+linux_process_target::write_pc write_pc6120,171789
+linux_process_target::supports_thread_stopped supports_thread_stopped6128,171939
+linux_process_target::thread_stopped thread_stopped6134,172013
+linux_process_target::pause_all pause_all6142,172195
+linux_process_target::unpause_all unpause_all6151,172368
+get_phdr_phnum_from_proc_auxv 6159,172544
+get_dynamic 6225,173981
+get_r_debug 6302,176254
+	      Elf64_Xword map;6321,176812
+	      unsigned char buf[buf6322,176836
+	      Elf32_Word map;6359,177681
+	      unsigned char buf[buf6360,177704
+read_one_ptr 6401,178540
+    CORE_ADDR core_addr;6411,178868
+    unsigned int ui;6412,178893
+    unsigned char uc;6413,178914
+linux_process_target::supports_qxfer_libraries_svr4 supports_qxfer_libraries_svr46430,179250
+struct link_map_offsets6435,179325
+    int r_version_offset;6438,179402
+    int r_map_offset;6441,179474
+    int r_next_offset;6444,179543
+    int l_addr_offset;6447,179621
+    int l_name_offset;6450,179699
+    int l_ld_offset;6453,179775
+    int l_next_offset;6456,179851
+    int l_prev_offset;6459,179929
+static const link_map_offsets lmo_32bit_offsets 6462,179958
+static const link_map_offsets lmo_64bit_offsets 6474,180360
+read_link_map 6489,180834
+linux_process_target::qxfer_libraries_svr4 qxfer_libraries_svr46538,182315
+linux_process_target::supports_btrace supports_btrace6719,186930
+linux_process_target::enable_btrace enable_btrace6725,187012
+linux_process_target::disable_btrace disable_btrace6734,187201
+linux_low_encode_pt_config 6745,187446
+linux_low_encode_raw 6769,187977
+linux_process_target::read_btrace read_btrace6794,188465
+linux_process_target::read_btrace_conf read_btrace_conf6854,190080
+current_lwp_ptid 6892,190986
+linux_process_target::thread_name thread_name6898,191063
+linux_process_target::thread_handle thread_handle6905,191184
+linux_process_target::thread_pending_parent thread_pending_parent6913,191366
+linux_process_target::thread_pending_child thread_pending_child6924,191597
+linux_set_pc_32bit 6938,191938
+linux_get_pc_32bit 6949,192214
+linux_set_pc_64bit 6962,192528
+linux_get_pc_64bit 6973,192804
+linux_get_auxv 6985,193018
+linux_get_hwcap 7022,193675
+linux_get_hwcap2 7032,193832
+initialize_regsets_info 7041,193990
+initialize_low 7051,194174
+
+linux-m68k-low.cc,1352
+class m68k_target 24,922
+static m68k_target the_m68k_target;53,1570
+m68k_target::low_supports_breakpoints low_supports_breakpoints56,1612
+m68k_target::low_get_pc low_get_pc62,1683
+m68k_target::low_set_pc low_set_pc68,1778
+m68k_target::low_decr_pc_after_break low_decr_pc_after_break74,1883
+#define m68k_num_regs 87,2120
+#define m68k_num_gregs 88,2145
+static int m68k_regmap[m68k_regmap91,2235
+m68k_target::low_cannot_store_register low_cannot_store_register115,2907
+m68k_target::low_cannot_fetch_register low_cannot_fetch_register121,3003
+m68k_fill_gregset 131,3186
+m68k_store_gregset 140,3376
+m68k_fill_fpregset 149,3578
+m68k_store_fpregset 159,3819
+static struct regset_info m68k_regsets[m68k_regsets170,4094
+static const gdb_byte m68k_breakpoint[m68k_breakpoint182,4471
+#define m68k_breakpoint_len 183,4529
+m68k_target::sw_breakpoint_from_kind sw_breakpoint_from_kind188,4648
+m68k_target::low_breakpoint_at low_breakpoint_at195,4774
+ps_get_thread_area 212,5082
+static struct regsets_info m68k_regsets_info 227,5527
+static struct usrregs_info m68k_usrregs_info 234,5674
+static struct regs_info myregs_info 240,5767
+m68k_target::get_regs_info get_regs_info248,5910
+m68k_target::low_arch_setup low_arch_setup254,5973
+linux_process_target *the_linux_target the_linux_target261,6088
+initialize_low_arch 264,6153
+
+linux-mips-low.cc,3289
+class mips_target 30,1036
+static mips_target the_mips_target;89,2612
+#define tdesc_mips_linux 108,3273
+#define tdesc_mips_dsp_linux 109,3317
+#define PTRACE_GET_THREAD_AREA 113,3408
+#define mips_num_regs 120,3501
+#define mips_dsp_num_regs 121,3526
+#define DSP_BASE 126,3598
+#define DSP_CONTROL 127,3618
+union mips_register130,3649
+  unsigned char buf[buf132,3671
+  int reg32;135,3753
+  long long reg64;136,3766
+#define mips_base_regs	141,3845
+#define mips_dsp_regs	159,4641
+static int mips_regmap[mips_regmap164,4788
+static int mips_dsp_regmap[mips_dsp_regmap169,4856
+static int have_dsp 182,5177
+mips_read_description 188,5353
+mips_target::low_arch_setup low_arch_setup214,5753
+struct arch_process_info221,5901
+  int watch_readback_valid;228,6129
+  struct pt_watch_regs watch_readback;232,6203
+  struct mips_watchpoint *current_watches;current_watches236,6299
+  struct pt_watch_regs watch_mirror;241,6426
+struct arch_lwp_info246,6522
+  int watch_registers_changed;249,6619
+mips_target::low_cannot_fetch_register low_cannot_fetch_register260,6932
+mips_target::low_cannot_store_register low_cannot_store_register280,7365
+mips_target::low_fetch_register low_fetch_register309,7985
+mips_target::low_supports_breakpoints low_supports_breakpoints323,8260
+mips_target::low_get_pc low_get_pc329,8331
+mips_target::low_set_pc low_set_pc337,8537
+static const unsigned int mips_breakpoint 349,8821
+#define mips_breakpoint_len 350,8877
+mips_target::sw_breakpoint_from_kind sw_breakpoint_from_kind355,8996
+mips_target::low_breakpoint_at low_breakpoint_at362,9142
+update_watch_registers_callback 378,9512
+mips_target::low_new_process low_new_process396,10054
+mips_target::low_delete_process low_delete_process407,10266
+mips_target::low_new_thread low_new_thread417,10511
+mips_target::low_delete_thread low_delete_thread429,10750
+mips_add_watchpoint 437,10905
+mips_target::low_new_fork low_new_fork458,11403
+mips_target::low_prepare_to_resume low_prepare_to_resume501,13108
+mips_target::supports_z_point_type supports_z_point_type526,13845
+mips_target::low_insert_point low_insert_point543,14152
+mips_target::low_remove_point low_remove_point588,15381
+mips_target::low_stopped_by_watchpoint low_stopped_by_watchpoint638,16781
+mips_target::low_stopped_data_address low_stopped_data_address666,17495
+ps_get_thread_area 727,19191
+mips_collect_register 742,19612
+mips_supply_register 760,19992
+mips_collect_register_32bit 776,20391
+mips_supply_register_32bit 788,20679
+mips_fill_gregset 800,20970
+mips_store_gregset 829,21967
+mips_fill_fpregset 859,23047
+mips_store_fpregset 884,23908
+mips_target::low_collect_ptrace_register low_collect_ptrace_register913,24895
+mips_target::low_supply_ptrace_register low_supply_ptrace_register932,25376
+static struct regset_info mips_regsets[mips_regsets948,25781
+static struct regsets_info mips_regsets_info 958,26117
+static struct usrregs_info mips_dsp_usrregs_info 965,26264
+static struct usrregs_info mips_usrregs_info 971,26369
+static struct regs_info dsp_regs_info 977,26462
+static struct regs_info myregs_info 984,26591
+mips_target::get_regs_info get_regs_info992,26734
+linux_process_target *the_linux_target the_linux_target1002,26881
+initialize_low_arch 1005,26946
+
+linux-nios2-low.cc,1497
+#define PTRACE_GET_THREAD_AREA 31,1063
+class nios2_target 36,1171
+static nios2_target the_nios2_target;63,1776
+nios2_target::low_supports_breakpoints low_supports_breakpoints66,1820
+nios2_target::low_get_pc low_get_pc72,1892
+nios2_target::low_set_pc low_set_pc78,1988
+#define nios2_num_regs 88,2299
+union nios2_register98,2580
+  unsigned char buf[buf100,2603
+  int reg32;101,2627
+static int nios2_regmap[nios2_regmap106,2700
+nios2_target::low_arch_setup low_arch_setup120,3015
+nios2_target::low_cannot_fetch_register low_cannot_fetch_register128,3179
+nios2_target::low_cannot_store_register low_cannot_store_register136,3352
+#define NIOS2_BREAKPOINT 145,3593
+#define CDX_BREAKPOINT 146,3629
+#define NIOS2_BREAKPOINT 148,3665
+static const unsigned int nios2_breakpoint 156,4031
+#define nios2_breakpoint_len 157,4094
+nios2_target::sw_breakpoint_from_kind sw_breakpoint_from_kind162,4214
+nios2_target::low_breakpoint_at low_breakpoint_at171,4428
+ps_get_thread_area 191,4928
+nios2_collect_register 208,5418
+nios2_supply_register 218,5644
+nios2_fill_gregset 227,5866
+nios2_store_gregset 237,6107
+static struct regset_info nios2_regsets[nios2_regsets246,6348
+static struct regsets_info nios2_regsets_info 254,6550
+static struct usrregs_info nios2_usrregs_info 261,6699
+static struct regs_info myregs_info 267,6795
+nios2_target::get_regs_info get_regs_info275,6940
+linux_process_target *the_linux_target the_linux_target282,7036
+initialize_low_arch 285,7102
+
+linux-or1k-low.cc,1364
+#define PTRACE_GET_THREAD_AREA 28,1004
+class or1k_target 33,1113
+static or1k_target the_or1k_target;60,1717
+or1k_target::low_supports_breakpoints low_supports_breakpoints63,1759
+or1k_target::low_get_pc low_get_pc69,1830
+or1k_target::low_set_pc low_set_pc75,1925
+#define or1k_num_regs 85,2237
+union or1k_register95,2514
+  unsigned char buf[buf97,2536
+  int reg32;98,2560
+static int or1k_regmap[or1k_regmap103,2633
+or1k_target::low_arch_setup low_arch_setup116,2932
+or1k_target::low_cannot_fetch_register low_cannot_fetch_register124,3094
+or1k_target::low_cannot_store_register low_cannot_store_register132,3265
+static const unsigned int or1k_breakpoint 139,3386
+#define or1k_breakpoint_len 140,3442
+or1k_target::sw_breakpoint_from_kind sw_breakpoint_from_kind145,3561
+or1k_target::low_breakpoint_at low_breakpoint_at154,3772
+ps_get_thread_area 167,4055
+or1k_collect_register 184,4545
+or1k_supply_register 194,4768
+or1k_fill_gregset 203,4989
+or1k_store_gregset 213,5225
+static struct regset_info or1k_regsets[or1k_regsets222,5461
+static struct regsets_info or1k_regsets_info 230,5659
+static struct usrregs_info or1k_usrregs_info 237,5806
+static struct regs_info or1k_regs 243,5899
+or1k_target::get_regs_info get_regs_info251,6040
+linux_process_target *the_linux_target the_linux_target258,6133
+initialize_low_arch 261,6198
+
+linux-ppc-low.cc,7362
+#define PPC_FIELD(36,1153
+#define PPC_SEXT(38,1250
+#define PPC_OP6(42,1404
+#define PPC_BO(43,1449
+#define PPC_LI(44,1493
+#define PPC_BD(45,1560
+class ppc_target 49,1695
+static ppc_target the_ppc_target;111,3437
+static unsigned long ppc_hwcap;115,3511
+static unsigned long ppc_hwcap2;119,3584
+#define ppc_num_regs 122,3619
+static int ppc_regmap[ppc_regmap127,3792
+static int ppc_regmap[ppc_regmap149,4980
+static int ppc_regmap_e500[ppc_regmap_e500171,6122
+ppc_check_regset 198,7304
+ppc_target::low_cannot_store_register low_cannot_store_register213,7591
+ppc_target::low_cannot_fetch_register low_cannot_fetch_register233,8093
+ppc_target::low_collect_ptrace_register low_collect_ptrace_register239,8169
+ppc_target::low_supply_ptrace_register low_supply_ptrace_register266,8978
+ppc_target::low_supports_breakpoints low_supports_breakpoints291,9753
+ppc_target::low_get_pc low_get_pc297,9823
+ppc_target::low_set_pc low_set_pc314,10168
+static int ppc_regmap_adjusted;329,10506
+static const unsigned int ppc_breakpoint 336,10666
+#define ppc_breakpoint_len 337,10721
+ppc_target::sw_breakpoint_from_kind sw_breakpoint_from_kind342,10839
+ppc_target::low_breakpoint_at low_breakpoint_at349,10982
+ppc_target::supports_z_point_type supports_z_point_type369,11497
+ppc_target::low_insert_point low_insert_point387,11860
+ppc_target::low_remove_point low_remove_point408,12340
+static void ppc_fill_gregset 428,12814
+ppc_fill_pprregset 450,13408
+ppc_store_pprregset 460,13620
+ppc_fill_dscrregset 470,13852
+ppc_store_dscrregset 480,14071
+ppc_fill_tarregset 490,14302
+ppc_store_tarregset 500,14512
+ppc_store_ebbregset 521,15465
+ppc_fill_pmuregset 535,15939
+ppc_store_pmuregset 551,16537
+ppc_fill_tm_sprregset 566,17046
+ppc_store_tm_sprregset 580,17393
+ppc_store_tm_cgprregset 598,17948
+ppc_store_tm_cfprregset 630,18853
+ppc_store_tm_cvrregset 647,19280
+ppc_store_tm_cvsxregset 671,19885
+ppc_store_tm_cpprregset 685,20266
+ppc_store_tm_cdscrregset 696,20552
+ppc_store_tm_ctarregset 707,20837
+ppc_fill_vsxregset 715,21017
+ppc_store_vsxregset 726,21272
+ppc_fill_vrregset 737,21545
+ppc_store_vrregset 757,22036
+struct gdb_evrregset_t775,22529
+  unsigned long evr[evr777,22554
+  unsigned long long acc;778,22579
+  unsigned long spefscr;779,22605
+ppc_fill_evrregset 783,22646
+ppc_store_evrregset 797,23064
+static struct regset_info ppc_regsets[ppc_regsets810,23486
+static struct usrregs_info ppc_usrregs_info 851,25654
+static struct regsets_info ppc_regsets_info 857,25744
+static struct regs_info myregs_info 864,25889
+ppc_target::get_regs_info get_regs_info872,26030
+ppc_target::low_arch_setup low_arch_setup878,26092
+ppc_target::supports_tracepoints supports_tracepoints1043,30635
+ppc_target::low_get_thread_area low_get_thread_area1054,30965
+#define EF_PPC64_ABI 1078,31517
+is_elfv2_inferior 1085,31645
+gen_ds_form 1122,32689
+#define GEN_STD(1138,33089
+#define GEN_STDU(1139,33167
+#define GEN_LD(1140,33246
+#define GEN_LDU(1141,33323
+gen_d_form 1149,33537
+#define GEN_ADDI(1164,33881
+#define GEN_ADDIS(1165,33948
+#define GEN_LI(1166,34016
+#define GEN_LIS(1167,34071
+#define GEN_ORI(1168,34128
+#define GEN_ORIS(1169,34194
+#define GEN_LWZ(1170,34261
+#define GEN_STW(1171,34327
+#define GEN_STWU(1172,34393
+gen_xfx_form 1181,34647
+#define GEN_MFSPR(1197,35051
+#define GEN_MTSPR(1198,35121
+#define GEN_MFCR(1199,35191
+#define GEN_MTCR(1200,35252
+#define GEN_SYNC(1201,35318
+#define GEN_LWSYNC(1203,35418
+gen_x_form 1212,35645
+#define GEN_OR(1230,36119
+#define GEN_MR(1231,36193
+#define GEN_LWARX(1232,36247
+#define GEN_STWCX(1233,36322
+#define GEN_CMPW(1235,36422
+gen_md_form 1244,36679
+#define GEN_RLDICL(1268,37367
+#define GEN_RLDICR(1270,37457
+gen_i_form 1279,37736
+#define GEN_B(1292,38011
+#define GEN_BL(1293,38066
+gen_b_form 1301,38311
+#define GEN_BNE(1317,38721
+#define GEN_LOAD(1324,39014
+#define GEN_STORE(1327,39136
+#define GEN_LOAD(1331,39266
+#define GEN_STORE(1332,39333
+gen_limm 1339,39570
+gen_atomic_xchg 1387,40990
+gen_call 1418,41709
+ppc_relocate_instruction 1441,42341
+ppc_target::supports_fast_tracepoints supports_fast_tracepoints1582,45898
+ppc_target::install_fast_tracepoint_jump_pad install_fast_tracepoint_jump_pad1591,46058
+ppc_target::get_min_fast_tracepoint_insn_len get_min_fast_tracepoint_insn_len1798,52754
+emit_insns 1807,52937
+#define __EMIT_ASM(1814,53098
+#define _EMIT_ASM(1828,53558
+#define EMIT_ASM(1829,53615
+#define TOP_FIRST	1878,55068
+#define TOP_SECOND	1879,55090
+#define TMP_FIRST	1880,55113
+#define TMP_SECOND	1881,55135
+#define TOP_FIRST	1883,55164
+#define TOP_SECOND	1884,55186
+#define TMP_FIRST	1885,55209
+#define TMP_SECOND	1886,55231
+ppc_emit_prologue 1892,55337
+ppc_emit_epilogue 1916,55995
+ppc_emit_add 1938,56480
+ppc_emit_sub 1949,56680
+ppc_emit_mul 1960,56880
+ppc_emit_lsh 1975,57181
+ppc_emit_rsh_signed 1993,57755
+ppc_emit_rsh_unsigned 2015,58399
+ppc_emit_ext 2032,58979
+ppc_emit_zero_ext 2055,59354
+ppc_emit_log_not 2079,59720
+ppc_emit_bit_and 2090,59900
+ppc_emit_bit_or 2101,60100
+ppc_emit_bit_xor 2112,60297
+ppc_emit_bit_not 2124,60512
+ppc_emit_equal 2133,60641
+ppc_emit_less_signed 2149,60966
+ppc_emit_less_unsigned 2168,61467
+ppc_emit_ref 2187,62002
+ppc_emit_const 2217,62498
+ppc_emit_reg 2233,62909
+ppc_emit_pop 2257,63408
+ppc_emit_stack_flush 2269,63634
+ppc_emit_swap 2286,64044
+ppc_emit_stack_adjust 2299,64344
+ppc_emit_call 2320,64665
+ppc_emit_int_call_1 2336,64941
+ppc_emit_void_call_2 2362,65500
+ppc_emit_if_goto 2405,66660
+ppc_emit_goto 2421,66971
+ppc_emit_eq_goto 2434,67157
+ppc_emit_ne_goto 2454,67577
+ppc_emit_lt_goto 2474,67996
+ppc_emit_le_goto 2497,68583
+ppc_emit_gt_goto 2520,69179
+ppc_emit_ge_goto 2543,69775
+ppc_write_goto_address 2570,70619
+static struct emit_ops ppc_emit_ops_impl 2603,71335
+ppc64v1_emit_prologue 2691,73321
+ppc64v2_emit_prologue 2723,74294
+ppc64_emit_epilogue 2746,74926
+ppc64_emit_add 2767,75363
+ppc64_emit_sub 2776,75490
+ppc64_emit_mul 2785,75617
+ppc64_emit_lsh 2794,75749
+ppc64_emit_rsh_signed 2804,75905
+ppc64_emit_rsh_unsigned 2814,76067
+ppc64_emit_ext 2823,76228
+ppc64_emit_zero_ext 2844,76560
+ppc64_emit_log_not 2866,76908
+ppc64_emit_bit_and 2875,77041
+ppc64_emit_bit_or 2884,77172
+ppc64_emit_bit_xor 2893,77302
+ppc64_emit_bit_not 2903,77448
+ppc64_emit_equal 2911,77556
+ppc64_emit_less_signed 2923,77763
+ppc64_emit_less_unsigned 2935,77988
+ppc64_emit_ref 2947,78247
+ppc64_emit_const 2969,78572
+ppc64v1_emit_reg 2984,78920
+ppc64v2_emit_reg 3003,79394
+ppc64_emit_pop 3022,79864
+ppc64_emit_stack_flush 3033,80041
+ppc64_emit_swap 3049,80405
+ppc64v1_emit_call 3059,80557
+ppc64v2_emit_call 3075,80900
+ppc64v1_emit_int_call_1 3093,81276
+ppc64v2_emit_int_call_1 3111,81712
+ppc64v1_emit_void_call_2 3132,82250
+ppc64v2_emit_void_call_2 3157,82851
+ppc64_emit_if_goto 3182,83495
+ppc64_emit_eq_goto 3197,83746
+ppc64_emit_ne_goto 3213,84028
+ppc64_emit_lt_goto 3229,84309
+ppc64_emit_le_goto 3245,84591
+ppc64_emit_gt_goto 3261,84872
+ppc64_emit_ge_goto 3277,85154
+static struct emit_ops ppc64v1_emit_ops_impl 3292,85433
+static struct emit_ops ppc64v2_emit_ops_impl 3335,86344
+ppc_target::emit_ops emit_ops3381,87286
+ppc_target::get_ipa_tdesc_idx get_ipa_tdesc_idx3400,87679
+linux_process_target *the_linux_target the_linux_target3452,89352
+initialize_low_arch 3455,89416
+
+linux-riscv-low.cc,1419
+# define NFPREG 30,1062
+class riscv_target 35,1154
+static riscv_target the_riscv_target;66,1888
+riscv_target::low_cannot_fetch_register low_cannot_fetch_register69,1932
+riscv_target::low_cannot_store_register low_cannot_store_register76,2107
+riscv_target::low_arch_setup low_arch_setup85,2350
+riscv_fill_gregset 101,2806
+riscv_store_gregset 116,3235
+riscv_fill_fpregset 132,3726
+riscv_store_fpregset 148,4204
+static struct regset_info riscv_regsets[riscv_regsets165,4902
+static struct regsets_info riscv_regsets_info 182,5631
+static struct regs_info riscv_regs 190,5843
+riscv_target::get_regs_info get_regs_info200,6054
+riscv_target::low_fetch_register low_fetch_register208,6189
+riscv_target::low_supports_breakpoints low_supports_breakpoints219,6438
+riscv_target::low_get_pc low_get_pc227,6574
+riscv_target::low_set_pc low_set_pc240,6841
+static const uint16_t riscv_ibreakpoint[riscv_ibreakpoint251,7093
+static const uint16_t riscv_cbreakpoint 252,7157
+riscv_target::breakpoint_kind_from_pc breakpoint_kind_from_pc257,7283
+      gdb_byte bytes[bytes261,7356
+      uint16_t insn;262,7381
+riscv_target::sw_breakpoint_from_kind sw_breakpoint_from_kind276,7730
+riscv_target::low_breakpoint_at low_breakpoint_at291,8063
+      gdb_byte bytes[bytes295,8126
+      uint16_t insn;296,8151
+linux_process_target *the_linux_target the_linux_target313,8557
+initialize_low_arch 318,8667
+
+linux-s390-low.cc,6286
+#define HWCAP_S390_HIGH_GPRS 37,1168
+#define HWCAP_S390_TE 41,1231
+#define HWCAP_S390_VX 45,1288
+#define HWCAP_S390_GS 49,1345
+#define s390_num_regs 52,1381
+class s390_target 56,1471
+static s390_target the_s390_target;113,3049
+static int s390_regmap[s390_regmap115,3086
+#define s390_num_regs_3264 145,3886
+static int s390_regmap_3264[s390_regmap_3264148,3934
+static int s390_regmap_3264[s390_regmap_3264175,4665
+s390_target::low_cannot_fetch_register low_cannot_fetch_register205,5366
+s390_target::low_cannot_store_register low_cannot_store_register211,5443
+s390_target::low_collect_ptrace_register low_collect_ptrace_register217,5520
+s390_target::low_supply_ptrace_register low_supply_ptrace_register264,7092
+s390_fill_gregset 323,9055
+s390_fill_gprs_high 344,9591
+s390_store_gprs_high 354,9821
+s390_store_last_break 365,10070
+s390_fill_system_call 374,10294
+s390_store_system_call 380,10431
+s390_store_tdb 386,10574
+s390_fill_vxrs_low 400,10961
+s390_store_vxrs_low 410,11184
+s390_fill_vxrs_high 420,11419
+s390_store_vxrs_high 430,11646
+s390_store_gs 440,11885
+s390_store_gsbc 450,12121
+static struct regset_info s390_regsets[s390_regsets459,12356
+static const gdb_byte s390_breakpoint[s390_breakpoint486,13504
+#define s390_breakpoint_len 487,13556
+s390_target::sw_breakpoint_from_kind sw_breakpoint_from_kind492,13675
+s390_target::low_supports_breakpoints low_supports_breakpoints499,13801
+s390_target::low_get_pc low_get_pc505,13872
+s390_target::low_set_pc low_set_pc522,14217
+s390_target::low_decr_pc_after_break low_decr_pc_after_break539,14650
+s390_get_wordsize 548,14814
+#define s390_get_wordsize(563,15199
+s390_check_regset 567,15251
+static int have_hwcap_s390_high_gprs 583,15622
+static int have_hwcap_s390_vx 584,15664
+s390_target::low_arch_setup low_arch_setup587,15705
+s390_target::low_breakpoint_at low_breakpoint_at705,18907
+s390_target::supports_z_point_type supports_z_point_type717,19214
+static struct usrregs_info s390_usrregs_info 728,19375
+static struct regsets_info s390_regsets_info 734,19468
+static struct regs_info myregs_info 741,19615
+static struct usrregs_info s390_usrregs_info_3264 748,19740
+static struct regsets_info s390_regsets_info_3264 754,19847
+static struct regs_info regs_info_3264 761,19999
+s390_target::get_regs_info get_regs_info769,20155
+s390_target::supports_tracepoints supports_tracepoints788,20511
+s390_target::low_get_thread_area low_get_thread_area796,20645
+static const unsigned char s390_ft_entry_gpr_esa[s390_ft_entry_gpr_esa834,21943
+static const unsigned char s390_ft_entry_gpr_zarch[s390_ft_entry_gpr_zarch886,24333
+static const unsigned char s390_ft_entry_misc[s390_ft_entry_misc918,25712
+static const unsigned char s390_ft_entry_fr[s390_ft_entry_fr931,26213
+static const unsigned char s390_ft_entry_vr[s390_ft_entry_vr952,27197
+static const unsigned char s390_ft_main_31[s390_ft_main_31960,27513
+static const unsigned char s390_ft_main_64[s390_ft_main_64995,28981
+static const unsigned char s390_ft_exit_fr[s390_ft_exit_fr1029,30501
+static const unsigned char s390_ft_exit_vr[s390_ft_exit_vr1050,31445
+static const unsigned char s390_ft_exit_misc[s390_ft_exit_misc1059,31857
+static const unsigned char s390_ft_exit_gpr_esa[s390_ft_exit_gpr_esa1074,32489
+static const unsigned char s390_ft_exit_gpr_zarch[s390_ft_exit_gpr_zarch1096,33480
+append_insns 1103,33687
+s390_relocate_instruction 1112,33889
+s390_target::supports_fast_tracepoints supports_fast_tracepoints1267,37371
+s390_target::install_fast_tracepoint_jump_padinstall_fast_tracepoint_jump_pad1276,37520
+s390_target::get_min_fast_tracepoint_insn_len get_min_fast_tracepoint_insn_len1440,42911
+s390_target::get_ipa_tdesc_idx get_ipa_tdesc_idx1453,43373
+add_insns 1502,44751
+s390_emit_prologue 1533,45527
+s390_emit_epilogue 1547,45874
+s390_emit_add 1561,46237
+s390_emit_sub 1574,46564
+s390_emit_mul 1590,46989
+s390_emit_lsh 1598,47094
+s390_emit_rsh_signed 1612,47456
+s390_emit_rsh_unsigned 1626,47827
+s390_emit_ext 1640,48191
+s390_emit_log_not 1652,48497
+s390_emit_bit_and 1668,48901
+s390_emit_bit_or 1681,49219
+s390_emit_bit_xor 1694,49537
+s390_emit_bit_not 1707,49856
+s390_emit_equal 1720,50142
+s390_emit_less_signed 1729,50287
+s390_emit_less_unsigned 1752,50979
+s390_emit_ref 1775,51664
+s390_emit_if_goto 1814,52585
+s390_emit_goto 1832,53055
+s390_write_goto_address 1847,53384
+s390_emit_litpool 1869,54021
+s390_emit_const 1896,54600
+s390_emit_call 1922,55198
+s390_emit_reg 1939,55649
+s390_emit_pop 1954,55983
+s390_emit_stack_flush 1966,56259
+s390_emit_zero_ext 1978,56537
+s390_emit_swap 1990,56845
+s390_emit_stack_adjust 2004,57200
+s390_emit_set_r2 2017,57449
+s390_emit_int_call_1 2039,57990
+s390_emit_void_call_2 2049,58208
+s390_emit_eq_goto 2071,58801
+s390_emit_ne_goto 2091,59365
+s390_emit_lt_goto 2111,59930
+s390_emit_le_goto 2139,60799
+s390_emit_gt_goto 2167,61669
+s390_emit_ge_goto 2195,62538
+static struct emit_ops s390_emit_ops_impl 2223,63455
+s390x_emit_prologue 2269,64441
+s390x_emit_epilogue 2283,64835
+s390x_emit_add 2297,65219
+s390x_emit_sub 2309,65498
+s390x_emit_mul 2323,65873
+s390x_emit_lsh 2331,65980
+s390x_emit_rsh_signed 2344,66333
+s390x_emit_rsh_unsigned 2357,66695
+s390x_emit_ext 2370,67050
+s390x_emit_log_not 2384,67400
+s390x_emit_bit_and 2397,67733
+s390x_emit_bit_or 2409,68018
+s390x_emit_bit_xor 2421,68303
+s390x_emit_bit_not 2433,68589
+s390x_emit_equal 2445,68853
+s390x_emit_less_signed 2454,69002
+s390x_emit_less_unsigned 2470,69453
+s390x_emit_ref 2486,69897
+s390x_emit_if_goto 2522,70734
+s390x_emit_const 2540,71216
+s390x_emit_call 2563,71788
+s390x_emit_reg 2580,72260
+s390x_emit_pop 2595,72602
+s390x_emit_stack_flush 2607,72888
+s390x_emit_zero_ext 2619,73177
+s390x_emit_swap 2633,73529
+s390x_emit_stack_adjust 2646,73876
+s390x_emit_int_call_1 2659,74144
+s390x_emit_void_call_2 2669,74365
+s390x_emit_eq_goto 2688,74887
+s390x_emit_ne_goto 2706,75384
+s390x_emit_lt_goto 2724,75882
+s390x_emit_le_goto 2742,76379
+s390x_emit_gt_goto 2760,76877
+s390x_emit_ge_goto 2778,77374
+static struct emit_ops s390x_emit_ops 2795,77850
+s390_target::emit_ops emit_ops2840,78842
+linux_process_target *the_linux_target the_linux_target2854,79119
+initialize_low_arch 2857,79184
+
+linux-sh-low.cc,1090
+class sh_target 24,918
+static sh_target the_sh_target;51,1520
+sh_target::low_supports_breakpoints low_supports_breakpoints54,1558
+sh_target::low_get_pc low_get_pc60,1627
+sh_target::low_set_pc low_set_pc66,1720
+#define sh_num_regs 81,2018
+static int sh_regmap[sh_regmap84,2081
+sh_target::low_cannot_store_register low_cannot_store_register99,2572
+sh_target::low_cannot_fetch_register low_cannot_fetch_register105,2647
+static const unsigned short sh_breakpoint 111,2765
+#define sh_breakpoint_len 112,2817
+sh_target::sw_breakpoint_from_kind sw_breakpoint_from_kind117,2934
+sh_target::low_breakpoint_at low_breakpoint_at124,3074
+static void sh_fill_gregset 140,3470
+static struct regset_info sh_regsets[sh_regsets149,3674
+static struct regsets_info sh_regsets_info 154,3790
+static struct usrregs_info sh_usrregs_info 161,3933
+static struct regs_info myregs_info 167,4020
+sh_target::get_regs_info get_regs_info175,4159
+sh_target::low_arch_setup low_arch_setup181,4220
+linux_process_target *the_linux_target the_linux_target188,4331
+initialize_low_arch 191,4394
+
+linux-sparc-low.cc,1749
+#undef BIAS29,1078
+#define BIAS 30,1090
+#define INSN_SIZE 36,1160
+#define SPARC_R_REGS_NUM 38,1181
+#define SPARC_F_REGS_NUM 39,1209
+#define SPARC_CONTROL_REGS_NUM 40,1237
+#define sparc_num_regs 42,1271
+class sparc_target 47,1426
+static sparc_target the_sparc_target;74,1999
+sparc_target::low_supports_breakpoints low_supports_breakpoints77,2043
+sparc_target::low_get_pc low_get_pc83,2115
+static int sparc_regmap[sparc_regmap93,2454
+struct regs_range_t123,3658
+  int regno_start;125,3680
+  int regno_end;126,3699
+static const struct regs_range_t gregs_ranges[gregs_ranges129,3720
+#define N_GREGS_RANGES 135,3869
+static const struct regs_range_t fpregs_ranges[fpregs_ranges137,3948
+#define N_FPREGS_RANGES 142,4058
+sparc_target::low_cannot_store_register low_cannot_store_register149,4282
+sparc_target::low_cannot_fetch_register low_cannot_fetch_register155,4409
+sparc_fill_gregset_to_stack 161,4543
+sparc_fill_gregset 185,5189
+sparc_fill_fpregset 200,5575
+sparc_store_gregset_from_stack 213,5890
+sparc_store_gregset 237,6541
+sparc_store_fpregset 257,7049
+static const gdb_byte sparc_breakpoint[sparc_breakpoint269,7359
+#define sparc_breakpoint_len 272,7441
+sparc_target::sw_breakpoint_from_kind sw_breakpoint_from_kind277,7569
+sparc_target::low_breakpoint_at low_breakpoint_at284,7698
+sparc_target::low_arch_setup low_arch_setup300,8044
+static struct regset_info sparc_regsets[sparc_regsets305,8126
+static struct regsets_info sparc_regsets_info 315,8444
+static struct usrregs_info sparc_usrregs_info 322,8593
+static struct regs_info myregs_info 330,8767
+sparc_target::get_regs_info get_regs_info338,8912
+linux_process_target *the_linux_target the_linux_target345,9008
+initialize_low_arch 348,9074
+
+linux-x86-low.cc,6963
+static target_desc_up tdesc_amd64_linux_no_xml;51,1484
+static target_desc_up tdesc_i386_linux_no_xml;53,1539
+static unsigned char jump_insn[jump_insn56,1588
+static unsigned char small_jump_insn[small_jump_insn57,1645
+static const char xmltarget_i386_linux_no_xml[xmltarget_i386_linux_no_xml61,1769
+static const char xmltarget_amd64_linux_no_xml[xmltarget_amd64_linux_no_xml67,1923
+#define PTRACE_GET_THREAD_AREA 78,2172
+#define PTRACE_ARCH_PRCTL 83,2317
+#define ARCH_SET_GS 89,2480
+#define ARCH_SET_FS 90,2507
+#define ARCH_GET_FS 91,2534
+#define ARCH_GET_GS 92,2561
+class x86_target 99,2770
+static x86_target the_x86_target;194,5601
+struct arch_process_info198,5692
+  struct x86_debug_reg_state debug_reg_state;200,5719
+static /*const*/ int i386_regmap[i386_regmap208,5952
+#define I386_NUM_REGS 216,6144
+#define ORIG_EAX 219,6274
+#define REGSIZE 220,6300
+static const int x86_64_regmap[x86_64_regmap222,6319
+#define X86_64_NUM_REGS 251,7342
+#define X86_64_USER_REGS 252,7419
+static /*const*/ int i386_regmap[i386_regmap258,7593
+#define I386_NUM_REGS 266,7783
+#define REGSIZE 268,7855
+is_64bit_tdesc 277,7987
+ps_get_thread_area 290,8194
+x86_target::low_get_thread_area low_get_thread_area336,9332
+x86_target::low_cannot_store_register low_cannot_store_register381,10274
+x86_target::low_cannot_fetch_register low_cannot_fetch_register392,10450
+collect_register_i386 403,10633
+x86_fill_gregset 432,11392
+x86_store_gregset 456,12005
+x86_fill_fpregset 479,12537
+x86_store_fpregset 489,12721
+x86_fill_fpxregset 501,12932
+x86_store_fpxregset 507,13047
+x86_fill_xstateregset 515,13177
+x86_store_xstateregset 521,13294
+static struct regset_info x86_regsets[x86_regsets533,13791
+x86_target::low_supports_breakpoints low_supports_breakpoints556,14500
+x86_target::low_get_pc low_get_pc562,14570
+x86_target::low_set_pc low_set_pc583,14940
+x86_target::low_decr_pc_after_break low_decr_pc_after_break602,15285
+static const gdb_byte x86_breakpoint[x86_breakpoint608,15343
+#define x86_breakpoint_len 609,15394
+x86_target::low_breakpoint_at low_breakpoint_at612,15429
+struct x86_dr_low_type x86_dr_low 624,15612
+x86_target::supports_z_point_type supports_z_point_type637,15867
+x86_target::low_insert_point low_insert_point652,16113
+x86_target::low_remove_point low_remove_point678,16700
+x86_target::low_stopped_by_watchpoint low_stopped_by_watchpoint703,17287
+x86_target::low_stopped_data_address low_stopped_data_address710,17477
+x86_target::low_new_process low_new_process723,17780
+x86_target::low_delete_process low_delete_process735,18002
+x86_target::low_new_thread low_new_thread741,18085
+x86_target::low_delete_thread low_delete_thread748,18199
+x86_target::low_new_fork low_new_fork757,18363
+x86_target::low_prepare_to_resume low_prepare_to_resume783,19409
+x86_debug_reg_state 792,19590
+x86_target::low_siginfo_fixup low_siginfo_fixup812,20344
+static int use_xml;832,20980
+#define I386_LINUX_XSAVE_XCR0_OFFSET 853,21690
+int have_ptrace_getfpxregs 858,21936
+x86_linux_read_description 869,22116
+x86_target::update_xmltarget update_xmltarget994,25129
+x86_target::process_qsupported process_qsupported1017,25733
+static struct regsets_info x86_regsets_info 1051,26426
+static struct regs_info amd64_linux_regs_info 1059,26589
+static struct usrregs_info i386_linux_usrregs_info 1066,26734
+static struct regs_info i386_linux_regs_info 1072,26833
+x86_target::get_regs_info get_regs_info1080,26990
+x86_target::low_arch_setup low_arch_setup1094,27252
+x86_target::low_supports_catch_syscall low_supports_catch_syscall1100,27353
+x86_target::low_get_syscall_trapinfo low_get_syscall_trapinfo1109,27570
+x86_target::supports_tracepoints supports_tracepoints1125,27922
+append_insns 1131,27990
+push_opcode 1138,28126
+amd64_install_fast_tracepoint_jump_pad 1165,28653
+i386_install_fast_tracepoint_jump_pad 1354,35079
+x86_target::supports_fast_tracepoints supports_fast_tracepoints1537,41146
+x86_target::install_fast_tracepoint_jump_pad install_fast_tracepoint_jump_pad1543,41211
+x86_target::get_min_fast_tracepoint_insn_len get_min_fast_tracepoint_insn_len1585,42442
+add_insns 1629,43609
+#define EMIT_ASM(1646,44182
+#define EMIT_ASM32(1659,44566
+#define EMIT_ASM32(1674,45000
+amd64_emit_prologue 1681,45092
+amd64_emit_epilogue 1693,45298
+amd64_emit_add 1704,45484
+amd64_emit_sub 1712,45601
+amd64_emit_mul 1720,45708
+amd64_emit_lsh 1726,45765
+amd64_emit_rsh_signed 1732,45822
+amd64_emit_rsh_unsigned 1738,45886
+amd64_emit_ext 1744,45952
+amd64_emit_log_not 1769,46294
+amd64_emit_bit_and 1778,46435
+amd64_emit_bit_or 1786,46556
+amd64_emit_bit_xor 1794,46674
+amd64_emit_bit_not 1802,46795
+amd64_emit_equal 1809,46904
+amd64_emit_less_signed 1823,47202
+amd64_emit_less_unsigned 1837,47534
+amd64_emit_ref 1851,47878
+amd64_emit_if_goto 1875,48251
+amd64_emit_goto 1889,48524
+amd64_write_goto_address 1900,48716
+amd64_emit_const 1916,49022
+amd64_emit_call 1931,49332
+amd64_emit_reg 1973,50367
+amd64_emit_pop 1991,50755
+amd64_emit_stack_flush 1998,50835
+amd64_emit_zero_ext 2005,50932
+amd64_emit_swap 2028,51315
+amd64_emit_stack_adjust 2037,51443
+amd64_emit_int_call_1 2057,51895
+amd64_emit_void_call_2 2076,52295
+amd64_emit_eq_goto 2101,52932
+amd64_emit_ne_goto 2121,53392
+amd64_emit_lt_goto 2141,53851
+amd64_emit_le_goto 2161,54311
+amd64_emit_gt_goto 2181,54772
+amd64_emit_ge_goto 2201,55232
+static emit_ops amd64_emit_ops 2221,55709
+i386_emit_prologue 2265,56673
+i386_emit_epilogue 2276,56918
+i386_emit_add 2289,57154
+i386_emit_sub 2298,57301
+i386_emit_mul 2308,57462
+i386_emit_lsh 2314,57518
+i386_emit_rsh_signed 2320,57574
+i386_emit_rsh_unsigned 2326,57637
+i386_emit_ext 2332,57702
+i386_emit_log_not 2360,58142
+i386_emit_bit_and 2371,58332
+i386_emit_bit_or 2380,58483
+i386_emit_bit_xor 2389,58630
+i386_emit_bit_not 2398,58781
+i386_emit_equal 2406,58917
+i386_emit_less_signed 2424,59329
+i386_emit_less_unsigned 2443,59827
+i386_emit_ref 2462,60343
+i386_emit_if_goto 2487,60745
+i386_emit_goto 2505,61177
+i386_write_goto_address 2517,61431
+i386_emit_const 2534,61790
+i386_emit_call 2561,62347
+i386_emit_reg 2577,62683
+i386_emit_pop 2603,63261
+i386_emit_stack_flush 2611,63361
+i386_emit_zero_ext 2619,63479
+i386_emit_swap 2643,63879
+i386_emit_stack_adjust 2655,64073
+i386_emit_int_call_1 2673,64426
+i386_emit_void_call_2 2701,65096
+i386_emit_eq_goto 2736,66093
+i386_emit_ne_goto 2761,66723
+i386_emit_lt_goto 2787,67372
+i386_emit_le_goto 2813,67990
+i386_emit_gt_goto 2839,68610
+i386_emit_ge_goto 2865,69228
+static emit_ops i386_emit_ops 2890,69836
+x86_target::emit_ops emit_ops2933,70737
+x86_target::sw_breakpoint_from_kind sw_breakpoint_from_kind2946,70980
+x86_target::low_supports_range_stepping low_supports_range_stepping2953,71103
+x86_target::get_ipa_tdesc_idx get_ipa_tdesc_idx2959,71170
+linux_process_target *the_linux_target the_linux_target2976,71553
+initialize_low_arch 2979,71617
+
+linux-xtensa-low.cc,1464
+class xtensa_target 25,927
+static xtensa_target the_xtensa_target;52,1533
+xtensa_target::low_cannot_fetch_register low_cannot_fetch_register55,1579
+xtensa_target::low_cannot_store_register low_cannot_store_register62,1755
+xtensa_target::low_supports_breakpoints low_supports_breakpoints69,1931
+xtensa_target::low_get_pc low_get_pc75,2004
+xtensa_target::low_set_pc low_set_pc81,2101
+enum regnum 97,2474
+	R_PC=98,2488
+	R_PC=0,	R_PS,98,2488
+	R_LBEG,99,2503
+	R_LBEG,	R_LEND,99,2503
+	R_LBEG,	R_LEND,	R_LCOUNT,99,2503
+	R_SAR,100,2530
+	R_WS,101,2538
+	R_WS, R_WB,101,2538
+	R_THREADPTR,102,2551
+	R_A0 103,2565
+xtensa_fill_gregset 107,2592
+xtensa_store_gregset 161,4198
+xtensa_fill_xtregset 217,5906
+xtensa_store_xtregset 229,6171
+static struct regset_info xtensa_regsets[xtensa_regsets240,6430
+#define XTENSA_BREAKPOINT 251,6779
+#define XTENSA_BREAKPOINT 253,6823
+static const gdb_byte xtensa_breakpoint[xtensa_breakpoint256,6869
+#define xtensa_breakpoint_len 257,6932
+xtensa_target::sw_breakpoint_from_kind sw_breakpoint_from_kind262,7053
+xtensa_target::low_breakpoint_at low_breakpoint_at269,7185
+ps_get_thread_area 281,7466
+static struct regsets_info xtensa_regsets_info 297,7908
+static struct regs_info myregs_info 304,8059
+xtensa_target::low_arch_setup low_arch_setup312,8191
+xtensa_target::get_regs_info get_regs_info318,8291
+linux_process_target *the_linux_target the_linux_target325,8388
+initialize_low_arch 328,8455
+
+mem-break.cc,4309
+#define MAX_BREAKPOINT_LEN 25,898
+#define APPEND_TO_LIST(34,1319
+struct raw_breakpoint85,3580
+  struct raw_breakpoint *next;next87,3604
+  enum raw_bkpt_type raw_type;91,3727
+  int refcount;95,3880
+  CORE_ADDR pc;99,4001
+  int kind;107,4439
+  unsigned char old_data[old_data110,4493
+  int inserted;115,4709
+enum bkpt_type119,4762
+    gdb_breakpoint_Z0,122,4838
+    gdb_breakpoint_Z1,125,4928
+    gdb_breakpoint_Z2,128,5015
+    gdb_breakpoint_Z3,131,5101
+    gdb_breakpoint_Z4,134,5189
+    single_step_breakpoint,137,5259
+    other_breakpoint,141,5411
+struct point_cond_list144,5439
+  struct agent_expr *cond;cond148,5548
+  struct point_cond_list *next;next151,5616
+struct point_command_list154,5652
+  struct agent_expr *cmd;cmd158,5761
+  int persistence;162,5879
+  struct point_command_list *next;next165,5937
+struct breakpoint169,6037
+  struct breakpoint *next;next171,6057
+  enum bkpt_type type;174,6117
+  struct raw_breakpoint *raw;raw178,6223
+struct gdb_breakpoint183,6294
+  struct breakpoint base;185,6318
+  struct point_cond_list *cond_list;cond_list191,6558
+  struct point_command_list *command_list;command_list194,6660
+struct other_breakpoint199,6745
+  struct breakpoint base;201,6771
+struct single_step_breakpoint211,7041
+  struct breakpoint base;213,7073
+  ptid_t ptid;216,7152
+bp_size 222,7232
+bp_opcode 233,7438
+raw_bkpt_type_to_target_hw_bp_type 243,7610
+Z_packet_to_bkpt_type 263,8061
+Z_packet_to_raw_bkpt_type 273,8258
+is_gdb_breakpoint 295,8783
+any_persistent_commands 305,8999
+find_enabled_raw_code_breakpoint_at 329,9569
+find_raw_breakpoint_at 347,10024
+insert_memory_breakpoint 362,10376
+remove_memory_breakpoint 393,11262
+set_raw_breakpoint_at 421,12416
+struct fast_tracepoint_jump491,14340
+  struct fast_tracepoint_jump *next;next493,14370
+  int refcount;498,14559
+  CORE_ADDR pc;502,14679
+  int inserted;506,14787
+  int length;509,14849
+  unsigned char insn_and_shadow[insn_and_shadow515,15093
+#define fast_tracepoint_jump_insn(519,15189
+#define fast_tracepoint_jump_shadow(523,15313
+find_fast_tracepoint_jump_at 530,15489
+fast_tracepoint_jump_here 543,15757
+delete_fast_tracepoint_jump 551,15908
+inc_ref_fast_tracepoint_jump 613,17532
+set_fast_tracepoint_jump 619,17648
+uninsert_fast_tracepoint_jumps_at 691,19944
+reinsert_fast_tracepoint_jumps_at 737,21306
+set_breakpoint 788,23131
+set_breakpoint_type_at 840,24354
+set_breakpoint_at 855,24740
+delete_raw_breakpoint 862,24889
+release_breakpoint 911,25816
+delete_breakpoint_1 932,26163
+delete_breakpoint 965,26665
+find_gdb_breakpoint 976,27019
+z_type_supported 991,27435
+set_gdb_breakpoint 1003,27857
+delete_gdb_breakpoint 1088,30872
+clear_breakpoint_conditions 1110,31406
+clear_breakpoint_commands 1135,31851
+clear_breakpoint_conditions_and_commands 1158,32234
+add_condition_to_breakpoint 1167,32452
+add_breakpoint_condition 1184,32860
+gdb_condition_true_at_breakpoint_z_type 1214,33426
+gdb_condition_true_at_breakpoint 1254,34496
+add_commands_to_breakpoint 1264,34831
+add_breakpoint_commands 1282,35291
+gdb_no_commands_at_breakpoint_z_type 1313,35885
+gdb_no_commands_at_breakpoint 1330,36370
+run_breakpoint_commands_z_type 1341,36743
+run_breakpoint_commands 1372,37464
+gdb_breakpoint_here 1383,37789
+set_single_step_breakpoint 1391,38028
+delete_single_step_breakpoints 1403,38320
+uninsert_raw_breakpoint 1432,38915
+uninsert_breakpoints_at 1457,39415
+uninsert_all_breakpoints 1485,40041
+uninsert_single_step_breakpoints 1498,40360
+reinsert_raw_breakpoint 1524,41014
+reinsert_breakpoints_at 1540,41340
+has_single_step_breakpoints 1567,41948
+reinsert_all_breakpoints 1591,42395
+reinsert_single_step_breakpoints 1604,42715
+check_breakpoints 1628,43280
+breakpoint_here 1673,44114
+breakpoint_inserted_here 1688,44428
+software_breakpoint_inserted_here 1706,44793
+hardware_breakpoint_inserted_here 1723,45127
+single_step_breakpoint_inserted_here 1740,45461
+validate_inserted_breakpoint 1755,45784
+delete_disabled_breakpoints 1776,46238
+validate_breakpoints 1802,47077
+check_mem_read 1819,47444
+check_mem_write 1902,49372
+delete_all_breakpoints 1994,51785
+mark_breakpoints_out 2005,52009
+free_all_breakpoints 2017,52294
+clone_agent_expr 2032,52746
+clone_one_breakpoint 2046,53100
+clone_all_breakpoints 2123,55547
+
+netbsd-aarch64-low.cc,545
+netbsd_aarch64_fill_gregset 31,1001
+#define netbsd_aarch64_collect_gp(35,1109
+netbsd_aarch64_store_gregset 49,1541
+#define netbsd_aarch64_supply_gp(53,1656
+static const struct netbsd_regset_info netbsd_target_regsets[netbsd_target_regsets66,2066
+class netbsd_aarch64_target 77,2405
+netbsd_aarch64_target::get_regs_info get_regs_info88,2651
+netbsd_aarch64_target::low_arch_setup low_arch_setup96,2794
+static netbsd_aarch64_target the_netbsd_aarch64_target;109,3114
+netbsd_process_target *the_netbsd_target the_netbsd_target113,3209
+
+netbsd-amd64-low.cc,1989
+enum netbsd_x86_64_gdb_regnum31,1010
+  AMD64_RAX_REGNUM,33,1042
+  AMD64_RBX_REGNUM,34,1078
+  AMD64_RCX_REGNUM,35,1114
+  AMD64_RDX_REGNUM,36,1150
+  AMD64_RSI_REGNUM,37,1186
+  AMD64_RDI_REGNUM,38,1222
+  AMD64_RBP_REGNUM,39,1258
+  AMD64_RSP_REGNUM,40,1294
+  AMD64_R8_REGNUM,41,1330
+  AMD64_R9_REGNUM,42,1365
+  AMD64_R10_REGNUM,43,1400
+  AMD64_R11_REGNUM,44,1436
+  AMD64_R12_REGNUM,45,1472
+  AMD64_R13_REGNUM,46,1508
+  AMD64_R14_REGNUM,47,1544
+  AMD64_R15_REGNUM,48,1580
+  AMD64_RIP_REGNUM,49,1616
+  AMD64_EFLAGS_REGNUM,50,1652
+  AMD64_CS_REGNUM,51,1691
+  AMD64_SS_REGNUM,52,1726
+  AMD64_DS_REGNUM,53,1761
+  AMD64_ES_REGNUM,54,1796
+  AMD64_FS_REGNUM,55,1831
+  AMD64_GS_REGNUM,56,1866
+  AMD64_ST0_REGNUM 57,1901
+  AMD64_ST1_REGNUM,58,1941
+  AMD64_FCTRL_REGNUM 59,1977
+  AMD64_FSTAT_REGNUM 60,2022
+  AMD64_FTAG_REGNUM 61,2067
+  AMD64_XMM0_REGNUM 62,2112
+  AMD64_XMM1_REGNUM,63,2152
+  AMD64_MXCSR_REGNUM 64,2189
+  AMD64_YMM0H_REGNUM,65,2236
+  AMD64_YMM15H_REGNUM 66,2274
+  AMD64_BND0R_REGNUM 67,2323
+  AMD64_BND3R_REGNUM 68,2371
+  AMD64_BNDCFGU_REGNUM,69,2418
+  AMD64_BNDSTATUS_REGNUM,70,2442
+  AMD64_XMM16_REGNUM,71,2468
+  AMD64_XMM31_REGNUM 72,2490
+  AMD64_YMM16H_REGNUM,73,2538
+  AMD64_YMM31H_REGNUM 74,2561
+  AMD64_K0_REGNUM,75,2611
+  AMD64_K7_REGNUM 76,2630
+  AMD64_ZMM0H_REGNUM,77,2671
+  AMD64_ZMM31H_REGNUM 78,2693
+  AMD64_PKRU_REGNUM,79,2742
+  AMD64_FSBASE_REGNUM,80,2763
+  AMD64_GSBASE_REGNUM81,2786
+netbsd_x86_64_fill_gregset 87,2888
+#define netbsd_x86_64_collect_gp(91,2995
+netbsd_x86_64_store_gregset 124,4447
+#define netbsd_x86_64_supply_gp(128,4561
+static const struct netbsd_regset_info netbsd_target_regsets[netbsd_target_regsets160,5966
+class netbsd_amd64_target 171,6302
+netbsd_amd64_target::get_regs_info get_regs_info182,6546
+netbsd_amd64_target::low_arch_setup low_arch_setup190,6687
+static netbsd_amd64_target the_netbsd_amd64_target;202,6963
+netbsd_process_target *the_netbsd_target the_netbsd_target206,7054
+
+netbsd-i386-low.cc,1014
+enum netbsd_i386_gdb_regnum31,1009
+  I386_EAX_REGNUM,33,1039
+  I386_ECX_REGNUM,34,1082
+  I386_EDX_REGNUM,35,1125
+  I386_EBX_REGNUM,36,1168
+  I386_ESP_REGNUM,37,1211
+  I386_EBP_REGNUM,38,1254
+  I386_ESI_REGNUM,39,1297
+  I386_EDI_REGNUM,40,1340
+  I386_EIP_REGNUM,41,1383
+  I386_EFLAGS_REGNUM,42,1426
+  I386_CS_REGNUM,43,1472
+  I386_SS_REGNUM,44,1514
+  I386_DS_REGNUM,45,1556
+  I386_ES_REGNUM,46,1598
+  I386_FS_REGNUM,47,1640
+  I386_GS_REGNUM,48,1682
+  I386_ST0_REGNUM 49,1724
+netbsd_i386_fill_gregset 55,1849
+#define netbsd_i386_collect_gp(59,1954
+netbsd_i386_store_gregset 84,2936
+#define netbsd_i386_supply_gp(88,3048
+static const struct netbsd_regset_info netbsd_target_regsets[netbsd_target_regsets112,3990
+class netbsd_i386_target 123,4321
+netbsd_i386_target::get_regs_info get_regs_info132,4509
+netbsd_i386_target::low_arch_setup low_arch_setup141,4671
+static netbsd_i386_target the_netbsd_i386_target;153,4937
+netbsd_process_target *the_netbsd_target the_netbsd_target157,5026
+
+netbsd-low.cc,3663
+int using_threads 44,1217
+netbsd_ptrace_fun 49,1323
+netbsd_process_target::create_inferior create_inferior81,2284
+netbsd_process_target::post_create_inferior post_create_inferior100,2782
+netbsd_process_target::attach attach111,2987
+gdb_catching_syscalls_p 120,3156
+netbsd_process_target::resume resume129,3348
+netbsd_catch_this_syscall 184,4818
+netbsd_store_waitstatus 206,5336
+netbsd_waitpid 219,5763
+netbsd_wait 243,6408
+netbsd_process_target::wait wait381,10010
+netbsd_process_target::kill kill429,11571
+netbsd_process_target::detach detach445,11895
+netbsd_process_target::mourn mourn457,12108
+netbsd_process_target::join join467,12293
+netbsd_process_target::thread_alive thread_alive476,12498
+netbsd_process_target::fetch_registers fetch_registers484,12657
+netbsd_process_target::store_registers store_registers505,13240
+netbsd_process_target::read_memory read_memory533,14085
+netbsd_process_target::write_memory write_memory543,14355
+netbsd_process_target::request_interrupt request_interrupt553,14640
+netbsd_read_auxv(565,14977
+netbsd_process_target::read_auxv read_auxv584,15401
+netbsd_process_target::supports_z_point_type supports_z_point_type593,15624
+netbsd_process_target::insert_point insert_point611,16000
+netbsd_process_target::remove_point remove_point630,16477
+netbsd_process_target::stopped_by_sw_breakpoint stopped_by_sw_breakpoint649,16953
+netbsd_process_target::supports_stopped_by_sw_breakpoint supports_stopped_by_sw_breakpoint664,17340
+netbsd_process_target::supports_qxfer_siginfo supports_qxfer_siginfo672,17489
+netbsd_process_target::qxfer_siginfo qxfer_siginfo680,17617
+netbsd_process_target::supports_non_stop supports_non_stop695,18014
+netbsd_process_target::supports_multi_process supports_multi_process703,18148
+netbsd_process_target::supports_fork_events supports_fork_events711,18266
+netbsd_process_target::supports_vfork_events supports_vfork_events719,18384
+netbsd_process_target::supports_exec_events supports_exec_events727,18502
+netbsd_process_target::supports_disable_randomization supports_disable_randomization735,18646
+int get_phdr_phnum_from_proc_auxv 743,18820
+  typedef typename std::conditional<std::conditional746,18921
+get_dynamic 794,20051
+  typedef typename std::conditional<std::conditional796,20083
+get_r_debug 856,22029
+  typedef typename std::conditional<std::conditional858,22061
+	T map;875,22594
+	unsigned char buf[buf876,22602
+read_one_ptr 905,23135
+    CORE_ADDR core_addr;914,23469
+    unsigned int ui;915,23494
+    unsigned char uc;916,23515
+netbsd_qxfer_libraries_svr4 936,23947
+  struct link_map_offsets941,24120
+    int r_version_offset;944,24199
+    int r_map_offset;947,24271
+    int l_addr_offset;950,24348
+    int l_name_offset;953,24426
+    int l_ld_offset;956,24502
+    int l_next_offset;959,24578
+    int l_prev_offset;962,24656
+elf_64_file_p 1127,29353
+netbsd_process_target::qxfer_libraries_svr4 qxfer_libraries_svr41153,30103
+netbsd_process_target::supports_qxfer_libraries_svr4 supports_qxfer_libraries_svr41178,30815
+netbsd_process_target::pid_to_exec_file pid_to_exec_file1187,31020
+netbsd_process_target::supports_pid_to_exec_file supports_pid_to_exec_file1195,31204
+netbsd_process_target::supports_hardware_single_step supports_hardware_single_step1202,31361
+netbsd_process_target::sw_breakpoint_from_kind sw_breakpoint_from_kind1210,31529
+netbsd_process_target::thread_name thread_name1222,31793
+netbsd_process_target::supports_catch_syscall supports_catch_syscall1230,31957
+netbsd_process_target::supports_read_auxv supports_read_auxv1238,32091
+initialize_low 1244,32161
+
+netbsd-low.h,287
+#define GDBSERVER_NETBSD_LOW_H19,767
+struct netbsd_regset_info26,898
+  int get_request,29,995
+  int get_request, set_request;29,995
+  int size;31,1066
+  void (*fill_function)fill_function33,1148
+  void (*store_function)store_function35,1276
+class netbsd_process_target 40,1403
+
+proc-service.cc,472
+typedef struct ps_prochandle *gdb_ps_prochandle_t;gdb_ps_prochandle_t31,1131
+typedef void *gdb_ps_read_buf_t;gdb_ps_read_buf_t32,1182
+typedef const void *gdb_ps_write_buf_t;gdb_ps_write_buf_t33,1215
+typedef size_t gdb_ps_size_t;34,1255
+#define HAVE_REGSETS37,1312
+gregset_info 42,1389
+ps_pglobal_lookup 64,1923
+ps_pdread 80,2293
+ps_pdwrite 91,2593
+ps_lgetregs 104,2935
+ps_lsetregs 129,3513
+ps_lgetfpregs 139,3756
+ps_lsetfpregs 149,3985
+ps_getpid 159,4218
+
+proc-service.list,210
+  ps_get_thread_area;21,796
+  ps_getpid;22,818
+  ps_lgetfpregs;23,831
+  ps_lgetregs;24,848
+  ps_lsetfpregs;25,863
+  ps_lsetregs;26,880
+  ps_pdread;27,895
+  ps_pdwrite;28,908
+  ps_pglobal_lookup;29,922
+
+regcache.cc,1194
+get_thread_regcache 27,954
+get_thread_regcache_for_ptid 68,2242
+regcache_invalidate_thread 74,2354
+regcache_invalidate_pid 97,2768
+regcache_invalidate 106,2956
+init_register_cache 117,3144
+new_register_cache 158,4233
+free_register_cache 168,4446
+regcache_cpy 182,4669
+find_register_by_number 200,5246
+registers_to_string 208,5376
+registers_from_string 231,5936
+find_regno_no_throw 250,6454
+find_regno 261,6694
+free_register_cache_thread 272,6946
+regcache_release 285,7238
+register_cache_size 293,7387
+register_size 299,7482
+regcache_register_size 307,7642
+register_data 313,7779
+supply_register 320,7937
+regcache::raw_supply raw_supply328,8097
+supply_register_zeroed 351,8596
+supply_register_by_name_zeroed 366,8956
+supply_regblock 379,9291
+supply_register_by_name 414,9976
+collect_register 423,10156
+regcache::raw_collect raw_collect431,10305
+regcache_raw_read_unsigned 437,10445
+regcache_raw_get_unsigned_by_name 464,11013
+collect_register_as_string 472,11201
+collect_register_by_name 479,11370
+regcache_read_pc 488,11586
+regcache_write_pc 494,11682
+regcache::get_register_status get_register_status504,11857
+regcache::raw_compare raw_compare517,12139
+
+remote-utils.cc,1836
+typedef int socklen_t;72,1757
+  NOT_SCHEDULED 80,1913
+static int readchar_callback 85,2022
+struct sym_cache92,2222
+  char *name;name94,2241
+  CORE_ADDR addr;95,2255
+  struct sym_cache *next;next96,2273
+static int remote_is_stdio 99,2303
+static int remote_desc 101,2336
+static int listen_desc 102,2365
+# undef read106,2463
+# undef write107,2476
+# define read(109,2491
+# define write(110,2551
+gdb_connected 114,2624
+remote_connection_is_stdio 122,2742
+enable_async_notification 128,2819
+handle_accept_event 142,3104
+remote_prepare 215,5463
+remote_open 315,7891
+remote_close 410,10250
+decode_address 432,10544
+decode_address_to_semicolon 449,10820
+try_rle 473,11316
+write_ptid 519,12308
+hex_or_minus_one 542,12723
+read_ptid 563,13117
+write_prim 603,14018
+read_prim 616,14363
+putpkt_binary_1 629,14731
+putpkt_binary 703,16166
+putpkt 713,16447
+putpkt_notif 719,16519
+input_interrupt 731,16930
+check_remote_input_interrupt_request 769,17775
+block_unblock_async_io 785,18202
+static int async_io_enabled;797,18463
+enable_async_io 801,18530
+disable_async_io 813,18688
+initialize_async_io 824,18815
+static unsigned char readchar_buf[readchar_buf840,19202
+static int readchar_bufcnt 841,19245
+static unsigned char *readchar_bufp;readchar_bufp842,19277
+readchar 847,19383
+reset_readchar 879,19877
+process_remaining 892,20122
+reschedule 905,20422
+getpkt 915,20721
+write_ok 1014,22979
+write_enn 1022,23059
+outreg 1036,23269
+prepare_resume_reply 1053,23694
+decode_m_packet_params 1277,30323
+decode_m_packet 1300,30783
+decode_M_packet 1307,30941
+decode_X_packet 1319,31234
+decode_xfer_write 1351,31919
+decode_search_memory_packet 1375,32436
+free_sym_cache 1391,32914
+clear_symbol_cache 1401,33036
+look_up_one_symbol 1420,33493
+relocate_instruction 1534,36782
+monitor_output 1616,38953
+
+server.cc,4111
+#define require_running_or_return(54,1658
+#define require_running_or_break(61,1798
+static gdb_environ our_environ;70,2002
+bool server_waiting;72,2035
+static bool extended_protocol;74,2057
+static bool response_needed;75,2088
+static bool exit_requested;76,2117
+bool run_once;79,2205
+static bool report_no_resumed;82,2281
+static bool keep_processing_events 86,2398
+bool non_stop;88,2442
+  void set 93,2569
+  const char *get get112,3132
+  std::string m_path;117,3268
+} program_path;118,3290
+static std::vector<char *> program_args;119,3306
+static std::string wrapper_argv;120,3347
+unsigned long signal_pid;127,3638
+bool disable_packet_vCont;132,3826
+bool disable_packet_Tthread;133,3853
+bool disable_packet_qC;134,3882
+bool disable_packet_qfThreadInfo;135,3906
+bool disable_packet_T;136,3940
+static unsigned char *mem_buf;mem_buf138,3964
+struct vstop_notif 144,4168
+  ptid_t ptid;147,4257
+  struct target_waitstatus status;150,4294
+static struct btrace_config current_btrace_conf;155,4436
+static client_state g_client_state;159,4527
+get_client_state 162,4579
+queue_stop_reply 172,4717
+remove_all_on_match_ptid 183,4960
+discard_queued_stop_replies 193,5182
+vstop_notif_reply 220,5847
+in_queued_stop_replies_ptid 230,6091
+in_queued_stop_replies 249,6627
+struct notif_server notif_stop 260,6811
+target_running 266,6906
+get_exec_wrapper 274,7026
+get_exec_file 282,7170
+get_environ 293,7356
+attach_inferior 299,7410
+decode_xfer_read 341,8689
+decode_xfer 351,8907
+write_qxfer_response 386,9729
+handle_btrace_enable_bts 402,10054
+handle_btrace_enable_pt 414,10384
+handle_btrace_disable 426,10681
+handle_btrace_general_set 441,10992
+handle_btrace_conf_general_set 490,12047
+create_fetch_memtags_reply 560,13629
+parse_store_memtags_request 583,14203
+handle_general_set 616,14927
+get_features_xml 977,23389
+monitor_show_help 1017,24302
+gdb_read_memory 1048,25767
+gdb_write_memory 1082,26628
+handle_search_memory 1102,27012
+handle_detach 1146,28129
+parse_debug_format_options 1290,32523
+handle_monitor_command 1338,33787
+struct qxfer1411,35911
+  const char *object;object1414,35968
+handle_qxfer_auxv 1436,36830
+handle_qxfer_exec_file 1452,37205
+handle_qxfer_features 1498,38041
+handle_qxfer_libraries 1531,38665
+handle_qxfer_libraries_svr4 1565,39487
+handle_qxfer_osdata 1583,39909
+handle_qxfer_siginfo 1596,40265
+handle_qxfer_statictrace 1612,40656
+handle_qxfer_threads_worker 1636,41228
+handle_qxfer_threads_proper 1680,42506
+handle_qxfer_threads 1709,43335
+handle_qxfer_traceframe_info 1762,44421
+handle_qxfer_fdpic 1813,45567
+handle_qxfer_btrace 1828,45909
+handle_qxfer_btrace_conf 1909,47605
+static const struct qxfer qxfer_packets[qxfer_packets1977,48981
+handle_qxfer 1995,49619
+crc32 2119,52132
+parse_fetch_memtags_request 2138,52542
+supported_btrace_packets 2159,53051
+handle_query 2173,53419
+typedef int (visit_actioned_threads_callback_ftype)2725,67659
+visit_actioned_threads 2734,68026
+handle_pending_status 2761,68680
+handle_v_cont 2779,69124
+resume 2889,71264
+handle_v_attach 2950,73133
+handle_v_run 2980,73917
+handle_v_kill 3097,76551
+handle_v_requests 3122,77111
+myresume 3219,79381
+queue_stop_reply_callback 3255,80186
+gdb_wants_thread_stopped 3292,81292
+gdb_wants_all_threads_stopped 3307,81664
+set_pending_status_callback 3316,81893
+handle_status 3333,82545
+gdbserver_version 3413,85029
+gdbserver_usage 3424,85329
+gdbserver_show_disableable 3485,88237
+start_event_loop 3501,88723
+kill_inferior_callback 3524,89383
+detach_or_kill_for_exit 3534,89638
+static int exit_code;3578,90828
+detach_or_kill_for_exit_cleanup 3584,90942
+namespace selftests 3601,91232
+test_memory_tagging_functions 3604,91267
+captured_main 3678,93382
+main 4073,103566
+process_point_options 4101,104159
+process_serial_event 4150,105409
+handle_serial_event 4509,113933
+push_stop_notification 4528,114410
+handle_target_event 4541,114732
+invoke_async_signal_handlers 4620,117114
+check_async_event_handlers 4628,117204
+flush_streams 4636,117288
+gdb_select 4645,117389
+namespace selftests4652,117575
+reset 4656,117603
+
+symbol.cc,36
+find_minimal_symbol_address 26,889
+
+target.cc,6478
+process_stratum_target *the_target;the_target30,1013
+set_desired_thread 35,1077
+set_desired_process 66,1775
+read_inferior_memory 83,2127
+target_read_memory 100,2646
+target_read_uint32 108,2808
+target_write_memory 116,2983
+mywait 134,3653
+target_stop_and_wait 175,4961
+target_wait 194,5357
+target_mourn_inferior 203,5540
+target_continue_no_signal 211,5669
+target_continue 224,5926
+target_supports_multi_process 237,6211
+set_target_ops 243,6306
+target_pid_to_str 251,6435
+kill_inferior 270,6921
+target_terminal_state target_terminal::m_terminal_state279,7055
+target_terminal::init init285,7182
+target_terminal::inferior inferior294,7334
+target_terminal::ours ours303,7490
+target_terminal::ours_for_output ours_for_output312,7642
+target_terminal::info info320,7743
+process_stratum_target::post_create_inferior post_create_inferior329,7909
+process_stratum_target::look_up_symbols look_up_symbols335,7981
+process_stratum_target::supports_read_auxv supports_read_auxv341,8048
+process_stratum_target::read_auxv read_auxv347,8119
+process_stratum_target::supports_z_point_type supports_z_point_type354,8294
+process_stratum_target::insert_point insert_point360,8379
+process_stratum_target::remove_point remove_point368,8529
+process_stratum_target::stopped_by_sw_breakpoint stopped_by_sw_breakpoint376,8680
+process_stratum_target::supports_stopped_by_sw_breakpoint supports_stopped_by_sw_breakpoint382,8758
+process_stratum_target::stopped_by_hw_breakpoint stopped_by_hw_breakpoint388,8845
+process_stratum_target::supports_stopped_by_hw_breakpoint supports_stopped_by_hw_breakpoint394,8923
+process_stratum_target::supports_hardware_single_step supports_hardware_single_step400,9010
+process_stratum_target::stopped_by_watchpoint stopped_by_watchpoint406,9093
+process_stratum_target::stopped_data_address stopped_data_address412,9173
+process_stratum_target::supports_read_offsets supports_read_offsets418,9243
+process_stratum_target::supports_memory_tagging supports_memory_tagging424,9318
+process_stratum_target::fetch_memtags fetch_memtags430,9395
+process_stratum_target::store_memtags store_memtags437,9588
+process_stratum_target::read_offsets read_offsets444,9786
+process_stratum_target::supports_get_tls_address supports_get_tls_address450,9935
+process_stratum_target::get_tls_address get_tls_address456,10012
+process_stratum_target::supports_qxfer_osdata supports_qxfer_osdata465,10233
+process_stratum_target::qxfer_osdata qxfer_osdata471,10307
+process_stratum_target::supports_qxfer_siginfo supports_qxfer_siginfo480,10553
+process_stratum_target::qxfer_siginfo qxfer_siginfo486,10628
+process_stratum_target::supports_non_stop supports_non_stop495,10879
+process_stratum_target::async async501,10950
+process_stratum_target::start_non_stop start_non_stop507,11019
+process_stratum_target::supports_multi_process supports_multi_process516,11132
+process_stratum_target::supports_fork_events supports_fork_events522,11208
+process_stratum_target::supports_vfork_events supports_vfork_events528,11282
+process_stratum_target::supports_exec_events supports_exec_events534,11357
+process_stratum_target::handle_new_gdb_connection handle_new_gdb_connection540,11431
+process_stratum_target::handle_monitor_command handle_monitor_command546,11507
+process_stratum_target::core_of_thread core_of_thread552,11587
+process_stratum_target::supports_read_loadmap supports_read_loadmap558,11663
+process_stratum_target::read_loadmap read_loadmap564,11737
+process_stratum_target::process_qsupportedprocess_qsupported573,11960
+process_stratum_target::supports_tracepoints supports_tracepoints580,12076
+process_stratum_target::read_pc read_pc586,12155
+process_stratum_target::write_pc write_pc592,12291
+process_stratum_target::supports_thread_stopped supports_thread_stopped598,12445
+process_stratum_target::thread_stopped thread_stopped604,12522
+process_stratum_target::supports_get_tib_address supports_get_tib_address610,12662
+process_stratum_target::get_tib_address get_tib_address616,12739
+process_stratum_target::pause_all pause_all622,12893
+process_stratum_target::unpause_all unpause_all628,12965
+process_stratum_target::stabilize_threads stabilize_threads634,13041
+process_stratum_target::supports_fast_tracepoints supports_fast_tracepoints640,13110
+process_stratum_target::install_fast_tracepoint_jump_padinstall_fast_tracepoint_jump_pad646,13188
+process_stratum_target::get_min_fast_tracepoint_insn_len get_min_fast_tracepoint_insn_len659,13676
+process_stratum_target::emit_ops emit_ops665,13771
+process_stratum_target::supports_disable_randomization supports_disable_randomization671,13835
+process_stratum_target::supports_qxfer_libraries_svr4 supports_qxfer_libraries_svr4677,13919
+process_stratum_target::qxfer_libraries_svr4 qxfer_libraries_svr4683,14001
+process_stratum_target::supports_agent supports_agent692,14266
+process_stratum_target::supports_btrace supports_btrace698,14334
+process_stratum_target::enable_btrace enable_btrace704,14419
+process_stratum_target::disable_btrace disable_btrace711,14578
+process_stratum_target::read_btrace read_btrace717,14710
+process_stratum_target::read_btrace_conf read_btrace_conf725,14899
+process_stratum_target::supports_range_stepping supports_range_stepping732,15063
+process_stratum_target::supports_pid_to_exec_file supports_pid_to_exec_file738,15140
+process_stratum_target::pid_to_exec_file pid_to_exec_file744,15227
+process_stratum_target::supports_multifs supports_multifs750,15359
+process_stratum_target::multifs_open multifs_open756,15428
+process_stratum_target::multifs_unlink multifs_unlink763,15579
+process_stratum_target::multifs_readlink multifs_readlink769,15691
+process_stratum_target::breakpoint_kind_from_pc breakpoint_kind_from_pc776,15849
+process_stratum_target::breakpoint_kind_from_current_state breakpoint_kind_from_current_state786,16077
+process_stratum_target::thread_name thread_name792,16215
+process_stratum_target::thread_handle thread_handle798,16295
+process_stratum_target::thread_pending_parent thread_pending_parent805,16429
+process_stratum_target::thread_pending_child thread_pending_child811,16534
+process_stratum_target::supports_software_single_step supports_software_single_step817,16629
+process_stratum_target::supports_catch_syscall supports_catch_syscall823,16712
+process_stratum_target::get_ipa_tdesc_idx get_ipa_tdesc_idx829,16787
+
+thread-db.cc,1637
+struct thread_db38,1167
+  struct ps_prochandle proc_handle;42,1280
+  td_thragent_t *thread_agent;thread_agent45,1366
+  int all_symbols_looked_up;50,1540
+  void *handle;handle54,1653
+  td_ta_new_ftype *td_ta_new_p;td_ta_new_p58,1723
+  td_ta_map_lwp2thr_ftype *td_ta_map_lwp2thr_p;td_ta_map_lwp2thr_p59,1755
+  td_thr_get_info_ftype *td_thr_get_info_p;td_thr_get_info_p60,1803
+  td_ta_thr_iter_ftype *td_ta_thr_iter_p;td_ta_thr_iter_p61,1847
+  td_thr_tls_get_addr_ftype *td_thr_tls_get_addr_p;td_thr_tls_get_addr_p62,1889
+  td_thr_tlsbase_ftype *td_thr_tlsbase_p;td_thr_tlsbase_p63,1941
+  td_symbol_list_ftype *td_symbol_list_p;td_symbol_list_p64,1983
+static char *libthread_db_search_path;libthread_db_search_path67,2029
+thread_db_err_str 73,2206
+thread_db_state_str 133,3873
+find_one_thread 161,4462
+attach_thread 217,6013
+maybe_attach_thread 252,6944
+find_new_threads_callback 271,7260
+thread_db_find_new_threads 310,8449
+thread_db_look_up_symbols 357,10086
+thread_db_look_up_one_symbol 372,10522
+thread_db_get_tls_address 386,11108
+thread_db_thread_handle 450,13018
+thread_db_load_search 479,13646
+try_thread_db_load_1 517,14564
+#define CHK(533,14940
+#define TDB_DLSYM(549,15277
+#undef CHK573,16027
+#undef TDB_DLSYM574,16038
+dladdr_to_soname 586,16273
+try_thread_db_load 598,16425
+try_thread_db_load_from_sdir 641,17414
+try_thread_db_load_from_dir 650,17619
+thread_db_load_search 677,18309
+thread_db_init 728,19508
+disable_thread_event_reporting 766,20972
+thread_db_detach 798,21775
+thread_db_mourn 811,22017
+thread_db_handle_monitor_command 840,22736
+thread_db_notice_clone 875,23533
+
+utils.cc,284
+#  define PREFIX 22,840
+#  define TOOLNAME 23,865
+#  define PREFIX 25,919
+#  define TOOLNAME 26,950
+abort_or_exit 36,1321
+malloc_failure 46,1404
+perror_with_name 59,1740
+verror 79,2137
+vwarning 92,2364
+internal_verror 102,2571
+internal_vwarning 114,2884
+paddress 126,3258
+
+../gdb/alloc.c,77
+xmalloc 48,1735
+xrealloc 65,2037
+xcalloc 85,2429
+xmalloc_failed 105,2806
+
+../gdb/arch/arc.c,270
+#define STATIC_IN_GDB 32,1043
+#define STATIC_IN_GDB34,1078
+arc_create_target_description 38,1137
+struct arc_arch_features_hasher87,2597
+  operator() operator()90,2645
+			  arc_arch_features_hasher> arc_tdesc_cache;100,2942
+arc_lookup_target_description 105,3035
+
+../gdb/arch/arm.c,311
+thumb_insn_size 37,1291
+condition_true 48,1452
+thumb_advance_itstate 95,2752
+arm_instruction_changes_pc 111,3131
+thumb_instruction_changes_pc 204,5219
+thumb2_instruction_changes_pc 231,5733
+shifted_reg_val 325,7475
+arm_create_target_description 378,8643
+arm_create_mprofile_target_description 423,9647
+
+../gdb/arch/arm-get-next-pcs.c,213
+arm_get_next_pcs_ctor 30,1016
+thumb_deal_with_atomic_sequence_raw 50,1739
+arm_deal_with_atomic_sequence_raw 188,6345
+thumb_get_next_pcs_raw 267,8953
+arm_get_next_pcs_raw 648,20781
+arm_get_next_pcs 913,26770
+
+../gdb/arch/arm-linux.c,82
+arm_linux_sigreturn_next_pc_offset 29,1094
+arm_linux_get_next_pcs_fixup 65,1952
+
+../gdb/arch/csky.c,39
+csky_create_target_description 25,865
+
+../gdb/arch/loongarch.c,304
+#define STATIC_IN_GDB 30,1020
+#define STATIC_IN_GDB32,1055
+loongarch_create_target_description 36,1114
+struct loongarch_gdbarch_features_hasher72,2217
+  operator() operator()75,2274
+			  loongarch_gdbarch_features_hasher> loongarch_tdesc_cache;85,2571
+loongarch_lookup_target_description 88,2655
+
+../gdb/arch/ppc-linux-common.c,104
+#define PPC_FEATURE_HAS_DFP	30,1118
+ppc_linux_has_isa205 34,1170
+ppc_linux_match_description 47,1724
+
+../gdb/arch/riscv.c,287
+#define STATIC_IN_GDB 30,1063
+#define STATIC_IN_GDB32,1098
+riscv_create_target_description 38,1183
+struct riscv_gdbarch_features_hasher99,2969
+  operator() operator()102,3022
+			  riscv_gdbarch_features_hasher> riscv_tdesc_cache;112,3311
+riscv_lookup_target_description 117,3413
+
+../gdb/nat/aarch64-mte-linux-ptrace.c,176
+aarch64_mte_linux_peek_error 36,1163
+aarch64_mte_linux_poke_error 58,1700
+prepare_tag_vector 86,2586
+aarch64_mte_fetch_memtags 112,3098
+aarch64_mte_store_memtags 165,4430
+
+../gdb/nat/aarch64-sve-linux-ptrace.c,238
+aarch64_sve_get_vq 34,1131
+aarch64_sve_set_vq 66,1849
+aarch64_sve_set_vq 94,2383
+aarch64_sve_get_sveregs 123,3289
+aarch64_maybe_swab128 151,4227
+aarch64_sve_regs_copy_to_reg_buf 167,4568
+aarch64_sve_regs_copy_from_reg_buf 256,7709
+
+../gdb/nat/linux-btrace.c,1081
+struct perf_event_bts44,1421
+  uint64_t from;47,1495
+  uint64_t to;50,1568
+struct perf_event_sample54,1628
+  struct perf_event_header header;57,1694
+  struct perf_event_bts bts;60,1778
+btrace_this_cpu 65,1878
+perf_event_new_data 106,2816
+perf_event_read 116,3112
+perf_event_read_all 168,4536
+linux_determine_kernel_start 186,4897
+perf_event_is_kernel_addr 227,5656
+perf_event_skip_bts_record 243,6103
+perf_event_sample_ok 255,6609
+perf_event_read_bts 280,7427
+intel_supports_bts 370,10050
+cpu_supports_bts 401,10625
+diagnose_perf_event_open_fail 424,11024
+linux_enable_bts 453,11805
+perf_event_pt_event_type 571,15050
+linux_enable_pt 605,15980
+linux_enable_pt 704,18738
+linux_enable_btrace 714,18987
+linux_disable_bts 735,19442
+linux_disable_pt 746,19683
+linux_disable_btrace 758,19928
+linux_read_bts 787,20555
+linux_fill_btrace_pt_config 881,23311
+linux_read_pt 890,23579
+linux_read_btrace 923,24370
+linux_btrace_conf 954,25203
+linux_enable_btrace 964,25384
+linux_disable_btrace 972,25518
+linux_read_btrace 980,25660
+linux_btrace_conf 990,25876
+
+../gdb/nat/linux-namespaces.c,1608
+bool debug_linux_namespaces;34,1129
+do_fork 39,1216
+do_setns 52,1371
+#define MSG_CMSG_CLOEXEC 67,1639
+struct linux_ns72,1701
+  const char *filename;filename75,1782
+  int initialized;78,1861
+  int supported;81,1945
+  ino_t id;87,2167
+linux_ns_filename 95,2365
+linux_ns_get_namespace 110,2737
+linux_ns_same 146,3349
+enum mnsh_msg_type222,6595
+    MNSH_MSG_ERROR,227,6767
+    MNSH_REQ_SETNS,234,7003
+    MNSH_REQ_OPEN,240,7258
+    MNSH_REQ_UNLINK,246,7506
+    MNSH_REQ_READLINK,252,7761
+    MNSH_RET_INT,257,7906
+    MNSH_RET_FD,261,8048
+    MNSH_RET_INTSTR,265,8159
+mnsh_debug_print_message 273,8357
+mnsh_send_message 337,9766
+mnsh_recv_message 412,11712
+#define mnsh_return_int(494,13742
+#define mnsh_return_fd(497,13859
+#define mnsh_return_intstr(503,14028
+mnsh_handle_setns 510,14261
+mnsh_handle_open 520,14485
+mnsh_handle_unlink 530,14762
+mnsh_handle_readlink 540,14989
+static void mnsh_main 552,15283
+struct linux_mnsh615,16600
+  pid_t pid;618,16644
+  int sock;621,16693
+  ino_t nsid;624,16769
+static int mnsh_creator_pid 630,16983
+linux_mntns_get_helper 638,17265
+mnsh_maybe_mourn_peer 701,18530
+#define mnsh_send_setns(760,19941
+#define mnsh_send_open(764,20072
+#define mnsh_send_unlink(768,20238
+#define mnsh_send_readlink(772,20388
+mnsh_recv_int 782,20774
+mnsh_recv_fd 808,21385
+mnsh_recv_intstr 840,22146
+enum mnsh_fs_code863,22566
+    MNSH_FS_ERROR 866,22635
+    MNSH_FS_DIRECT,870,22780
+    MNSH_FS_HELPER874,22921
+linux_mntns_access_fs 881,23073
+linux_mntns_open_cloexec 951,24497
+linux_mntns_unlink 985,25175
+linux_mntns_readlink 1018,25783
+
+../gdb/nat/linux-osdata.c,1821
+#define NAMELEN(42,1236
+typedef long long  PID_T;48,1434
+typedef long long TIME_T;53,1587
+#define MAX_PID_T_STRLEN 55,1614
+linux_common_core_of_thread 62,1819
+command_from_pid 106,3115
+commandline_from_pid 141,4172
+user_from_uid 196,5364
+get_process_owner 217,5871
+get_cores_used_by_process 237,6327
+get_core_array_size_using_sys_possible 277,7173
+get_core_array_size 323,8528
+linux_xfer_osdata_processes 337,9035
+struct pid_pgid_entry413,10630
+  pid_pgid_entry 415,10654
+  bool is_leader 421,10802
+  bool operator< 426,10861
+  PID_T pid,445,11281
+  PID_T pid, pgid;445,11281
+linux_xfer_osdata_processgroups 451,11380
+linux_xfer_osdata_threads 522,12975
+linux_xfer_osdata_cpus 604,14626
+linux_xfer_osdata_fds 672,15855
+format_socket_state 757,17614
+    TCP_ESTABLISHED 761,17742
+    TCP_SYN_SENT,762,17767
+    TCP_SYN_RECV,763,17785
+    TCP_FIN_WAIT1,764,17803
+    TCP_FIN_WAIT2,765,17822
+    TCP_TIME_WAIT,766,17841
+    TCP_CLOSE,767,17860
+    TCP_CLOSE_WAIT,768,17875
+    TCP_LAST_ACK,769,17895
+    TCP_LISTEN,770,17913
+    TCP_CLOSING771,17929
+union socket_addr803,18554
+    struct sockaddr sa;805,18576
+    struct sockaddr_in sin;806,18600
+    struct sockaddr_in6 sin6;807,18628
+print_sockets 816,18930
+linux_xfer_osdata_isockets 947,22615
+time_from_time_t 965,23047
+group_from_gid 986,23563
+linux_xfer_osdata_shm 1004,23970
+linux_xfer_osdata_sem 1100,26547
+linux_xfer_osdata_msg 1180,28554
+linux_xfer_osdata_modules 1274,31148
+static struct osdata_type 1349,32802
+  const char *type;type1350,32830
+  const char *title;title1351,32850
+  const char *description;description1352,32871
+  std::string buffer;1354,32933
+} osdata_table[osdata_table1355,32955
+linux_xfer_osdata_info_os_types 1384,34159
+common_getter 1410,34832
+linux_common_xfer_osdata 1433,35283
+
+../gdb/nat/linux-personality.c,139
+#  define ADDR_NO_RANDOMIZE 26,943
+maybe_disable_address_space_randomization 32,1118
+~maybe_disable_address_space_randomization 53,1756
+
+../gdb/nat/mips-linux-watch.c,437
+mips_linux_watch_get_irw_mask 26,924
+get_reg_mask 43,1376
+mips_linux_watch_get_num_valid 59,1790
+mips_linux_watch_get_watchlo 76,2197
+mips_linux_watch_set_watchlo 93,2608
+mips_linux_watch_get_watchhi 115,3197
+mips_linux_watch_set_watchhi 132,3608
+mips_linux_read_watch_registers 154,4233
+mips_linux_watch_type_to_irw 194,5132
+fill_mask 212,5458
+mips_linux_watch_try_one_watch 229,5783
+mips_linux_watch_populate_regs 318,8348
+
+../gdb/nat/ppc-linux.c,93
+ppc64_host_hwcap 33,1021
+ppc64_64bit_inferior_p 58,1413
+ppc_linux_target_wordsize 79,2054
+
+../gdb/nat/riscv-linux-tdesc.c,60
+# define NFPREG 31,1093
+riscv_linux_read_features 37,1187
+
+../gdb/nat/fork-inferior.c,444
+class execv_argv36,1267
+  char **argv argv51,1976
+  std::vector<const char *> m_argv;75,2714
+  std::string m_storage;81,3002
+execv_argv::init_for_no_shell init_for_no_shell93,3462
+escape_bang_in_quoted_argument 142,4839
+execv_argv::execv_argv execv_argv163,5385
+execv_argv::init_for_shell init_for_shell176,5655
+fork_inferior 268,7692
+startup_inferior 451,13795
+trace_start_error 574,17148
+trace_start_error_with_name 590,17400
+
+../gdb/target/target.c,86
+partial_memory_read 29,1093
+target_read_string 65,1916
+target_read_string 176,5425
+
+../gdb/target/waitstatus.c,47
+target_waitstatus::to_string to_string26,874

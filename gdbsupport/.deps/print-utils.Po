@@ -1,0 +1,512 @@
+print-utils.o: print-utils.cc common-defs.h ../gdbsupport/config.h \
+ ../gnulib/config.h d:\usr\lib\gcc\mingw32\9.2.0\include\stdarg.h \
+ ../gnulib/import/stdio.h d:\usr\include\stdio.h d:\usr\include\_mingw.h \
+ d:\usr\include\msvcrtver.h d:\usr\include\w32api.h \
+ d:\usr\include\sdkddkver.h d:\usr\include\features.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\stddef.h d:\usr\include\sys/types.h \
+ d:\usr\include\stdarg.h ../gnulib/import/sys/types.h \
+ d:\usr\include\sys\types.h d:\usr\include\io.h d:\usr\include\stdint.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\cstdlib \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\mingw32\bits\c++config.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\mingw32\bits\os_defines.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\mingw32\bits\cpu_defines.h \
+ d:\usr\include\stdlib.h d:\usr\include\errno.h d:\usr\include\alloca.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\std_abs.h \
+ ../gnulib/import/stdlib.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\stdlib.h \
+ ../gnulib/import/stdint.h d:\usr\lib\gcc\mingw32\9.2.0\include\stdint.h \
+ d:\usr\include\stdint.h ../gnulib/import/limits.h \
+ d:\usr\include\limits.h ../gnulib/import/inttypes.h \
+ d:\usr\include\inttypes.h ../gnulib/import/string.h \
+ d:\usr\include\string.h ../gnulib/import/strings.h \
+ d:\usr\include\strings.h d:\usr\include\wchar.h ../gnulib/import/errno.h \
+ d:\usr\include\errno.h ../gnulib/import/alloca.h ../include/ansidecl.h \
+ ../include/libiberty.h ../include/ansidecl.h ../gnulib/import/pathmax.h \
+ ../gnulib/import/unistd.h d:\usr\include\unistd.h d:\usr\include\io.h \
+ d:\usr\include\process.h d:\usr\include\getopt.h d:\usr\include\direct.h \
+ d:\usr\include\dos.h d:\usr\include\process.h ../include/gdb/signals.h \
+ ../include/gdb/signals.def gdb_locale.h ../gnulib/import/locale.h \
+ d:\usr\include\locale.h ../gnulib/import/setlocale_null.h \
+ ../gnulib/import/arg-nonnull.h d:\usr\include\libintl.h ptid.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\functional \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_function.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\move.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\concept_check.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\type_traits \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\backward\binders.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\new \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\exception \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\exception.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\exception_ptr.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\exception_defines.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\cxxabi_init_exception.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\typeinfo \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\hash_bytes.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\nested_exception.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\tuple \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\utility \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_relops.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_pair.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\initializer_list \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\array \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\stdexcept \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\string \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\stringfwd.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\memoryfwd.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\char_traits.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_algobase.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\functexcept.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\cpp_type_traits.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\ext\type_traits.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\ext\numeric_traits.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_iterator_base_types.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_iterator_base_funcs.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\debug\assertions.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_iterator.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\ptr_traits.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\debug\debug.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\predefined_ops.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\postypes.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\cwchar ../gnulib/import/wchar.h \
+ d:\usr\include\wchar.h ../gnulib/import/wctype.h \
+ ../gnulib/import/ctype.h d:\usr\include\ctype.h d:\usr\include\wctype.h \
+ d:\usr\include\wctype.h d:\usr\include\stdio.h d:\usr\include\stdlib.h \
+ d:\usr\include\direct.h d:\usr\include\sys/stat.h d:\usr\include\conio.h \
+ d:\usr\include\time.h d:\usr\include\locale.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\cstdint \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\allocator.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\mingw32\bits\c++allocator.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\ext\new_allocator.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\localefwd.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\mingw32\bits\c++locale.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\clocale \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\iosfwd \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\cctype \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\ostream_insert.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\cxxabi_forced.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\range_access.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\basic_string.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\ext\atomicity.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\mingw32\bits\gthr.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\mingw32\bits\gthr-default.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\mingw32\bits\atomic_word.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\ext\alloc_traits.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\alloc_traits.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\ext\string_conversions.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\cstdio \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\cerrno \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\functional_hash.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\basic_string.tcc \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\uses_allocator.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\invoke.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\refwrap.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\std_function.h \
+ ../gdbsupport/common-types.h common-types.h common-utils.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\vector \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_construct.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_uninitialized.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_vector.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_bvector.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\vector.tcc \
+ ../gdbsupport/byte-vector.h ../gdbsupport/def-vector.h \
+ ../gdbsupport/default-init-alloc.h ../gdbsupport/gdb_unique_ptr.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\memory \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_tempbuf.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_raw_storage_iter.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\ext\concurrence.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\unique_ptr.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\shared_ptr.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\shared_ptr_base.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\allocated_ptr.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\ext\aligned_buffer.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\shared_ptr_atomic.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\atomic_base.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\atomic_lockfree_defines.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\backward\auto_ptr.h \
+ ../gdbsupport/gdb-xfree.h ../gdbsupport/poison.h ../gdbsupport/traits.h \
+ ../include/obstack.h poison.h gdb_string_view.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\c++\limits gdb_assert.h errors.h \
+ gdb_string_view.tcc print-utils.h common-debug.h \
+ ../gdbsupport/gdb_optional.h ../gdbsupport/traits.h \
+ ../gdbsupport/preprocessor.h cleanups.h common-exceptions.h \
+ d:\usr\include\setjmp.h
+
+common-defs.h:
+
+../gdbsupport/config.h:
+
+../gnulib/config.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\stdarg.h:
+
+../gnulib/import/stdio.h:
+
+d:\usr\include\stdio.h:
+
+d:\usr\include\_mingw.h:
+
+d:\usr\include\msvcrtver.h:
+
+d:\usr\include\w32api.h:
+
+d:\usr\include\sdkddkver.h:
+
+d:\usr\include\features.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\stddef.h:
+
+d:\usr\include\sys/types.h:
+
+d:\usr\include\stdarg.h:
+
+../gnulib/import/sys/types.h:
+
+d:\usr\include\sys\types.h:
+
+d:\usr\include\io.h:
+
+d:\usr\include\stdint.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\cstdlib:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\mingw32\bits\c++config.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\mingw32\bits\os_defines.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\mingw32\bits\cpu_defines.h:
+
+d:\usr\include\stdlib.h:
+
+d:\usr\include\errno.h:
+
+d:\usr\include\alloca.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\std_abs.h:
+
+../gnulib/import/stdlib.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\stdlib.h:
+
+../gnulib/import/stdint.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\stdint.h:
+
+d:\usr\include\stdint.h:
+
+../gnulib/import/limits.h:
+
+d:\usr\include\limits.h:
+
+../gnulib/import/inttypes.h:
+
+d:\usr\include\inttypes.h:
+
+../gnulib/import/string.h:
+
+d:\usr\include\string.h:
+
+../gnulib/import/strings.h:
+
+d:\usr\include\strings.h:
+
+d:\usr\include\wchar.h:
+
+../gnulib/import/errno.h:
+
+d:\usr\include\errno.h:
+
+../gnulib/import/alloca.h:
+
+../include/ansidecl.h:
+
+../include/libiberty.h:
+
+../include/ansidecl.h:
+
+../gnulib/import/pathmax.h:
+
+../gnulib/import/unistd.h:
+
+d:\usr\include\unistd.h:
+
+d:\usr\include\io.h:
+
+d:\usr\include\process.h:
+
+d:\usr\include\getopt.h:
+
+d:\usr\include\direct.h:
+
+d:\usr\include\dos.h:
+
+d:\usr\include\process.h:
+
+../include/gdb/signals.h:
+
+../include/gdb/signals.def:
+
+gdb_locale.h:
+
+../gnulib/import/locale.h:
+
+d:\usr\include\locale.h:
+
+../gnulib/import/setlocale_null.h:
+
+../gnulib/import/arg-nonnull.h:
+
+d:\usr\include\libintl.h:
+
+ptid.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\functional:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_function.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\move.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\concept_check.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\type_traits:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\backward\binders.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\new:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\exception:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\exception.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\exception_ptr.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\exception_defines.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\cxxabi_init_exception.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\typeinfo:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\hash_bytes.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\nested_exception.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\tuple:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\utility:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_relops.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_pair.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\initializer_list:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\array:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\stdexcept:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\string:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\stringfwd.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\memoryfwd.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\char_traits.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_algobase.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\functexcept.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\cpp_type_traits.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\ext\type_traits.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\ext\numeric_traits.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_iterator_base_types.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_iterator_base_funcs.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\debug\assertions.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_iterator.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\ptr_traits.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\debug\debug.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\predefined_ops.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\postypes.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\cwchar:
+
+../gnulib/import/wchar.h:
+
+d:\usr\include\wchar.h:
+
+../gnulib/import/wctype.h:
+
+../gnulib/import/ctype.h:
+
+d:\usr\include\ctype.h:
+
+d:\usr\include\wctype.h:
+
+d:\usr\include\wctype.h:
+
+d:\usr\include\stdio.h:
+
+d:\usr\include\stdlib.h:
+
+d:\usr\include\direct.h:
+
+d:\usr\include\sys/stat.h:
+
+d:\usr\include\conio.h:
+
+d:\usr\include\time.h:
+
+d:\usr\include\locale.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\cstdint:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\allocator.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\mingw32\bits\c++allocator.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\ext\new_allocator.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\localefwd.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\mingw32\bits\c++locale.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\clocale:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\iosfwd:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\cctype:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\ostream_insert.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\cxxabi_forced.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\range_access.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\basic_string.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\ext\atomicity.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\mingw32\bits\gthr.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\mingw32\bits\gthr-default.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\mingw32\bits\atomic_word.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\ext\alloc_traits.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\alloc_traits.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\ext\string_conversions.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\cstdio:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\cerrno:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\functional_hash.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\basic_string.tcc:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\uses_allocator.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\invoke.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\refwrap.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\std_function.h:
+
+../gdbsupport/common-types.h:
+
+common-types.h:
+
+common-utils.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\vector:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_construct.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_uninitialized.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_vector.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_bvector.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\vector.tcc:
+
+../gdbsupport/byte-vector.h:
+
+../gdbsupport/def-vector.h:
+
+../gdbsupport/default-init-alloc.h:
+
+../gdbsupport/gdb_unique_ptr.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\memory:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_tempbuf.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_raw_storage_iter.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\ext\concurrence.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\unique_ptr.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\shared_ptr.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\shared_ptr_base.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\allocated_ptr.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\ext\aligned_buffer.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\shared_ptr_atomic.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\atomic_base.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\bits\atomic_lockfree_defines.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\backward\auto_ptr.h:
+
+../gdbsupport/gdb-xfree.h:
+
+../gdbsupport/poison.h:
+
+../gdbsupport/traits.h:
+
+../include/obstack.h:
+
+poison.h:
+
+gdb_string_view.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\c++\limits:
+
+gdb_assert.h:
+
+errors.h:
+
+gdb_string_view.tcc:
+
+print-utils.h:
+
+common-debug.h:
+
+../gdbsupport/gdb_optional.h:
+
+../gdbsupport/traits.h:
+
+../gdbsupport/preprocessor.h:
+
+cleanups.h:
+
+common-exceptions.h:
+
+d:\usr\include\setjmp.h:

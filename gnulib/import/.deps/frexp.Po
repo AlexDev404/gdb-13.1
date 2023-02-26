@@ -1,0 +1,27 @@
+frexp.o: frexp.c ../config.h math.h d:\usr\include\math.h \
+ d:\usr\include\_mingw.h d:\usr\include\msvcrtver.h \
+ d:\usr\include\w32api.h d:\usr\include\sdkddkver.h \
+ d:\usr\include\features.h d:\usr\lib\gcc\mingw32\9.2.0\include\float.h \
+ d:\usr\include\float.h isnand-nolibm.h
+
+../config.h:
+
+math.h:
+
+d:\usr\include\math.h:
+
+d:\usr\include\_mingw.h:
+
+d:\usr\include\msvcrtver.h:
+
+d:\usr\include\w32api.h:
+
+d:\usr\include\sdkddkver.h:
+
+d:\usr\include\features.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\float.h:
+
+d:\usr\include\float.h:
+
+isnand-nolibm.h:

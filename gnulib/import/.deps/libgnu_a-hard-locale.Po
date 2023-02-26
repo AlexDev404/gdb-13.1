@@ -1,0 +1,44 @@
+libgnu_a-hard-locale.o: hard-locale.c ../config.h hard-locale.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\stdbool.h locale.h \
+ d:\usr\include\locale.h d:\usr\include\_mingw.h \
+ d:\usr\include\msvcrtver.h d:\usr\include\w32api.h \
+ d:\usr\include\sdkddkver.h d:\usr\include\features.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\stddef.h setlocale_null.h \
+ arg-nonnull.h string.h d:\usr\include\string.h strings.h \
+ d:\usr\include\strings.h d:\usr\include\wchar.h
+
+../config.h:
+
+hard-locale.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\stdbool.h:
+
+locale.h:
+
+d:\usr\include\locale.h:
+
+d:\usr\include\_mingw.h:
+
+d:\usr\include\msvcrtver.h:
+
+d:\usr\include\w32api.h:
+
+d:\usr\include\sdkddkver.h:
+
+d:\usr\include\features.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\stddef.h:
+
+setlocale_null.h:
+
+arg-nonnull.h:
+
+string.h:
+
+d:\usr\include\string.h:
+
+strings.h:
+
+d:\usr\include\strings.h:
+
+d:\usr\include\wchar.h:

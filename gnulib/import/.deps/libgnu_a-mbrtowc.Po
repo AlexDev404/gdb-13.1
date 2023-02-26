@@ -1,0 +1,84 @@
+libgnu_a-mbrtowc.o: mbrtowc.c ../config.h wchar.h \
+ d:\usr\include\features.h d:\usr\lib\gcc\mingw32\9.2.0\include\stddef.h \
+ d:\usr\include\wchar.h d:\usr\include\_mingw.h \
+ d:\usr\include\msvcrtver.h d:\usr\include\w32api.h \
+ d:\usr\include\sdkddkver.h wctype.h ctype.h d:\usr\include\ctype.h \
+ d:\usr\include\wctype.h d:\usr\include\wctype.h sys/types.h \
+ d:\usr\include\sys\types.h d:\usr\include\stdio.h \
+ d:\usr\include\sys/types.h d:\usr\include\stdarg.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\stdarg.h d:\usr\include\stdlib.h \
+ d:\usr\include\direct.h d:\usr\include\sys/stat.h d:\usr\include\conio.h \
+ d:\usr\include\io.h d:\usr\include\stdint.h d:\usr\include\time.h \
+ d:\usr\include\locale.h d:\usr\include\process.h hard-locale.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\stdbool.h locale.h \
+ d:\usr\include\locale.h setlocale_null.h arg-nonnull.h
+
+../config.h:
+
+wchar.h:
+
+d:\usr\include\features.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\stddef.h:
+
+d:\usr\include\wchar.h:
+
+d:\usr\include\_mingw.h:
+
+d:\usr\include\msvcrtver.h:
+
+d:\usr\include\w32api.h:
+
+d:\usr\include\sdkddkver.h:
+
+wctype.h:
+
+ctype.h:
+
+d:\usr\include\ctype.h:
+
+d:\usr\include\wctype.h:
+
+d:\usr\include\wctype.h:
+
+sys/types.h:
+
+d:\usr\include\sys\types.h:
+
+d:\usr\include\stdio.h:
+
+d:\usr\include\sys/types.h:
+
+d:\usr\include\stdarg.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\stdarg.h:
+
+d:\usr\include\stdlib.h:
+
+d:\usr\include\direct.h:
+
+d:\usr\include\sys/stat.h:
+
+d:\usr\include\conio.h:
+
+d:\usr\include\io.h:
+
+d:\usr\include\stdint.h:
+
+d:\usr\include\time.h:
+
+d:\usr\include\locale.h:
+
+d:\usr\include\process.h:
+
+hard-locale.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\stdbool.h:
+
+locale.h:
+
+d:\usr\include\locale.h:
+
+setlocale_null.h:
+
+arg-nonnull.h:

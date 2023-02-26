@@ -1,0 +1,786 @@
+guile/scm-lazy-string.o: guile/scm-lazy-string.c defs.h \
+ ../gdbsupport/common-defs.h ../gdbsupport/config.h ../gnulib/config.h \
+ ../gnulib/import/stdio.h ../gnulib/import/stdlib.h \
+ ../gnulib/import/stdint.h ../gnulib/import/string.h \
+ ../gnulib/import/errno.h ../gnulib/import/alloca.h ../include/ansidecl.h \
+ ../include/libiberty.h ../include/ansidecl.h ../gnulib/import/pathmax.h \
+ ../gnulib/import/unistd.h ../include/gdb/signals.h \
+ ../include/gdb/signals.def ../gdbsupport/gdb_locale.h \
+ ../gnulib/import/locale.h ../gdbsupport/ptid.h \
+ ../gdbsupport/common-types.h ../gdbsupport/common-types.h \
+ ../gdbsupport/common-utils.h ../gdbsupport/byte-vector.h \
+ ../gdbsupport/def-vector.h ../gdbsupport/default-init-alloc.h \
+ ../gdbsupport/gdb_unique_ptr.h ../gdbsupport/gdb-xfree.h \
+ ../gdbsupport/poison.h ../gdbsupport/traits.h ../include/obstack.h \
+ ../gdbsupport/poison.h ../gdbsupport/gdb_string_view.h \
+ ../gdbsupport/gdb_assert.h ../gdbsupport/errors.h \
+ ../gdbsupport/gdb_string_view.tcc ../gdbsupport/print-utils.h \
+ ../gdbsupport/common-debug.h ../gdbsupport/gdb_optional.h \
+ ../gdbsupport/traits.h ../gdbsupport/preprocessor.h \
+ ../gdbsupport/cleanups.h ../gdbsupport/common-exceptions.h config.h \
+ ../bfd/bfd.h ../include/symcat.h ../include/diagnostics.h \
+ ../gnulib/import/sys/stat.h ../gnulib/import/fcntl.h gdb_wchar.h \
+ ui-file.h ui-style.h ../gdbsupport/host-defs.h \
+ ../gdbsupport/enum-flags.h ../gdbsupport/array-view.h \
+ ../include/hashtab.h ../include/fopen-bin.h utils.h exceptions.h \
+ ui-out.h ../gdbsupport/scoped_restore.h charset.h value.h frame.h \
+ frame-info.h ../gdbsupport/intrusive_list.h frame-id.h language.h \
+ symtab.h ../gdbsupport/gdb_vecs.h gdbtypes.h ../gdbsupport/gdb-hashtab.h \
+ ../gdbsupport/offset-type.h ../gdbsupport/underlying.h \
+ ../gdbsupport/print-utils.h ../gdbsupport/function-view.h \
+ ../gdbsupport/invoke-result.h ../include/dwarf2.h ../include/dwarf2.def \
+ ../gdbsupport/gdb_obstack.h gmp-utils.h defs.h type-codes.def \
+ ../gdbsupport/gdb_regex.h ../include/xregex.h ../include/xregex2.h \
+ ../gdbsupport/gdb_string_view.h ../gdbsupport/next-iterator.h \
+ ../gdbsupport/iterator-range.h completer.h command.h gdb-demangle.h \
+ split-name.h minsyms.h expression.h std-operator.def cli/cli-option.h \
+ completer.h command.h ../gdbsupport/common-debug.h \
+ unwind_stop_reasons.def extension.h mi/mi-cmds.h mi/mi-main.h \
+ ../gdbsupport/gdb_ref_ptr.h valprint.h language.h guile/guile-internal.h \
+ extension-priv.h ../gnulib/import/signal.h cli/cli-script.h symtab.h \
+ d:/usr/include/guile/2.0/libguile.h \
+ d:/usr/include/guile/2.0/libguile/__scm.h \
+ d:/usr/include/guile/2.0/libguile/scmconfig.h \
+ ../gnulib/import/sys/time.h d:/usr/include/guile/2.0/libguile/tags.h \
+ d:/usr/include/guile/2.0/libguile/__scm.h \
+ d:/usr/include/guile/2.0/libguile/alist.h \
+ d:/usr/include/guile/2.0/libguile/arbiters.h \
+ d:/usr/include/guile/2.0/libguile/array-handle.h \
+ d:/usr/include/guile/2.0/libguile/error.h \
+ d:/usr/include/guile/2.0/libguile/numbers.h \
+ d:/usr/include/guile/2.0/libguile/print.h \
+ d:/usr/include/guile/2.0/libguile/chars.h \
+ d:/usr/include/guile/2.0/libguile/options.h \
+ d:/usr/include/guile/2.0/libguile/array-map.h \
+ d:/usr/include/guile/2.0/libguile/arrays.h \
+ d:/usr/include/guile/2.0/libguile/async.h \
+ d:/usr/include/guile/2.0/libguile/root.h \
+ d:/usr/include/guile/2.0/libguile/debug.h \
+ d:/usr/include/guile/2.0/libguile/throw.h \
+ d:/usr/include/guile/2.0/libguile/threads.h \
+ d:/usr/include/guile/2.0/libguile/procs.h \
+ d:/usr/include/guile/2.0/libguile/iselect.h \
+ d:/usr/include/guile/2.0/libguile/dynwind.h \
+ d:/usr/include/guile/2.0/libguile/continuations.h \
+ d:/usr/include/guile/2.0/libguile/null-threads.h \
+ d:/usr/include/guile/2.0/libguile/boolean.h \
+ d:/usr/include/guile/2.0/libguile/bitvectors.h \
+ d:/usr/include/guile/2.0/libguile/array-handle.h \
+ d:/usr/include/guile/2.0/libguile/bytevectors.h \
+ d:/usr/include/guile/2.0/libguile/chars.h \
+ d:/usr/include/guile/2.0/libguile/continuations.h \
+ d:/usr/include/guile/2.0/libguile/dynl.h \
+ d:/usr/include/guile/2.0/libguile/dynwind.h \
+ d:/usr/include/guile/2.0/libguile/eq.h \
+ d:/usr/include/guile/2.0/libguile/error.h \
+ d:/usr/include/guile/2.0/libguile/eval.h \
+ d:/usr/include/guile/2.0/libguile/struct.h \
+ d:/usr/include/guile/2.0/libguile/memoize.h \
+ d:/usr/include/guile/2.0/libguile/evalext.h \
+ d:/usr/include/guile/2.0/libguile/extensions.h \
+ d:/usr/include/guile/2.0/libguile/feature.h \
+ d:/usr/include/guile/2.0/libguile/filesys.h \
+ d:/usr/include/guile/2.0/libguile/finalizers.h \
+ d:/usr/include/guile/2.0/libguile/fluids.h \
+ d:/usr/include/guile/2.0/libguile/vectors.h \
+ d:/usr/include/guile/2.0/libguile/foreign.h \
+ d:/usr/include/guile/2.0/libguile/fports.h \
+ d:/usr/include/guile/2.0/libguile/ports.h \
+ d:/usr/include/guile/2.0/libguile/strings.h \
+ d:/usr/include/guile/2.0/libguile/gc.h \
+ d:/usr/include/guile/2.0/libguile/hooks.h \
+ d:/usr/include/guile/2.0/libguile/gdbint.h \
+ d:/usr/include/guile/2.0/libguile/generalized-arrays.h \
+ d:/usr/include/guile/2.0/libguile/generalized-vectors.h \
+ d:/usr/include/guile/2.0/libguile/goops.h \
+ d:/usr/include/guile/2.0/libguile/validate.h \
+ d:/usr/include/guile/2.0/libguile/gsubr.h \
+ d:/usr/include/guile/2.0/libguile/guardians.h \
+ d:/usr/include/guile/2.0/libguile/hash.h \
+ d:/usr/include/guile/2.0/libguile/hashtab.h \
+ d:/usr/include/guile/2.0/libguile/weaks.h \
+ d:/usr/include/guile/2.0/libguile/i18n.h \
+ d:/usr/include/guile/2.0/libguile/init.h \
+ d:/usr/include/guile/2.0/libguile/ioext.h \
+ d:/usr/include/guile/2.0/libguile/rdelim.h \
+ d:/usr/include/guile/2.0/libguile/rw.h \
+ d:/usr/include/guile/2.0/libguile/keywords.h \
+ d:/usr/include/guile/2.0/libguile/list.h \
+ d:/usr/include/guile/2.0/libguile/load.h \
+ d:/usr/include/guile/2.0/libguile/macros.h \
+ d:/usr/include/guile/2.0/libguile/mallocs.h \
+ d:/usr/include/guile/2.0/libguile/modules.h \
+ d:/usr/include/guile/2.0/libguile/net_db.h \
+ d:/usr/include/guile/2.0/libguile/numbers.h \
+ d:/usr/include/guile/2.0/libguile/objprop.h \
+ d:/usr/include/guile/2.0/libguile/options.h \
+ d:/usr/include/guile/2.0/libguile/pairs.h \
+ d:/usr/include/guile/2.0/libguile/ports.h \
+ d:/usr/include/guile/2.0/libguile/posix.h \
+ d:/usr/include/guile/2.0/libguile/print.h \
+ d:/usr/include/guile/2.0/libguile/procprop.h \
+ d:/usr/include/guile/2.0/libguile/promises.h \
+ d:/usr/include/guile/2.0/libguile/procs.h \
+ d:/usr/include/guile/2.0/libguile/r6rs-ports.h \
+ d:/usr/include/guile/2.0/libguile/random.h \
+ d:/usr/include/guile/2.0/libguile/read.h \
+ d:/usr/include/guile/2.0/libguile/root.h \
+ d:/usr/include/guile/2.0/libguile/scmsigs.h \
+ d:/usr/include/guile/2.0/libguile/script.h \
+ d:/usr/include/guile/2.0/libguile/simpos.h \
+ d:/usr/include/guile/2.0/libguile/smob.h \
+ d:/usr/include/guile/2.0/libguile/snarf.h \
+ d:/usr/include/guile/2.0/libguile/socket.h \
+ d:/usr/include/guile/2.0/libguile/sort.h \
+ d:/usr/include/guile/2.0/libguile/srcprop.h \
+ d:/usr/include/guile/2.0/libguile/stackchk.h \
+ d:/usr/include/guile/2.0/libguile/stime.h \
+ d:/usr/include/guile/2.0/libguile/strings.h \
+ d:/usr/include/guile/2.0/libguile/srfi-13.h \
+ d:/usr/include/guile/2.0/libguile/srfi-14.h \
+ d:/usr/include/guile/2.0/libguile/strorder.h \
+ d:/usr/include/guile/2.0/libguile/strports.h \
+ d:/usr/include/guile/2.0/libguile/struct.h \
+ d:/usr/include/guile/2.0/libguile/symbols.h \
+ d:/usr/include/guile/2.0/libguile/tags.h \
+ d:/usr/include/guile/2.0/libguile/throw.h \
+ d:/usr/include/guile/2.0/libguile/trees.h \
+ d:/usr/include/guile/2.0/libguile/uniform.h \
+ d:/usr/include/guile/2.0/libguile/generalized-vectors.h \
+ d:/usr/include/guile/2.0/libguile/validate.h \
+ d:/usr/include/guile/2.0/libguile/values.h \
+ d:/usr/include/guile/2.0/libguile/variable.h \
+ d:/usr/include/guile/2.0/libguile/smob.h \
+ d:/usr/include/guile/2.0/libguile/vectors.h \
+ d:/usr/include/guile/2.0/libguile/srfi-4.h \
+ d:/usr/include/guile/2.0/libguile/version.h \
+ d:/usr/include/guile/2.0/libguile/vports.h \
+ d:/usr/include/guile/2.0/libguile/weaks.h \
+ d:/usr/include/guile/2.0/libguile/backtrace.h \
+ d:/usr/include/guile/2.0/libguile/debug.h \
+ d:/usr/include/guile/2.0/libguile/stacks.h \
+ d:/usr/include/guile/2.0/libguile/frames.h \
+ d:/usr/include/guile/2.0/libguile/programs.h \
+ d:/usr/include/guile/2.0/libguile/objcodes.h \
+ d:/usr/include/guile/2.0/libguile/threads.h \
+ d:/usr/include/guile/2.0/libguile/inline.h \
+ d:/usr/include/guile/2.0/libguile/pairs.h \
+ d:/usr/include/guile/2.0/libguile/gc.h \
+ d:/usr/include/guile/2.0/libguile/deprecated.h \
+ d:/usr/include/guile/2.0/libguile/eval.h objfiles.h objfile-flags.h \
+ symfile.h probe.h symfile-add-flags.h gdb_bfd.h registry.h \
+ target-section.h quick-symbol.h progspace.h target.h infrun.h \
+ gdbthread.h breakpoint.h value.h ax.h ../gdbsupport/ax.def \
+ ../gdbsupport/break-common.h location.h \
+ ../gdbsupport/filtered-iterator.h ../gdbsupport/refcounted-object.h \
+ ../gdbsupport/safe-iterator.h target/waitstatus.h \
+ ../gdbsupport/gdb_signals.h btrace.h ../gdbsupport/btrace-common.h \
+ cli/cli-utils.h ../gdbsupport/common-gdbthread.h \
+ ../gdbsupport/forward-scope-exit.h ../gdbsupport/scope-exit.h \
+ displaced-stepping.h thread-fsm.h mi/mi-common.h thread-iter.h \
+ ../gdbsupport/reference-to-pointer-iterator.h target/target.h \
+ target/waitstatus.h target/wait.h target/resume.h target/wait.h \
+ memattr.h record.h disasm-flags.h tracepoint.h memrange.h \
+ ../gdbsupport/fileio.h solist.h psymtab.h bcache.h gdbarch.h \
+ ../include/dis-asm.h osabi.h ../gdbsupport/gdb-checked-static-cast.h \
+ regcache.h ../gdbsupport/common-regcache.h gdbarch-gen.h jit.h
+
+defs.h:
+
+../gdbsupport/common-defs.h:
+
+../gdbsupport/config.h:
+
+../gnulib/config.h:
+
+../gnulib/import/stdio.h:
+
+../gnulib/import/stdlib.h:
+
+../gnulib/import/stdint.h:
+
+../gnulib/import/string.h:
+
+../gnulib/import/errno.h:
+
+../gnulib/import/alloca.h:
+
+../include/ansidecl.h:
+
+../include/libiberty.h:
+
+../include/ansidecl.h:
+
+../gnulib/import/pathmax.h:
+
+../gnulib/import/unistd.h:
+
+../include/gdb/signals.h:
+
+../include/gdb/signals.def:
+
+../gdbsupport/gdb_locale.h:
+
+../gnulib/import/locale.h:
+
+../gdbsupport/ptid.h:
+
+../gdbsupport/common-types.h:
+
+../gdbsupport/common-types.h:
+
+../gdbsupport/common-utils.h:
+
+../gdbsupport/byte-vector.h:
+
+../gdbsupport/def-vector.h:
+
+../gdbsupport/default-init-alloc.h:
+
+../gdbsupport/gdb_unique_ptr.h:
+
+../gdbsupport/gdb-xfree.h:
+
+../gdbsupport/poison.h:
+
+../gdbsupport/traits.h:
+
+../include/obstack.h:
+
+../gdbsupport/poison.h:
+
+../gdbsupport/gdb_string_view.h:
+
+../gdbsupport/gdb_assert.h:
+
+../gdbsupport/errors.h:
+
+../gdbsupport/gdb_string_view.tcc:
+
+../gdbsupport/print-utils.h:
+
+../gdbsupport/common-debug.h:
+
+../gdbsupport/gdb_optional.h:
+
+../gdbsupport/traits.h:
+
+../gdbsupport/preprocessor.h:
+
+../gdbsupport/cleanups.h:
+
+../gdbsupport/common-exceptions.h:
+
+config.h:
+
+../bfd/bfd.h:
+
+../include/symcat.h:
+
+../include/diagnostics.h:
+
+../gnulib/import/sys/stat.h:
+
+../gnulib/import/fcntl.h:
+
+gdb_wchar.h:
+
+ui-file.h:
+
+ui-style.h:
+
+../gdbsupport/host-defs.h:
+
+../gdbsupport/enum-flags.h:
+
+../gdbsupport/array-view.h:
+
+../include/hashtab.h:
+
+../include/fopen-bin.h:
+
+utils.h:
+
+exceptions.h:
+
+ui-out.h:
+
+../gdbsupport/scoped_restore.h:
+
+charset.h:
+
+value.h:
+
+frame.h:
+
+frame-info.h:
+
+../gdbsupport/intrusive_list.h:
+
+frame-id.h:
+
+language.h:
+
+symtab.h:
+
+../gdbsupport/gdb_vecs.h:
+
+gdbtypes.h:
+
+../gdbsupport/gdb-hashtab.h:
+
+../gdbsupport/offset-type.h:
+
+../gdbsupport/underlying.h:
+
+../gdbsupport/print-utils.h:
+
+../gdbsupport/function-view.h:
+
+../gdbsupport/invoke-result.h:
+
+../include/dwarf2.h:
+
+../include/dwarf2.def:
+
+../gdbsupport/gdb_obstack.h:
+
+gmp-utils.h:
+
+defs.h:
+
+type-codes.def:
+
+../gdbsupport/gdb_regex.h:
+
+../include/xregex.h:
+
+../include/xregex2.h:
+
+../gdbsupport/gdb_string_view.h:
+
+../gdbsupport/next-iterator.h:
+
+../gdbsupport/iterator-range.h:
+
+completer.h:
+
+command.h:
+
+gdb-demangle.h:
+
+split-name.h:
+
+minsyms.h:
+
+expression.h:
+
+std-operator.def:
+
+cli/cli-option.h:
+
+completer.h:
+
+command.h:
+
+../gdbsupport/common-debug.h:
+
+unwind_stop_reasons.def:
+
+extension.h:
+
+mi/mi-cmds.h:
+
+mi/mi-main.h:
+
+../gdbsupport/gdb_ref_ptr.h:
+
+valprint.h:
+
+language.h:
+
+guile/guile-internal.h:
+
+extension-priv.h:
+
+../gnulib/import/signal.h:
+
+cli/cli-script.h:
+
+symtab.h:
+
+d:/usr/include/guile/2.0/libguile.h:
+
+d:/usr/include/guile/2.0/libguile/__scm.h:
+
+d:/usr/include/guile/2.0/libguile/scmconfig.h:
+
+../gnulib/import/sys/time.h:
+
+d:/usr/include/guile/2.0/libguile/tags.h:
+
+d:/usr/include/guile/2.0/libguile/__scm.h:
+
+d:/usr/include/guile/2.0/libguile/alist.h:
+
+d:/usr/include/guile/2.0/libguile/arbiters.h:
+
+d:/usr/include/guile/2.0/libguile/array-handle.h:
+
+d:/usr/include/guile/2.0/libguile/error.h:
+
+d:/usr/include/guile/2.0/libguile/numbers.h:
+
+d:/usr/include/guile/2.0/libguile/print.h:
+
+d:/usr/include/guile/2.0/libguile/chars.h:
+
+d:/usr/include/guile/2.0/libguile/options.h:
+
+d:/usr/include/guile/2.0/libguile/array-map.h:
+
+d:/usr/include/guile/2.0/libguile/arrays.h:
+
+d:/usr/include/guile/2.0/libguile/async.h:
+
+d:/usr/include/guile/2.0/libguile/root.h:
+
+d:/usr/include/guile/2.0/libguile/debug.h:
+
+d:/usr/include/guile/2.0/libguile/throw.h:
+
+d:/usr/include/guile/2.0/libguile/threads.h:
+
+d:/usr/include/guile/2.0/libguile/procs.h:
+
+d:/usr/include/guile/2.0/libguile/iselect.h:
+
+d:/usr/include/guile/2.0/libguile/dynwind.h:
+
+d:/usr/include/guile/2.0/libguile/continuations.h:
+
+d:/usr/include/guile/2.0/libguile/null-threads.h:
+
+d:/usr/include/guile/2.0/libguile/boolean.h:
+
+d:/usr/include/guile/2.0/libguile/bitvectors.h:
+
+d:/usr/include/guile/2.0/libguile/array-handle.h:
+
+d:/usr/include/guile/2.0/libguile/bytevectors.h:
+
+d:/usr/include/guile/2.0/libguile/chars.h:
+
+d:/usr/include/guile/2.0/libguile/continuations.h:
+
+d:/usr/include/guile/2.0/libguile/dynl.h:
+
+d:/usr/include/guile/2.0/libguile/dynwind.h:
+
+d:/usr/include/guile/2.0/libguile/eq.h:
+
+d:/usr/include/guile/2.0/libguile/error.h:
+
+d:/usr/include/guile/2.0/libguile/eval.h:
+
+d:/usr/include/guile/2.0/libguile/struct.h:
+
+d:/usr/include/guile/2.0/libguile/memoize.h:
+
+d:/usr/include/guile/2.0/libguile/evalext.h:
+
+d:/usr/include/guile/2.0/libguile/extensions.h:
+
+d:/usr/include/guile/2.0/libguile/feature.h:
+
+d:/usr/include/guile/2.0/libguile/filesys.h:
+
+d:/usr/include/guile/2.0/libguile/finalizers.h:
+
+d:/usr/include/guile/2.0/libguile/fluids.h:
+
+d:/usr/include/guile/2.0/libguile/vectors.h:
+
+d:/usr/include/guile/2.0/libguile/foreign.h:
+
+d:/usr/include/guile/2.0/libguile/fports.h:
+
+d:/usr/include/guile/2.0/libguile/ports.h:
+
+d:/usr/include/guile/2.0/libguile/strings.h:
+
+d:/usr/include/guile/2.0/libguile/gc.h:
+
+d:/usr/include/guile/2.0/libguile/hooks.h:
+
+d:/usr/include/guile/2.0/libguile/gdbint.h:
+
+d:/usr/include/guile/2.0/libguile/generalized-arrays.h:
+
+d:/usr/include/guile/2.0/libguile/generalized-vectors.h:
+
+d:/usr/include/guile/2.0/libguile/goops.h:
+
+d:/usr/include/guile/2.0/libguile/validate.h:
+
+d:/usr/include/guile/2.0/libguile/gsubr.h:
+
+d:/usr/include/guile/2.0/libguile/guardians.h:
+
+d:/usr/include/guile/2.0/libguile/hash.h:
+
+d:/usr/include/guile/2.0/libguile/hashtab.h:
+
+d:/usr/include/guile/2.0/libguile/weaks.h:
+
+d:/usr/include/guile/2.0/libguile/i18n.h:
+
+d:/usr/include/guile/2.0/libguile/init.h:
+
+d:/usr/include/guile/2.0/libguile/ioext.h:
+
+d:/usr/include/guile/2.0/libguile/rdelim.h:
+
+d:/usr/include/guile/2.0/libguile/rw.h:
+
+d:/usr/include/guile/2.0/libguile/keywords.h:
+
+d:/usr/include/guile/2.0/libguile/list.h:
+
+d:/usr/include/guile/2.0/libguile/load.h:
+
+d:/usr/include/guile/2.0/libguile/macros.h:
+
+d:/usr/include/guile/2.0/libguile/mallocs.h:
+
+d:/usr/include/guile/2.0/libguile/modules.h:
+
+d:/usr/include/guile/2.0/libguile/net_db.h:
+
+d:/usr/include/guile/2.0/libguile/numbers.h:
+
+d:/usr/include/guile/2.0/libguile/objprop.h:
+
+d:/usr/include/guile/2.0/libguile/options.h:
+
+d:/usr/include/guile/2.0/libguile/pairs.h:
+
+d:/usr/include/guile/2.0/libguile/ports.h:
+
+d:/usr/include/guile/2.0/libguile/posix.h:
+
+d:/usr/include/guile/2.0/libguile/print.h:
+
+d:/usr/include/guile/2.0/libguile/procprop.h:
+
+d:/usr/include/guile/2.0/libguile/promises.h:
+
+d:/usr/include/guile/2.0/libguile/procs.h:
+
+d:/usr/include/guile/2.0/libguile/r6rs-ports.h:
+
+d:/usr/include/guile/2.0/libguile/random.h:
+
+d:/usr/include/guile/2.0/libguile/read.h:
+
+d:/usr/include/guile/2.0/libguile/root.h:
+
+d:/usr/include/guile/2.0/libguile/scmsigs.h:
+
+d:/usr/include/guile/2.0/libguile/script.h:
+
+d:/usr/include/guile/2.0/libguile/simpos.h:
+
+d:/usr/include/guile/2.0/libguile/smob.h:
+
+d:/usr/include/guile/2.0/libguile/snarf.h:
+
+d:/usr/include/guile/2.0/libguile/socket.h:
+
+d:/usr/include/guile/2.0/libguile/sort.h:
+
+d:/usr/include/guile/2.0/libguile/srcprop.h:
+
+d:/usr/include/guile/2.0/libguile/stackchk.h:
+
+d:/usr/include/guile/2.0/libguile/stime.h:
+
+d:/usr/include/guile/2.0/libguile/strings.h:
+
+d:/usr/include/guile/2.0/libguile/srfi-13.h:
+
+d:/usr/include/guile/2.0/libguile/srfi-14.h:
+
+d:/usr/include/guile/2.0/libguile/strorder.h:
+
+d:/usr/include/guile/2.0/libguile/strports.h:
+
+d:/usr/include/guile/2.0/libguile/struct.h:
+
+d:/usr/include/guile/2.0/libguile/symbols.h:
+
+d:/usr/include/guile/2.0/libguile/tags.h:
+
+d:/usr/include/guile/2.0/libguile/throw.h:
+
+d:/usr/include/guile/2.0/libguile/trees.h:
+
+d:/usr/include/guile/2.0/libguile/uniform.h:
+
+d:/usr/include/guile/2.0/libguile/generalized-vectors.h:
+
+d:/usr/include/guile/2.0/libguile/validate.h:
+
+d:/usr/include/guile/2.0/libguile/values.h:
+
+d:/usr/include/guile/2.0/libguile/variable.h:
+
+d:/usr/include/guile/2.0/libguile/smob.h:
+
+d:/usr/include/guile/2.0/libguile/vectors.h:
+
+d:/usr/include/guile/2.0/libguile/srfi-4.h:
+
+d:/usr/include/guile/2.0/libguile/version.h:
+
+d:/usr/include/guile/2.0/libguile/vports.h:
+
+d:/usr/include/guile/2.0/libguile/weaks.h:
+
+d:/usr/include/guile/2.0/libguile/backtrace.h:
+
+d:/usr/include/guile/2.0/libguile/debug.h:
+
+d:/usr/include/guile/2.0/libguile/stacks.h:
+
+d:/usr/include/guile/2.0/libguile/frames.h:
+
+d:/usr/include/guile/2.0/libguile/programs.h:
+
+d:/usr/include/guile/2.0/libguile/objcodes.h:
+
+d:/usr/include/guile/2.0/libguile/threads.h:
+
+d:/usr/include/guile/2.0/libguile/inline.h:
+
+d:/usr/include/guile/2.0/libguile/pairs.h:
+
+d:/usr/include/guile/2.0/libguile/gc.h:
+
+d:/usr/include/guile/2.0/libguile/deprecated.h:
+
+d:/usr/include/guile/2.0/libguile/eval.h:
+
+objfiles.h:
+
+objfile-flags.h:
+
+symfile.h:
+
+probe.h:
+
+symfile-add-flags.h:
+
+gdb_bfd.h:
+
+registry.h:
+
+target-section.h:
+
+quick-symbol.h:
+
+progspace.h:
+
+target.h:
+
+infrun.h:
+
+gdbthread.h:
+
+breakpoint.h:
+
+value.h:
+
+ax.h:
+
+../gdbsupport/ax.def:
+
+../gdbsupport/break-common.h:
+
+location.h:
+
+../gdbsupport/filtered-iterator.h:
+
+../gdbsupport/refcounted-object.h:
+
+../gdbsupport/safe-iterator.h:
+
+target/waitstatus.h:
+
+../gdbsupport/gdb_signals.h:
+
+btrace.h:
+
+../gdbsupport/btrace-common.h:
+
+cli/cli-utils.h:
+
+../gdbsupport/common-gdbthread.h:
+
+../gdbsupport/forward-scope-exit.h:
+
+../gdbsupport/scope-exit.h:
+
+displaced-stepping.h:
+
+thread-fsm.h:
+
+mi/mi-common.h:
+
+thread-iter.h:
+
+../gdbsupport/reference-to-pointer-iterator.h:
+
+target/target.h:
+
+target/waitstatus.h:
+
+target/wait.h:
+
+target/resume.h:
+
+target/wait.h:
+
+memattr.h:
+
+record.h:
+
+disasm-flags.h:
+
+tracepoint.h:
+
+memrange.h:
+
+../gdbsupport/fileio.h:
+
+solist.h:
+
+psymtab.h:
+
+bcache.h:
+
+gdbarch.h:
+
+../include/dis-asm.h:
+
+osabi.h:
+
+../gdbsupport/gdb-checked-static-cast.h:
+
+regcache.h:
+
+../gdbsupport/common-regcache.h:
+
+gdbarch-gen.h:
+
+jit.h:

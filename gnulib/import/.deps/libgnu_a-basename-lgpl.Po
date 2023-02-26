@@ -1,0 +1,37 @@
+libgnu_a-basename-lgpl.o: basename-lgpl.c ../config.h basename-lgpl.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\stddef.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\stdbool.h string.h \
+ d:\usr\include\string.h d:\usr\include\_mingw.h \
+ d:\usr\include\msvcrtver.h d:\usr\include\w32api.h \
+ d:\usr\include\sdkddkver.h d:\usr\include\features.h strings.h \
+ d:\usr\include\strings.h d:\usr\include\wchar.h filename.h
+
+../config.h:
+
+basename-lgpl.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\stddef.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\stdbool.h:
+
+string.h:
+
+d:\usr\include\string.h:
+
+d:\usr\include\_mingw.h:
+
+d:\usr\include\msvcrtver.h:
+
+d:\usr\include\w32api.h:
+
+d:\usr\include\sdkddkver.h:
+
+d:\usr\include\features.h:
+
+strings.h:
+
+d:\usr\include\strings.h:
+
+d:\usr\include\wchar.h:
+
+filename.h:

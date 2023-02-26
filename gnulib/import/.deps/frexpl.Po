@@ -1,0 +1,31 @@
+frexpl.o: frexpl.c ../config.h frexp.c math.h d:\usr\include\math.h \
+ d:\usr\include\_mingw.h d:\usr\include\msvcrtver.h \
+ d:\usr\include\w32api.h d:\usr\include\sdkddkver.h \
+ d:\usr\include\features.h d:\usr\lib\gcc\mingw32\9.2.0\include\float.h \
+ d:\usr\include\float.h isnanl-nolibm.h fpucw.h
+
+../config.h:
+
+frexp.c:
+
+math.h:
+
+d:\usr\include\math.h:
+
+d:\usr\include\_mingw.h:
+
+d:\usr\include\msvcrtver.h:
+
+d:\usr\include\w32api.h:
+
+d:\usr\include\sdkddkver.h:
+
+d:\usr\include\features.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\float.h:
+
+d:\usr\include\float.h:
+
+isnanl-nolibm.h:
+
+fpucw.h:

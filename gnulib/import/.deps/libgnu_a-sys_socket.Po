@@ -1,0 +1,197 @@
+libgnu_a-sys_socket.o: sys_socket.c ../config.h sys/socket.h sys/uio.h \
+ sys/types.h d:\usr\include\sys\types.h d:\usr\include\_mingw.h \
+ d:\usr\include\msvcrtver.h d:\usr\include\w32api.h \
+ d:\usr\include\sdkddkver.h d:\usr\include\features.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\stddef.h d:\usr\include\winsock2.h \
+ d:\usr\include\winsock.h d:\usr\include\windows.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\stdarg.h d:\usr\include\windef.h \
+ d:\usr\include\winnt.h d:\usr\include\winerror.h string.h \
+ d:\usr\include\string.h strings.h d:\usr\include\strings.h \
+ d:\usr\include\wchar.h d:\usr\include\basetsd.h \
+ d:\usr\include\pshpack4.h d:\usr\include\poppack.h \
+ d:\usr\include\wincon.h d:\usr\include\winbase.h d:\usr\include\wingdi.h \
+ d:\usr\include\winuser.h d:\usr\include\dbt.h d:\usr\include\winnls.h \
+ d:\usr\include\winver.h d:\usr\include\winnetwk.h \
+ d:\usr\include\winreg.h d:\usr\include\reason.h d:\usr\include\winsvc.h \
+ d:\usr\include\cderr.h d:\usr\include\dde.h d:\usr\include\ddeml.h \
+ d:\usr\include\dlgs.h d:\usr\include\imm.h d:\usr\include\lzexpand.h \
+ d:\usr\include\mmsystem.h d:\usr\include\nb30.h d:\usr\include\rpc.h \
+ d:\usr\include\rpcdce.h d:\usr\include\basetyps.h \
+ d:\usr\include\rpcdcep.h d:\usr\include\rpcnsi.h \
+ d:\usr\include\rpcnterr.h d:\usr\include\shellapi.h \
+ d:\usr\include\pshpack2.h d:\usr\include\winperf.h \
+ d:\usr\include\commdlg.h d:\usr\include\unknwn.h d:\usr\include\objfwd.h \
+ d:\usr\include\wtypes.h d:\usr\include\rpcndr.h d:\usr\include\rpcnsip.h \
+ d:\usr\include\prsht.h d:\usr\include\winspool.h d:\usr\include\ole2.h \
+ d:\usr\include\objbase.h stdlib.h d:\usr\include\stdlib.h \
+ d:\usr\include\errno.h d:\usr\include\alloca.h d:\usr\include\io.h \
+ d:\usr\include\stdint.h d:\usr\include\objidl.h d:\usr\include\cguid.h \
+ d:\usr\include\olectlid.h d:\usr\include\oleauto.h \
+ d:\usr\include\oaidl.h d:\usr\include\oleidl.h \
+ d:\usr\include\sys\bsdtypes.h sys/time.h d:\usr\include\sys\time.h \
+ d:\usr\include\nspapi.h d:\usr\include\wtypes.h \
+ d:\usr\include\ws2tcpip.h
+
+../config.h:
+
+sys/socket.h:
+
+sys/uio.h:
+
+sys/types.h:
+
+d:\usr\include\sys\types.h:
+
+d:\usr\include\_mingw.h:
+
+d:\usr\include\msvcrtver.h:
+
+d:\usr\include\w32api.h:
+
+d:\usr\include\sdkddkver.h:
+
+d:\usr\include\features.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\stddef.h:
+
+d:\usr\include\winsock2.h:
+
+d:\usr\include\winsock.h:
+
+d:\usr\include\windows.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\stdarg.h:
+
+d:\usr\include\windef.h:
+
+d:\usr\include\winnt.h:
+
+d:\usr\include\winerror.h:
+
+string.h:
+
+d:\usr\include\string.h:
+
+strings.h:
+
+d:\usr\include\strings.h:
+
+d:\usr\include\wchar.h:
+
+d:\usr\include\basetsd.h:
+
+d:\usr\include\pshpack4.h:
+
+d:\usr\include\poppack.h:
+
+d:\usr\include\wincon.h:
+
+d:\usr\include\winbase.h:
+
+d:\usr\include\wingdi.h:
+
+d:\usr\include\winuser.h:
+
+d:\usr\include\dbt.h:
+
+d:\usr\include\winnls.h:
+
+d:\usr\include\winver.h:
+
+d:\usr\include\winnetwk.h:
+
+d:\usr\include\winreg.h:
+
+d:\usr\include\reason.h:
+
+d:\usr\include\winsvc.h:
+
+d:\usr\include\cderr.h:
+
+d:\usr\include\dde.h:
+
+d:\usr\include\ddeml.h:
+
+d:\usr\include\dlgs.h:
+
+d:\usr\include\imm.h:
+
+d:\usr\include\lzexpand.h:
+
+d:\usr\include\mmsystem.h:
+
+d:\usr\include\nb30.h:
+
+d:\usr\include\rpc.h:
+
+d:\usr\include\rpcdce.h:
+
+d:\usr\include\basetyps.h:
+
+d:\usr\include\rpcdcep.h:
+
+d:\usr\include\rpcnsi.h:
+
+d:\usr\include\rpcnterr.h:
+
+d:\usr\include\shellapi.h:
+
+d:\usr\include\pshpack2.h:
+
+d:\usr\include\winperf.h:
+
+d:\usr\include\commdlg.h:
+
+d:\usr\include\unknwn.h:
+
+d:\usr\include\objfwd.h:
+
+d:\usr\include\wtypes.h:
+
+d:\usr\include\rpcndr.h:
+
+d:\usr\include\rpcnsip.h:
+
+d:\usr\include\prsht.h:
+
+d:\usr\include\winspool.h:
+
+d:\usr\include\ole2.h:
+
+d:\usr\include\objbase.h:
+
+stdlib.h:
+
+d:\usr\include\stdlib.h:
+
+d:\usr\include\errno.h:
+
+d:\usr\include\alloca.h:
+
+d:\usr\include\io.h:
+
+d:\usr\include\stdint.h:
+
+d:\usr\include\objidl.h:
+
+d:\usr\include\cguid.h:
+
+d:\usr\include\olectlid.h:
+
+d:\usr\include\oleauto.h:
+
+d:\usr\include\oaidl.h:
+
+d:\usr\include\oleidl.h:
+
+d:\usr\include\sys\bsdtypes.h:
+
+sys/time.h:
+
+d:\usr\include\sys\time.h:
+
+d:\usr\include\nspapi.h:
+
+d:\usr\include\wtypes.h:
+
+d:\usr\include\ws2tcpip.h:

@@ -1,0 +1,94 @@
+--- ./gdb/unittests/mkdir-recursive-selftests.c.~1~	2023-02-02 06:45:52.000000000 +0200
++++ ./gdb/unittests/mkdir-recursive-selftests.c	2023-02-19 17:25:13.640625000 +0200
+@@ -74,7 +74,11 @@ test ()
+   std::string dir = string_printf ("%s/a/b", base.data ());
+   SELF_CHECK (create_dir_and_check (dir.c_str ()));
+ 
++#ifdef _WIN32
++  dir = string_printf ("%s/a/b/c//d/e", base.data ());
++#else
+   dir = string_printf ("%s/a/b/c//d/e/", base.data ());
++#endif
+   SELF_CHECK (create_dir_and_check (dir.c_str ()));
+ }
+ 
+--- ./gdb/unittests/scoped_fd-selftests.c.~1~	2023-02-02 06:45:52.000000000 +0200
++++ ./gdb/unittests/scoped_fd-selftests.c	2023-02-19 17:25:13.625000000 +0200
+@@ -76,7 +76,7 @@ test_to_file ()
+ 
+   unlink (filename);
+   
+-  gdb_file_up file = sfd.to_file ("rw");
++  gdb_file_up file = sfd.to_file ("r+");
+   SELF_CHECK (file != nullptr);
+   SELF_CHECK (sfd.get () == -1);
+ }
+--- ./gdb/utils.c.~1~	2023-02-19 15:45:05.000000000 +0200
++++ ./gdb/utils.c	2023-02-19 17:25:13.359375000 +0200
+@@ -3196,8 +3196,20 @@ gdb_realpath_check_trailer (const char *
+   size_t len = strlen (result.get ());
+   size_t trail_len = strlen (trailer);
+ 
++#ifndef _WIN32
+   SELF_CHECK (len >= trail_len
+ 	      && strcmp (result.get () + len - trail_len, trailer) == 0);
++#else
++  const char *res_trail = result.get () + len - trail_len;
++  int slash = res_trail[0];
++
++  SELF_CHECK (len >= trail_len
++	      && (strcmp (result.get () + len - trail_len, trailer) == 0
++		  || (strcmp (result.get () + len - trail_len + 1,
++			      trailer + 1) == 0
++		      && IS_DIR_SEPARATOR (slash)
++		      && IS_DIR_SEPARATOR (trailer[0]))));
++#endif
+ }
+ 
+ static void
+--- ./gnulib/import/sys_stat.in.h.~1~	2023-02-02 06:45:52.000000000 +0200
++++ ./gnulib/import/sys_stat.in.h	2023-02-19 17:23:59.296875000 +0200
+@@ -75,7 +75,7 @@
+ #endif
+ 
+ /* Large File Support on native Windows.  */
+-#if @WINDOWS_64_BIT_ST_SIZE@
++#if 0
+ # define stat _stati64
+ #endif
+ 
+@@ -456,7 +456,7 @@ _GL_CXXALIASWARN (fstat);
+ #elif @GNULIB_OVERRIDES_STRUCT_STAT@
+ # undef fstat
+ # define fstat fstat_used_without_requesting_gnulib_module_fstat
+-#elif @WINDOWS_64_BIT_ST_SIZE@
++#elif 0
+ /* Above, we define stat to _stati64.  */
+ # define fstat _fstati64
+ #elif defined GNULIB_POSIXCHECK
+@@ -806,7 +806,7 @@ _GL_WARN_ON_USE (mknodat, "mknodat is no
+         so we have to replace stat64() instead of stat(). */
+ #    undef stat64
+ #    define stat64(name, st) rpl_stat (name, st)
+-#   elif @WINDOWS_64_BIT_ST_SIZE@
++#   elif 0
+      /* Above, we define stat to _stati64.  */
+ #    if defined __MINGW32__ && defined _stati64
+ #     ifndef _USE_32BIT_TIME_T
+--- ./libiberty/pex-win32.c.~1~	2023-02-19 15:45:05.000000000 +0200
++++ ./libiberty/pex-win32.c	2023-02-19 17:24:13.828125000 +0200
+@@ -873,9 +873,11 @@ pex_win32_exec_child (struct pex_obj *ob
+ 	_close (orig_in);
+       if (orig_out != STDOUT_FILENO)
+ 	_close (orig_out);
+-      if (separate_stderr
+-	  && orig_err != STDERR_FILENO)
+-	_close (orig_err);
++      if (separate_stderr)
++	{
++	  if (orig_err != STDERR_FILENO)
++	    _close (orig_err);
++	}
+     }
+ 
+   /* Close the standard input, standard output and standard error handles

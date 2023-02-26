@@ -1,0 +1,111 @@
+i386-dis.lo: i386-dis.c sysdep.h config.h d:\usr\include\stdlib.h \
+ d:\usr\include\_mingw.h d:\usr\include\msvcrtver.h \
+ d:\usr\include\w32api.h d:\usr\include\sdkddkver.h \
+ d:\usr\include\features.h d:\usr\lib\gcc\mingw32\9.2.0\include\stddef.h \
+ d:\usr\include\errno.h d:\usr\include\alloca.h d:\usr\include\string.h \
+ d:\usr\include\strings.h d:\usr\include\wchar.h ../include/ansidecl.h \
+ disassemble.h ../include/dis-asm.h d:\usr\include\stdio.h \
+ d:\usr\include\sys/types.h d:\usr\include\stdarg.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\stdarg.h ../bfd/bfd.h \
+ ../include/symcat.h d:\usr\lib\gcc\mingw32\9.2.0\include\stdint.h \
+ d:\usr\include\stdint.h d:\usr\lib\gcc\mingw32\9.2.0\include\stdbool.h \
+ ../include/diagnostics.h d:\usr\include\sys\stat.h \
+ d:\usr\include\sys\types.h d:\usr\include\inttypes.h opintl.h \
+ d:\usr\include\libintl.h d:\usr\include\locale.h \
+ ../include/opcode/i386.h ../include/libiberty.h ../include/ansidecl.h \
+ ../include/safe-ctype.h d:\usr\include\ctype.h d:\usr\include\wctype.h \
+ d:\usr\include\setjmp.h i386-dis-evex-reg.h i386-dis-evex-prefix.h \
+ i386-dis-evex.h i386-dis-evex-len.h i386-dis-evex-w.h \
+ i386-dis-evex-mod.h
+
+sysdep.h:
+
+config.h:
+
+d:\usr\include\stdlib.h:
+
+d:\usr\include\_mingw.h:
+
+d:\usr\include\msvcrtver.h:
+
+d:\usr\include\w32api.h:
+
+d:\usr\include\sdkddkver.h:
+
+d:\usr\include\features.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\stddef.h:
+
+d:\usr\include\errno.h:
+
+d:\usr\include\alloca.h:
+
+d:\usr\include\string.h:
+
+d:\usr\include\strings.h:
+
+d:\usr\include\wchar.h:
+
+../include/ansidecl.h:
+
+disassemble.h:
+
+../include/dis-asm.h:
+
+d:\usr\include\stdio.h:
+
+d:\usr\include\sys/types.h:
+
+d:\usr\include\stdarg.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\stdarg.h:
+
+../bfd/bfd.h:
+
+../include/symcat.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\stdint.h:
+
+d:\usr\include\stdint.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\stdbool.h:
+
+../include/diagnostics.h:
+
+d:\usr\include\sys\stat.h:
+
+d:\usr\include\sys\types.h:
+
+d:\usr\include\inttypes.h:
+
+opintl.h:
+
+d:\usr\include\libintl.h:
+
+d:\usr\include\locale.h:
+
+../include/opcode/i386.h:
+
+../include/libiberty.h:
+
+../include/ansidecl.h:
+
+../include/safe-ctype.h:
+
+d:\usr\include\ctype.h:
+
+d:\usr\include\wctype.h:
+
+d:\usr\include\setjmp.h:
+
+i386-dis-evex-reg.h:
+
+i386-dis-evex-prefix.h:
+
+i386-dis-evex.h:
+
+i386-dis-evex-len.h:
+
+i386-dis-evex-w.h:
+
+i386-dis-evex-mod.h:

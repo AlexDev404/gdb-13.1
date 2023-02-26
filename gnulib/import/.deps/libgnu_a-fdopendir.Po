@@ -1,0 +1,92 @@
+libgnu_a-fdopendir.o: fdopendir.c ../config.h dirent.h \
+ d:\usr\include\dirent.h d:\usr\include\_mingw.h \
+ d:\usr\include\msvcrtver.h d:\usr\include\w32api.h \
+ d:\usr\include\sdkddkver.h d:\usr\include\features.h d:\usr\include\io.h \
+ sys/types.h d:\usr\include\sys\types.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\stddef.h d:\usr\include\stdint.h \
+ stdlib.h d:\usr\include\stdlib.h d:\usr\include\errno.h \
+ d:\usr\include\alloca.h unistd.h d:\usr\include\unistd.h \
+ d:\usr\include\io.h d:\usr\include\process.h d:\usr\include\getopt.h \
+ d:\usr\include\direct.h d:\usr\include\dos.h d:\usr\include\process.h \
+ openat.h fcntl.h sys/stat.h time.h d:\usr\include\time.h \
+ d:\usr\include\sys\stat.h d:\usr\include\fcntl.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\stdbool.h openat-priv.h errno.h \
+ d:\usr\include\errno.h limits.h d:\usr\include\limits.h save-cwd.h
+
+../config.h:
+
+dirent.h:
+
+d:\usr\include\dirent.h:
+
+d:\usr\include\_mingw.h:
+
+d:\usr\include\msvcrtver.h:
+
+d:\usr\include\w32api.h:
+
+d:\usr\include\sdkddkver.h:
+
+d:\usr\include\features.h:
+
+d:\usr\include\io.h:
+
+sys/types.h:
+
+d:\usr\include\sys\types.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\stddef.h:
+
+d:\usr\include\stdint.h:
+
+stdlib.h:
+
+d:\usr\include\stdlib.h:
+
+d:\usr\include\errno.h:
+
+d:\usr\include\alloca.h:
+
+unistd.h:
+
+d:\usr\include\unistd.h:
+
+d:\usr\include\io.h:
+
+d:\usr\include\process.h:
+
+d:\usr\include\getopt.h:
+
+d:\usr\include\direct.h:
+
+d:\usr\include\dos.h:
+
+d:\usr\include\process.h:
+
+openat.h:
+
+fcntl.h:
+
+sys/stat.h:
+
+time.h:
+
+d:\usr\include\time.h:
+
+d:\usr\include\sys\stat.h:
+
+d:\usr\include\fcntl.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\stdbool.h:
+
+openat-priv.h:
+
+errno.h:
+
+d:\usr\include\errno.h:
+
+limits.h:
+
+d:\usr\include\limits.h:
+
+save-cwd.h:

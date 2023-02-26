@@ -1,0 +1,603 @@
+
+common-exceptions.cc,807
+enum catcher_state 25,915
+  CATCHER_CREATED,27,997
+  CATCHER_RUNNING,29,1052
+  CATCHER_RUNNING_1,30,1071
+  CATCHER_ABORTING32,1136
+enum catcher_action 36,1192
+  CATCH_ITER,37,1214
+  CATCH_ITER_1,38,1228
+  CATCH_THROWING39,1244
+struct catcher42,1265
+  enum catcher_state state 44,1282
+  jmp_buf buf;46,1389
+  struct gdb_exception exception;48,1463
+static std::forward_list<struct catcher> catchers;52,1543
+exceptions_state_mc_init 55,1605
+exceptions_state_mc 65,1820
+exceptions_state_mc_catch 130,3228
+exceptions_state_mc_action_iter 155,3788
+exceptions_state_mc_action_iter_1 161,3879
+throw_exception_sjlj 169,4044
+throw_exception 183,4545
+static void ATTRIBUTE_NORETURN ATTRIBUTE_PRINTF 193,4848
+throw_verror 206,5214
+throw_vquit 212,5329
+throw_error 218,5430
+throw_quit 228,5587
+
+gdb-dlfcn.cc,255
+#define NO_SHARED_LIB29,959
+gdb_dlopen 35,1027
+gdb_dlsym 41,1153
+dlclose_deleter::operator() operator()47,1304
+is_dl_available 53,1443
+gdb_dlopen 61,1526
+gdb_dlsym 93,2218
+dlclose_deleter::operator() operator()103,2443
+is_dl_available 113,2600
+
+thread-pool.cc,728
+#define USE_PTHREAD_SETNAME_NP35,1159
+do_set_thread_name 49,1521
+do_set_thread_name 56,1713
+do_set_thread_name 65,1997
+set_thread_name 71,2103
+typedef HRESULT WINAPI 80,2244
+static SetThreadDescription_ftype *dyn_SetThreadDescription;dyn_SetThreadDescription81,2314
+static bool initialized;82,2375
+init_windows 85,2413
+do_set_thread_name 108,3006
+#define set_thread_name(117,3195
+set_thread_name 122,3295
+namespace gdb130,3372
+thread_pool *thread_pool::g_thread_pool thread_pool::g_thread_pool142,3803
+thread_pool::~thread_pool ~thread_pool144,3866
+thread_pool::set_thread_count set_thread_count153,4176
+thread_pool::do_post_task do_post_task198,5340
+thread_pool::thread_function thread_function216,5698
+
+cleanups.cc,379
+struct cleanup38,1546
+  struct cleanup *next;next40,1563
+  void *arg;arg43,1645
+static const struct cleanup sentinel_cleanup 56,2148
+#define SENTINEL_CLEANUP 59,2274
+static struct cleanup *final_cleanup_chain final_cleanup_chain63,2442
+make_my_cleanup2 75,2939
+make_my_cleanup 100,3727
+make_final_cleanup 112,4113
+do_my_cleanups 123,4502
+do_final_cleanups 141,4910
+
+run-time-clock.cc,98
+run_time_clock::now now28,982
+timeval_to_microseconds 35,1128
+run_time_clock::now now42,1252
+
+print-utils.cc,361
+#define NUMCELLS 25,947
+get_print_cell 30,1029
+decimal2str 41,1200
+octal2str 83,2168
+pulongest 127,3073
+plongest 135,3168
+static int thirty_two 144,3344
+phex 149,3407
+phex_nz 184,4176
+hex_string 226,5083
+hex_string_custom 237,5277
+int_string 259,5845
+core_addr_to_string 304,6795
+core_addr_to_string_nz 316,6997
+host_address_to_string_1 328,7205
+
+tdesc.cc,1117
+tdesc_reg::tdesc_reg 23,832
+static tdesc_type_builtin tdesc_predefined_types[tdesc_predefined_types38,1438
+void tdesc_feature::accept accept61,2199
+bool tdesc_feature::operator== operator==74,2441
+tdesc_predefined_type 109,3209
+tdesc_named_type 121,3531
+tdesc_create_reg 139,4001
+tdesc_create_vector 152,4355
+tdesc_create_struct 164,4667
+tdesc_set_struct_size 176,4924
+tdesc_create_union 186,5143
+tdesc_create_flags 198,5418
+tdesc_create_enum 213,5741
+tdesc_add_field 228,6041
+tdesc_add_typed_bitfield 242,6437
+tdesc_add_bitfield 255,6814
+tdesc_add_flag 273,7255
+tdesc_add_enum_value 287,7581
+void print_xml_feature::visit_pre visit_pre296,7826
+void print_xml_feature::visit_post visit_post302,7960
+void print_xml_feature::visit visit308,8067
+void print_xml_feature::visit visit313,8211
+void print_xml_feature::visit visit319,8401
+void print_xml_feature::visit visit381,10127
+void print_xml_feature::visit_pre visit_pre401,10589
+void print_xml_feature::visit_post visit_post424,11287
+print_xml_feature::add_line add_line433,11428
+print_xml_feature::add_line add_line443,11659
+
+safe-strerror.cc,77
+select_strerror_r 31,1243
+select_strerror_r 38,1396
+safe_strerror 46,1536
+
+search.cc,29
+simple_search_memory30,1072
+
+fileio.cc,242
+host_to_fileio_error 28,908
+fileio_error_to_host 81,1905
+fileio_to_host_openflags 134,2900
+fileio_to_host_mode 168,3753
+fileio_mode_pack 217,4800
+host_to_fileio_mode 261,5661
+host_to_fileio_ulong 269,5848
+host_to_fileio_stat 277,5978
+
+gdb_tilde_expand.cc,165
+class gdb_glob28,956
+  gdb_glob 33,1115
+  ~gdb_glob 49,1513
+  int pathc 55,1611
+  char **pathv pathv61,1719
+  glob_t m_glob;68,1841
+gdb_tilde_expand 74,1917
+
+event-loop.cc,1627
+debug_event_loop_kind debug_event_loop;41,1273
+#define GDB_READABLE	46,1438
+#define GDB_WRITABLE	47,1466
+#define GDB_EXCEPTION	48,1494
+struct file_handler53,1607
+  int fd;56,1655
+  int mask;59,1715
+  int ready_mask;62,1785
+  handler_func *proc;proc65,1849
+  gdb_client_data client_data;68,1907
+  std::string name;71,1984
+  bool is_ui;74,2073
+  int error;77,2131
+  struct file_handler *next_file;next_file80,2187
+static bool use_poll 87,2410
+    file_handler *first_file_handler;first_file_handler106,3014
+    file_handler *next_file_handler;next_file_handler113,3351
+    struct pollfd *poll_fds;poll_fds117,3452
+    int next_poll_fds_index;124,3790
+    int poll_timeout;127,3876
+    fd_set check_masks[check_masks132,4027
+    fd_set ready_masks[ready_masks135,4116
+    int num_fds;139,4274
+    struct timeval select_timeout;142,4341
+    int timeout_valid;145,4437
+gdb_notifier;147,4464
+struct gdb_timer151,4581
+    std::chrono::steady_clock::time_point when;153,4602
+    int timer_id;154,4650
+    struct gdb_timer *next;next155,4668
+    timer_handler_func *proc;proc156,4696
+    gdb_client_data client_data;157,4770
+    struct gdb_timer *first_timer;first_timer165,5000
+    int num_timers;168,5077
+timer_list;170,5101
+gdb_do_one_event 190,5944
+add_file_handler 270,8075
+create_file_handler 311,9383
+get_next_file_handler_to_handle_and_advance 387,11527
+delete_file_handler 410,12239
+handle_file_event 515,15014
+gdb_wait_for_event 585,17097
+create_timer 728,20937
+delete_timer 778,22228
+duration_cast_timeval 813,23031
+update_wait_timeout 829,23441
+poll_timers 876,24607
+
+scoped_mmap.cc,18
+mmap_file 28,923
+
+common-regcache.cc,34
+regcache_raw_get_unsigned 26,940
+
+netstuff.cc,281
+scoped_free_addrinfo::~scoped_free_addrinfo ~scoped_free_addrinfo35,1043
+parse_connection_spec_without_prefix 43,1177
+parse_connection_spec 117,3080
+  struct host_prefix121,3242
+      const char *prefix;prefix124,3294
+      int family;127,3351
+      int socktype;130,3402
+
+gdb-hashtab.cc,67
+hashtab_obstack_allocate 26,941
+dummy_obstack_deallocate 41,1369
+
+agent.cc,876
+#define IPA_SYM_STRUCT_NAME 26,923
+bool debug_agent 29,996
+static void ATTRIBUTE_PRINTF 33,1067
+#define DEBUG_AGENT 45,1261
+bool use_agent 48,1353
+struct ipa_sym_addresses_common53,1465
+  CORE_ADDR addr_helper_thread_id;55,1499
+  CORE_ADDR addr_cmd_buf;56,1534
+  CORE_ADDR addr_capability;57,1560
+static uint32_t helper_thread_id 62,1682
+  const char *name;name66,1737
+  int offset;67,1757
+} symbol_list[symbol_list68,1771
+static struct ipa_sym_addresses_common ipa_sym_addrs;74,1867
+static bool all_agent_symbols_looked_up 76,1922
+agent_loaded_p 79,1977
+agent_look_up_symbols 88,2161
+agent_get_helper_thread_id 111,2724
+#define SOCK_DIR 126,3051
+#define UNIX_PATH_MAX 129,3100
+gdb_connect_sync_socket 138,3320
+agent_run_command 189,4682
+static uint32_t agent_capability 257,6091
+agent_capability_check 262,6214
+agent_capability_invalidate 277,6662
+
+pathstuff.cc,559
+char *current_directory;current_directory32,1000
+gdb_realpath 37,1092
+gdb_realpath_keepfile 90,3026
+gdb_abspath 128,4386
+child_path 144,4703
+path_join 194,6267
+contains_dir_separator 217,6667
+get_standard_cache_dir 231,6873
+#define HOME_CACHE_DIR 234,6918
+#define HOME_CACHE_DIR 236,6964
+get_standard_temp_dir 273,7936
+get_standard_config_dir 298,8338
+#define HOME_CONFIG_DIR 301,8384
+#define HOME_CONFIG_DIR 303,8436
+get_standard_config_filename 330,9115
+find_gdb_home_config_file 346,9477
+get_shell 374,10202
+make_temp_filename 386,10366
+
+ptid.cc,104
+ptid_t const null_ptid 26,896
+ptid_t const minus_one_ptid 27,943
+ptid_t::to_string to_string32,1033
+
+common-inferior.cc,69
+bool startup_with_shell 26,923
+construct_inferior_arguments 31,999
+
+filestuff.cc,742
+#define HAVE_SOCKETS 31,1003
+#define HAVE_F_GETFD 35,1136
+#define HAVE_SOCKETS 36,1165
+#define O_CLOEXEC 49,1378
+#define O_NOINHERIT 53,1426
+#define SOCK_CLOEXEC 57,1477
+fdwalk 74,1919
+static std::vector<int> open_fds;180,3968
+do_mark_open_fd 186,4127
+notice_open_fds 195,4240
+mark_fd_no_cloexec 203,4332
+unmark_fd_no_cloexec 211,4425
+do_close 225,4750
+close_most_fds 243,4953
+static int trust_o_cloexec;257,5380
+mark_cloexec 263,5500
+maybe_mark_cloexec 286,5892
+socket_mark_cloexec 297,6081
+gdb_open_cloexec 310,6233
+gdb_fopen_cloexec 323,6478
+gdb_socketpair_cloexec 367,7743
+gdb_socket_cloexec 388,8169
+gdb_pipe_cloexec 402,8404
+is_regular_file 432,8963
+mkdir_recursive 463,9651
+read_text_file_to_string 508,11008
+
+environ.cc,440
+gdb_environ::operator= operator=26,905
+gdb_environ gdb_environ::from_host_environ from_host_environ46,1371
+gdb_environ::clear clear67,1768
+match_var_in_string 83,2200
+gdb_environ::get get94,2429
+gdb_environ::set set108,2681
+gdb_environ::unset unset132,3483
+gdb_environ::unset unset160,4160
+gdb_environ::envp envp168,4265
+gdb_environ::user_set_env user_set_env176,4414
+gdb_environ::user_unset_env user_unset_env182,4509
+
+config.in,4173
+#undef CRAY_STACKSEG_END6,222
+#undef CXX_STD_THREAD9,288
+#undef C_ALLOCA12,350
+#undef DEVELOPMENT15,422
+#undef ENABLE_NLS19,542
+#undef GDB_SELF_TEST22,617
+#undef HAVE_ALLOCA25,703
+#undef HAVE_ALLOCA_H29,806
+#undef HAVE_CXX1132,885
+#undef HAVE_DECL_ADDR_NO_RANDOMIZE36,1000
+#undef HAVE_DECL_ASPRINTF40,1123
+#undef HAVE_DECL_BASENAME44,1245
+#undef HAVE_DECL_FFS47,1351
+#undef HAVE_DECL_SNPRINTF51,1460
+#undef HAVE_DECL_STRSTR55,1572
+#undef HAVE_DECL_STRTOL59,1682
+#undef HAVE_DECL_STRTOLL63,1793
+#undef HAVE_DECL_STRTOUL67,1905
+#undef HAVE_DECL_STRTOULL71,2018
+#undef HAVE_DECL_STRVERSCMP75,2134
+#undef HAVE_DECL_VASPRINTF79,2251
+#undef HAVE_DECL_VSNPRINTF83,2367
+#undef HAVE_DLFCN_H86,2452
+#undef HAVE_ELF_FPREGSET_T89,2524
+#undef HAVE_FDWALK92,2605
+#undef HAVE_FORK95,2676
+#undef HAVE_FPREGSET_T98,2741
+#undef HAVE_GETAUXVAL101,2821
+#undef HAVE_GETPAGESIZE104,2902
+#undef HAVE_GETRLIMIT107,2983
+#undef HAVE_GETRUSAGE110,3062
+#undef HAVE_GREGSET_T113,3131
+#undef HAVE_INTTYPES_H116,3214
+#undef HAVE_KINFO_GETFILE119,3298
+#undef HAVE_LANGINFO_CODESET122,3389
+#undef HAVE_LIBIPT125,3461
+#undef HAVE_LINUX_ELF_H128,3542
+#undef HAVE_LINUX_PERF_EVENT_H131,3635
+#undef HAVE_LOCALE_H134,3725
+#undef HAVE_LONG_LONG137,3805
+#undef HAVE_LWPID_T140,3872
+#undef HAVE_MEMORY_H143,3951
+#undef HAVE_MMAP146,4033
+#undef HAVE_PIPE149,4102
+#undef HAVE_PIPE2152,4172
+#undef HAVE_POLL155,4242
+#undef HAVE_POLL_H158,4316
+#undef HAVE_PRFPREGSET_T161,4385
+#undef HAVE_PRGREGSET32_T164,4461
+#undef HAVE_PRGREGSET_T167,4536
+#undef HAVE_PROC_SERVICE_H170,4625
+#undef HAVE_PSADDR_T173,4698
+#undef HAVE_PTHREAD_PRIO_INHERIT176,4753
+#undef HAVE_PTHREAD_SETNAME_NP179,4852
+#undef HAVE_PTHREAD_SIGMASK182,4946
+#undef HAVE_PTRACE64185,5030
+#undef HAVE_PTRACE_H188,5110
+#undef HAVE_PT_INSN_EVENT191,5192
+#undef HAVE_SBRK194,5270
+#undef HAVE_SETNS197,5340
+#undef HAVE_SETPGID200,5413
+#undef HAVE_SETPGRP203,5488
+#undef HAVE_SIGACTION206,5565
+#undef HAVE_SIGALTSTACK209,5646
+#undef HAVE_SIGNAL_H212,5729
+#undef HAVE_SIGPROCMASK215,5809
+#undef HAVE_SIGSETJMP218,5874
+#undef HAVE_SIGTIMEDWAIT221,5956
+#undef HAVE_SOCKETPAIR224,6039
+#undef HAVE_STDINT_H227,6121
+#undef HAVE_STDLIB_H230,6201
+#undef HAVE_STRINGS_H233,6282
+#undef HAVE_STRING_H236,6363
+#undef HAVE_STRUCT_PT_INSN_ENABLED239,6449
+#undef HAVE_STRUCT_PT_INSN_RESYNCED242,6550
+#undef HAVE_STRUCT_STAT_ST_BLKSIZE245,6651
+#undef HAVE_STRUCT_STAT_ST_BLOCKS248,6750
+#undef HAVE_SYS_PARAM_H251,6846
+#undef HAVE_SYS_POLL_H254,6931
+#undef HAVE_SYS_PROCFS_H257,7017
+#undef HAVE_SYS_PTRACE_H260,7105
+#undef HAVE_SYS_RESOURCE_H263,7195
+#undef HAVE_SYS_SELECT_H266,7285
+#undef HAVE_SYS_SOCKET_H269,7373
+#undef HAVE_SYS_STAT_H272,7459
+#undef HAVE_SYS_TYPES_H275,7544
+#undef HAVE_SYS_UN_H278,7627
+#undef HAVE_SYS_WAIT_H281,7709
+#undef HAVE_TERMIOS_H284,7792
+#undef HAVE_THREAD_DB_H287,7876
+#undef HAVE_UNISTD_H290,7959
+#undef HAVE_VFORK293,8033
+#undef HAVE_VFORK_H296,8109
+#undef HAVE_WAIT_H299,8186
+#undef HAVE_WINDOWS_H302,8265
+#undef HAVE_WORKING_FORK305,8323
+#undef HAVE_WORKING_VFORK308,8385
+#undef PACKAGE311,8434
+#undef PACKAGE_BUGREPORT314,8529
+#undef PACKAGE_NAME317,8602
+#undef PACKAGE_STRING320,8682
+#undef PACKAGE_TARNAME323,8764
+#undef PACKAGE_URL326,8836
+#undef PACKAGE_VERSION329,8901
+#undef PRINTF_HAS_LONG_LONG332,8990
+#undef PTHREAD_CREATE_JOINABLE336,9113
+#undef PTRACE_TYPE_ARG1339,9191
+#undef PTRACE_TYPE_ARG3342,9262
+#undef PTRACE_TYPE_ARG4345,9333
+#undef PTRACE_TYPE_ARG5348,9404
+#undef PTRACE_TYPE_RET351,9472
+#undef SIZEOF_LONG_LONG354,9550
+#undef STACK_DIRECTION362,9908
+#undef STDC_HEADERS365,9987
+# undef _ALL_SOURCE369,10072
+# undef _GNU_SOURCE373,10175
+# undef _POSIX_PTHREAD_SEMANTICS377,10282
+# undef _TANDEM_SOURCE381,10385
+# undef __EXTENSIONS__385,10483
+#undef USE_WIN32API392,10698
+#undef VERSION395,10751
+# define _DARWIN_USE_64_BIT_INODE 399,10852
+#undef _FILE_OFFSET_BITS403,10968
+#undef _LARGE_FILES406,11044
+#undef _MINIX409,11096
+#undef _POSIX_1_SOURCE413,11206
+#undef _POSIX_SOURCE416,11309
+#undef _STRUCTURED_PROC419,11370
+#undef pid_t422,11451
+#undef size_t425,11530
+#undef vfork428,11594
+
+gdb_regex.cc,185
+compiled_regex::compiled_regex compiled_regex22,820
+compiled_regex::~compiled_regex ~compiled_regex39,1262
+compiled_regex::exec exec45,1330
+compiled_regex::search search52,1506
+
+xml-utils.cc,84
+xml_escape_text 26,871
+xml_escape_text_append 38,1023
+string_xml_appendf 68,1491
+
+gdb_obstack.cc,18
+obconcat 29,1049
+
+errors.cc,110
+warning 29,949
+error 41,1097
+internal_error_loc 53,1241
+internal_warning_loc 65,1447
+strwinerror 79,1705
+
+buffer.cc,112
+buffer_grow 25,870
+buffer_free 48,1423
+buffer_init 60,1600
+buffer_finish 66,1687
+buffer_xml_printf 76,1856
+
+selftest.cc,282
+namespace selftests25,884
+static selftests_registry tests;31,1071
+static std::vector<selftests_generator> lazy_generators;36,1201
+register_test 41,1288
+add_lazy_generator 53,1602
+static bool run_verbose_ 60,1735
+run_verbose 65,1799
+run_tests 73,1871
+all_selftests 118,2646
+
+gdb_wait.cc,143
+# define WIN32_LEAN_AND_MEAN41,1598
+struct xlate_status44,1683
+  DWORD status;47,1764
+  int sig;50,1822
+windows_status_to_termsig 54,1841
+
+gdb_vecs.cc,155
+delim_string_to_char_ptr_vec_append28,968
+delim_string_to_char_ptr_vec 60,1643
+dirnames_to_char_ptr_vec_append72,1879
+dirnames_to_char_ptr_vec 81,2133
+
+new-op.cc,443
+# define __has_feature(22,869
+operator new operator new53,2158
+operator new operator new81,2800
+operator new[] operator new[]90,2990
+operator new[] operator new[]96,3064
+operator delete operator delete107,3442
+operator delete operator delete113,3499
+operator delete operator delete119,3599
+operator delete[] operator delete[]125,3703
+operator delete[] operator delete[]131,3782
+operator delete[] operator delete[]137,3898
+
+job-control.cc,71
+int job_control;29,994
+gdb_setpgid 41,1382
+have_job_control 69,1949
+
+format.cc,51
+format_pieces::format_pieces format_pieces23,822
+
+signals-state-save-restore.cc,202
+static struct sigaction original_signal_actions[original_signal_actions27,927
+static sigset_t original_signal_mask;29,983
+save_original_signals_state 35,1077
+restore_original_signals_state 92,2577
+
+btrace-common.cc,195
+btrace_format_string 27,892
+btrace_format_short_string 47,1277
+btrace_data::fini fini67,1604
+btrace_data::empty empty91,2004
+btrace_data::clear clear111,2340
+btrace_data_append 120,2442
+
+rsp-low.cc,305
+tohex 26,864
+static const char hexchars[hexchars36,1000
+ishex 39,1063
+pack_nibble 62,1400
+pack_hex_byte 71,1523
+unpack_varlen_hex 81,1689
+hex2str 100,2002
+hex2str 108,2106
+bin2hex 131,2505
+bin2hex 147,2752
+needs_escaping 164,3071
+remote_escape_output 172,3186
+remote_unescape_input 227,4732
+
+signals.cc,542
+#  define REALTIME_LO 36,1152
+#  define REALTIME_HI 37,1185
+#  define REALTIME_LO 39,1249
+#  define REALTIME_HI 40,1280
+  const char *symbol;symbol48,1438
+  const char *name;name49,1460
+  const char *string;string50,1480
+  } signals 51,1502
+#define SET(53,1521
+#undef SET55,1619
+gdb_signal_to_symbol_string 59,1647
+gdb_signal_to_string 68,1863
+gdb_signal_to_name 78,2116
+gdb_signal_from_name 91,2517
+gdb_signal_from_host 116,3369
+do_gdb_signal_to_host 366,9472
+gdb_signal_to_host_p 631,15359
+gdb_signal_to_host 639,15497
+
+common-debug.cc,113
+bool show_debug_regs;25,857
+debug_printf 30,924
+debug_prefixed_printf 42,1088
+debug_prefixed_vprintf 55,1340
+
+common-utils.cc,550
+xzalloc 27,939
+xstrprintf 36,1103
+xstrvprintf 47,1316
+xsnprintf 62,1810
+string_printf 78,2091
+string_vprintf 101,2547
+string_appendf 123,2984
+string_vappendf 138,3206
+savestring 158,3664
+extract_string_maybe_quoted 170,3858
+#define HIGH_BYTE_POSN 229,4848
+is_digit_in_base 235,5017
+digit_to_int 246,5264
+strtoulst 257,5440
+skip_spaces 328,6722
+skip_spaces 340,6904
+skip_to_space 352,7091
+skip_to_space 364,7275
+free_vector_argv 372,7404
+align_up 383,7551
+align_down 393,7746
+fromhex 403,7930
+hex2bin 418,8207
+hex2bin 439,8621

@@ -1,0 +1,130 @@
+libgnu_a-tempname.o: tempname.c libc-config.h ../config.h errno.h \
+ d:\usr\include\errno.h d:\usr\include\_mingw.h \
+ d:\usr\include\msvcrtver.h d:\usr\include\w32api.h \
+ d:\usr\include\sdkddkver.h d:\usr\include\features.h cdefs.h tempname.h \
+ stdio.h d:\usr\include\stdio.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\stddef.h d:\usr\include\sys/types.h \
+ d:\usr\include\stdarg.h d:\usr\lib\gcc\mingw32\9.2.0\include\stdarg.h \
+ sys/types.h d:\usr\include\sys\types.h d:\usr\include\io.h \
+ d:\usr\include\stdint.h d:\usr\include\assert.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\stdbool.h stdlib.h \
+ d:\usr\include\stdlib.h d:\usr\include\errno.h d:\usr\include\alloca.h \
+ string.h d:\usr\include\string.h strings.h d:\usr\include\strings.h \
+ d:\usr\include\wchar.h fcntl.h sys/stat.h time.h unistd.h \
+ d:\usr\include\unistd.h d:\usr\include\io.h d:\usr\include\process.h \
+ d:\usr\include\getopt.h d:\usr\include\direct.h d:\usr\include\dos.h \
+ d:\usr\include\process.h d:\usr\include\time.h d:\usr\include\sys\stat.h \
+ d:\usr\include\fcntl.h d:\usr\lib\gcc\mingw32\9.2.0\include\stdalign.h \
+ stdint.h d:\usr\lib\gcc\mingw32\9.2.0\include\stdint.h \
+ d:\usr\include\stdint.h limits.h d:\usr\include\limits.h inttypes.h \
+ d:\usr\include\inttypes.h sys/random.h
+
+libc-config.h:
+
+../config.h:
+
+errno.h:
+
+d:\usr\include\errno.h:
+
+d:\usr\include\_mingw.h:
+
+d:\usr\include\msvcrtver.h:
+
+d:\usr\include\w32api.h:
+
+d:\usr\include\sdkddkver.h:
+
+d:\usr\include\features.h:
+
+cdefs.h:
+
+tempname.h:
+
+stdio.h:
+
+d:\usr\include\stdio.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\stddef.h:
+
+d:\usr\include\sys/types.h:
+
+d:\usr\include\stdarg.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\stdarg.h:
+
+sys/types.h:
+
+d:\usr\include\sys\types.h:
+
+d:\usr\include\io.h:
+
+d:\usr\include\stdint.h:
+
+d:\usr\include\assert.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\stdbool.h:
+
+stdlib.h:
+
+d:\usr\include\stdlib.h:
+
+d:\usr\include\errno.h:
+
+d:\usr\include\alloca.h:
+
+string.h:
+
+d:\usr\include\string.h:
+
+strings.h:
+
+d:\usr\include\strings.h:
+
+d:\usr\include\wchar.h:
+
+fcntl.h:
+
+sys/stat.h:
+
+time.h:
+
+unistd.h:
+
+d:\usr\include\unistd.h:
+
+d:\usr\include\io.h:
+
+d:\usr\include\process.h:
+
+d:\usr\include\getopt.h:
+
+d:\usr\include\direct.h:
+
+d:\usr\include\dos.h:
+
+d:\usr\include\process.h:
+
+d:\usr\include\time.h:
+
+d:\usr\include\sys\stat.h:
+
+d:\usr\include\fcntl.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\stdalign.h:
+
+stdint.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\stdint.h:
+
+d:\usr\include\stdint.h:
+
+limits.h:
+
+d:\usr\include\limits.h:
+
+inttypes.h:
+
+d:\usr\include\inttypes.h:
+
+sys/random.h:

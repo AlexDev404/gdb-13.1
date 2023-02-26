@@ -1,0 +1,233 @@
+unittests/string_view-selftests.o: unittests/string_view-selftests.c \
+ ../include/diagnostics.h defs.h ../gdbsupport/common-defs.h \
+ ../gdbsupport/config.h ../gnulib/config.h ../gnulib/import/stdio.h \
+ ../gnulib/import/stdlib.h ../gnulib/import/stdint.h \
+ ../gnulib/import/string.h ../gnulib/import/errno.h \
+ ../gnulib/import/alloca.h ../include/ansidecl.h ../include/libiberty.h \
+ ../include/ansidecl.h ../gnulib/import/pathmax.h \
+ ../gnulib/import/unistd.h ../include/gdb/signals.h \
+ ../include/gdb/signals.def ../gdbsupport/gdb_locale.h \
+ ../gnulib/import/locale.h ../gdbsupport/ptid.h \
+ ../gdbsupport/common-types.h ../gdbsupport/common-types.h \
+ ../gdbsupport/common-utils.h ../gdbsupport/byte-vector.h \
+ ../gdbsupport/def-vector.h ../gdbsupport/default-init-alloc.h \
+ ../gdbsupport/gdb_unique_ptr.h ../gdbsupport/gdb-xfree.h \
+ ../gdbsupport/poison.h ../gdbsupport/traits.h ../include/obstack.h \
+ ../gdbsupport/poison.h ../gdbsupport/gdb_string_view.h \
+ ../gdbsupport/gdb_assert.h ../gdbsupport/errors.h \
+ ../gdbsupport/gdb_string_view.tcc ../gdbsupport/print-utils.h \
+ ../gdbsupport/common-debug.h ../gdbsupport/gdb_optional.h \
+ ../gdbsupport/traits.h ../gdbsupport/preprocessor.h \
+ ../gdbsupport/cleanups.h ../gdbsupport/common-exceptions.h config.h \
+ ../bfd/bfd.h ../include/symcat.h ../gnulib/import/sys/stat.h \
+ ../gnulib/import/fcntl.h gdb_wchar.h ui-file.h ui-style.h \
+ ../gdbsupport/host-defs.h ../gdbsupport/enum-flags.h \
+ ../gdbsupport/array-view.h ../include/hashtab.h ../include/fopen-bin.h \
+ utils.h exceptions.h ui-out.h ../gdbsupport/scoped_restore.h \
+ ../gdbsupport/selftest.h ../gdbsupport/function-view.h \
+ ../gdbsupport/invoke-result.h ../gdbsupport/iterator-range.h \
+ ../gdbsupport/gdb_string_view.h \
+ unittests/basic_string_view/capacity/1.cc \
+ unittests/basic_string_view/cons/char/1.cc \
+ unittests/basic_string_view/cons/char/2.cc \
+ unittests/basic_string_view/cons/char/3.cc \
+ unittests/basic_string_view/element_access/char/1.cc \
+ unittests/basic_string_view/element_access/char/empty.cc \
+ unittests/basic_string_view/element_access/char/front_back.cc \
+ unittests/basic_string_view/inserters/char/2.cc \
+ unittests/basic_string_view/modifiers/remove_prefix/char/1.cc \
+ unittests/basic_string_view/modifiers/remove_suffix/char/1.cc \
+ unittests/basic_string_view/modifiers/swap/char/1.cc \
+ unittests/basic_string_view/operations/compare/char/1.cc \
+ unittests/basic_string_view/operations/compare/char/13650.cc \
+ unittests/basic_string_view/operations/copy/char/1.cc \
+ unittests/basic_string_view/operations/data/char/1.cc \
+ unittests/basic_string_view/operations/find/char/1.cc \
+ unittests/basic_string_view/operations/find/char/2.cc \
+ unittests/basic_string_view/operations/find/char/3.cc \
+ unittests/basic_string_view/operations/find/char/4.cc \
+ unittests/basic_string_view/operations/rfind/char/1.cc \
+ unittests/basic_string_view/operations/rfind/char/2.cc \
+ unittests/basic_string_view/operations/rfind/char/3.cc \
+ unittests/basic_string_view/operations/substr/char/1.cc \
+ unittests/basic_string_view/operators/char/2.cc
+
+../include/diagnostics.h:
+
+defs.h:
+
+../gdbsupport/common-defs.h:
+
+../gdbsupport/config.h:
+
+../gnulib/config.h:
+
+../gnulib/import/stdio.h:
+
+../gnulib/import/stdlib.h:
+
+../gnulib/import/stdint.h:
+
+../gnulib/import/string.h:
+
+../gnulib/import/errno.h:
+
+../gnulib/import/alloca.h:
+
+../include/ansidecl.h:
+
+../include/libiberty.h:
+
+../include/ansidecl.h:
+
+../gnulib/import/pathmax.h:
+
+../gnulib/import/unistd.h:
+
+../include/gdb/signals.h:
+
+../include/gdb/signals.def:
+
+../gdbsupport/gdb_locale.h:
+
+../gnulib/import/locale.h:
+
+../gdbsupport/ptid.h:
+
+../gdbsupport/common-types.h:
+
+../gdbsupport/common-types.h:
+
+../gdbsupport/common-utils.h:
+
+../gdbsupport/byte-vector.h:
+
+../gdbsupport/def-vector.h:
+
+../gdbsupport/default-init-alloc.h:
+
+../gdbsupport/gdb_unique_ptr.h:
+
+../gdbsupport/gdb-xfree.h:
+
+../gdbsupport/poison.h:
+
+../gdbsupport/traits.h:
+
+../include/obstack.h:
+
+../gdbsupport/poison.h:
+
+../gdbsupport/gdb_string_view.h:
+
+../gdbsupport/gdb_assert.h:
+
+../gdbsupport/errors.h:
+
+../gdbsupport/gdb_string_view.tcc:
+
+../gdbsupport/print-utils.h:
+
+../gdbsupport/common-debug.h:
+
+../gdbsupport/gdb_optional.h:
+
+../gdbsupport/traits.h:
+
+../gdbsupport/preprocessor.h:
+
+../gdbsupport/cleanups.h:
+
+../gdbsupport/common-exceptions.h:
+
+config.h:
+
+../bfd/bfd.h:
+
+../include/symcat.h:
+
+../gnulib/import/sys/stat.h:
+
+../gnulib/import/fcntl.h:
+
+gdb_wchar.h:
+
+ui-file.h:
+
+ui-style.h:
+
+../gdbsupport/host-defs.h:
+
+../gdbsupport/enum-flags.h:
+
+../gdbsupport/array-view.h:
+
+../include/hashtab.h:
+
+../include/fopen-bin.h:
+
+utils.h:
+
+exceptions.h:
+
+ui-out.h:
+
+../gdbsupport/scoped_restore.h:
+
+../gdbsupport/selftest.h:
+
+../gdbsupport/function-view.h:
+
+../gdbsupport/invoke-result.h:
+
+../gdbsupport/iterator-range.h:
+
+../gdbsupport/gdb_string_view.h:
+
+unittests/basic_string_view/capacity/1.cc:
+
+unittests/basic_string_view/cons/char/1.cc:
+
+unittests/basic_string_view/cons/char/2.cc:
+
+unittests/basic_string_view/cons/char/3.cc:
+
+unittests/basic_string_view/element_access/char/1.cc:
+
+unittests/basic_string_view/element_access/char/empty.cc:
+
+unittests/basic_string_view/element_access/char/front_back.cc:
+
+unittests/basic_string_view/inserters/char/2.cc:
+
+unittests/basic_string_view/modifiers/remove_prefix/char/1.cc:
+
+unittests/basic_string_view/modifiers/remove_suffix/char/1.cc:
+
+unittests/basic_string_view/modifiers/swap/char/1.cc:
+
+unittests/basic_string_view/operations/compare/char/1.cc:
+
+unittests/basic_string_view/operations/compare/char/13650.cc:
+
+unittests/basic_string_view/operations/copy/char/1.cc:
+
+unittests/basic_string_view/operations/data/char/1.cc:
+
+unittests/basic_string_view/operations/find/char/1.cc:
+
+unittests/basic_string_view/operations/find/char/2.cc:
+
+unittests/basic_string_view/operations/find/char/3.cc:
+
+unittests/basic_string_view/operations/find/char/4.cc:
+
+unittests/basic_string_view/operations/rfind/char/1.cc:
+
+unittests/basic_string_view/operations/rfind/char/2.cc:
+
+unittests/basic_string_view/operations/rfind/char/3.cc:
+
+unittests/basic_string_view/operations/substr/char/1.cc:
+
+unittests/basic_string_view/operators/char/2.cc:

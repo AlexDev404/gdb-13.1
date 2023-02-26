@@ -1,0 +1,152 @@
+libctf_la-ctf-open-bfd.lo: ctf-open-bfd.c ctf-impl.h config.h \
+ d:\usr\include\errno.h d:\usr\include\_mingw.h \
+ d:\usr\include\msvcrtver.h d:\usr\include\w32api.h \
+ d:\usr\include\sdkddkver.h d:\usr\include\features.h \
+ d:\usr\include\sys\param.h d:\usr\include\sys\types.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\stddef.h d:\usr\include\limits.h \
+ ctf-decls.h d:\usr\include\stdlib.h d:\usr\include\errno.h \
+ d:\usr\include\alloca.h ../include/libiberty.h ../include/ansidecl.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\stdarg.h d:\usr\include\stdio.h \
+ d:\usr\include\sys/types.h d:\usr\include\stdarg.h ../include/ctf-api.h \
+ ../include/ctf.h d:\usr\lib\gcc\mingw32\9.2.0\include\stdint.h \
+ d:\usr\include\stdint.h d:\usr\include\zlib.h d:\usr\include\zconf.h \
+ d:\usr\include\unistd.h d:\usr\include\io.h d:\usr\include\stdint.h \
+ d:\usr\include\process.h d:\usr\include\getopt.h ctf-sha1.h \
+ ../include/sha1.h d:\usr\include\string.h d:\usr\include\strings.h \
+ d:\usr\include\wchar.h d:\usr\include\ctype.h d:\usr\include\wctype.h \
+ elf.h ../include/ansidecl.h ../include/elf/common.h \
+ ../include/elf/external.h ../bfd/bfd.h ../include/symcat.h \
+ d:\usr\lib\gcc\mingw32\9.2.0\include\stdbool.h ../include/diagnostics.h \
+ d:\usr\include\sys\stat.h d:\usr\include\inttypes.h ../include/hashtab.h \
+ ctf-intl.h d:\usr\include\libintl.h d:\usr\include\locale.h \
+ ctf-inlines.h d:\usr\include\assert.h d:\usr\include\fcntl.h \
+ d:\usr\include\io.h swap.h config.h ctf-endian.h ../bfd/elf-bfd.h \
+ ../include/elf/internal.h ../include/bfdlink.h
+
+ctf-impl.h:
+
+config.h:
+
+d:\usr\include\errno.h:
+
+d:\usr\include\_mingw.h:
+
+d:\usr\include\msvcrtver.h:
+
+d:\usr\include\w32api.h:
+
+d:\usr\include\sdkddkver.h:
+
+d:\usr\include\features.h:
+
+d:\usr\include\sys\param.h:
+
+d:\usr\include\sys\types.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\stddef.h:
+
+d:\usr\include\limits.h:
+
+ctf-decls.h:
+
+d:\usr\include\stdlib.h:
+
+d:\usr\include\errno.h:
+
+d:\usr\include\alloca.h:
+
+../include/libiberty.h:
+
+../include/ansidecl.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\stdarg.h:
+
+d:\usr\include\stdio.h:
+
+d:\usr\include\sys/types.h:
+
+d:\usr\include\stdarg.h:
+
+../include/ctf-api.h:
+
+../include/ctf.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\stdint.h:
+
+d:\usr\include\stdint.h:
+
+d:\usr\include\zlib.h:
+
+d:\usr\include\zconf.h:
+
+d:\usr\include\unistd.h:
+
+d:\usr\include\io.h:
+
+d:\usr\include\stdint.h:
+
+d:\usr\include\process.h:
+
+d:\usr\include\getopt.h:
+
+ctf-sha1.h:
+
+../include/sha1.h:
+
+d:\usr\include\string.h:
+
+d:\usr\include\strings.h:
+
+d:\usr\include\wchar.h:
+
+d:\usr\include\ctype.h:
+
+d:\usr\include\wctype.h:
+
+elf.h:
+
+../include/ansidecl.h:
+
+../include/elf/common.h:
+
+../include/elf/external.h:
+
+../bfd/bfd.h:
+
+../include/symcat.h:
+
+d:\usr\lib\gcc\mingw32\9.2.0\include\stdbool.h:
+
+../include/diagnostics.h:
+
+d:\usr\include\sys\stat.h:
+
+d:\usr\include\inttypes.h:
+
+../include/hashtab.h:
+
+ctf-intl.h:
+
+d:\usr\include\libintl.h:
+
+d:\usr\include\locale.h:
+
+ctf-inlines.h:
+
+d:\usr\include\assert.h:
+
+d:\usr\include\fcntl.h:
+
+d:\usr\include\io.h:
+
+swap.h:
+
+config.h:
+
+ctf-endian.h:
+
+../bfd/elf-bfd.h:
+
+../include/elf/internal.h:
+
+../include/bfdlink.h:
