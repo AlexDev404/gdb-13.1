@@ -15420,4 +15420,3 @@ from the target."),
 			    selftests::test_memory_tagging_functions);
 #endif
 }
-                    
